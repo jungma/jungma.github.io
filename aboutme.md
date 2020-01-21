@@ -1,7 +1,7 @@
 ---
 layout: page
-title: HOME
-subtitle: Why you'd want to go on a date with me
+title: ABOUT ME
+subtitle: HTML5, CSS3, W3C, VUE.JS, JAVASCRIPT, FRONT-END
 ---
 
 My name is Inigo Montoya. I have the following qualities:
