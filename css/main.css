@@ -7,7 +7,7 @@ layout: null
 /* --- General --- */
 
 body {
-  font-family: 'Noto Sans KR', 'Lora', 'Times New Roman', serif;
+  font-family:  'Noto Sans KR', sans-serif, 'Lora', 'Times New Roman', serif;
   font-size: 18px;
   color: #404040;
   position: relative;
@@ -629,6 +629,7 @@ footer .theme-by {
 /* --- Tables --- */
 
 table {
+  width:100%;
   padding: 0;
 }
 table tr {
