@@ -1,16 +1,11 @@
 ---
 layout: page
 title: ABOUT ME
-subtitle: HTML5, CSS3, W3C, VUE.JS, JAVASCRIPT, FRONT-END
+subtitle: 코딩을 잘하고 싶어 만든 블로그
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+
+### 경력 요약
 
 - I rock a great mustache
 - I'm extremely loyal to my family
-
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
