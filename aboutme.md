@@ -1,11 +1,14 @@
 ---
 layout: page
 title: ABOUT ME
-subtitle: 코딩을 잘하고 싶어 만든 블로그
+subtitle: 먹고, 공부하고, 사랑하라
 ---
 
 
 ### 경력 요약
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+|제목|내용|설명|
+|------|---|---|
+|테스트1|테스트2|테스트3|
+|테스트1|테스트2|테스트3|
+|테스트1|테스트2|테스트3|
