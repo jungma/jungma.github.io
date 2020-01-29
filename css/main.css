@@ -811,4 +811,10 @@ pre {
 }
 .card-title {
   margin-bottom: .75rem;
+  font-size:15px;
+}
+
+.card-text{
+  font-size:14px;
+  margin:20px 0; 
 }
