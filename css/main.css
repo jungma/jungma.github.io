@@ -825,5 +825,5 @@ pre {
 .row .card .card-img-top{height:160px}
 
 @media only screen and (max-width: 500px) {
-  .row .card{display:inline-block;width:88%;margin:20px 0.5%}
+  .row .card{display:block;width:60%;margin:20px auto}
 }
