@@ -822,8 +822,8 @@ pre {
 
 .row{text-align:center}
 .row .card{display:inline-block;width:31%;margin:20px 0.5%;text-align:left}
-.row .card .card-img-top{height:160px}
+.row .card .card-img-top{height:160px;margin:0 auto}
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 600px)  {
   .row .card{display:block;width:60%;margin:20px auto}
 }
