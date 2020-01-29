@@ -819,3 +819,11 @@ pre {
   margin:20px 0; 
   height:100px;
 }
+
+.row{text-align:center}
+.row .card{display:inline-block;width:31%;margin:20px 0.5%;text-align:left}
+.row .card .card-img-top{height:160px}
+
+@media only screen and (max-width: 500px) {
+  .row .card{display:inline-block;width:88%;margin:20px 0.5%}
+}
