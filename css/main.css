@@ -817,10 +817,10 @@ pre {
 .card-text{
   font-size:14px;
   margin:20px 0; 
-  height:100px;
+  height:110px;
 }
 
-.row{text-align:center}
+.row{}
 .row .card{display:inline-block;width:31%;margin:20px 0.5%;text-align:left}
 .row .card .card-img-top{height:160px;margin:0 auto}
 
