@@ -4,9 +4,7 @@ title:  web standard step
 tags: [웹표준, 접근성]
 ---
 
-웹 표준
-
-표준 스펙을 잘 지키는 것 뿐만 아니라 구조적 마크업(XHTML)과 표현 및 레이아웃(CSS) 및 사용자 행위 제어(DOMScripting)를 잘 분리하는 고급 홈페이지 구축 방식.
+웹 표준이란, 표준 스펙을 잘 지키는 것 뿐만 아니라 구조적 마크업(XHTML)과 표현 및 레이아웃(CSS) 및 사용자 행위 제어(DOMScripting)를 잘 분리하는 고급 홈페이지 구축 방식.
 
 CSS 와 HTML(XHTML)로 웹 문서를 작성하는 것의 명확한 용어는 권고(recommend)라고 하며 버전과 상관없이 HTML, XHTML은 그 자체로 표준이라고 한다.
 
