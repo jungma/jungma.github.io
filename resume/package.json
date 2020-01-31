@@ -1,0 +1,36 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --hot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/KimWooHyun/resume.git",
+  "author": "kimwoohyun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KimWooHyun/resume/issues"
+  },
+  "homepage": "https://github.com/KimWooHyun/resume#readme",
+  "dependencies": {
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "vue": "^2.6.5",
+    "vue-loader": "^15.6.2",
+    "vue-template-compiler": "^2.6.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^2.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
