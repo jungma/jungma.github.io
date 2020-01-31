@@ -831,12 +831,12 @@ pre {
 }
 
 
-body {
+/* body {
   width: 100%;
   height: 100%;
   position: fixed;
   background-color: #34495e;
-}
+} */
 
 .about_content {
   position: absolute;
