@@ -824,7 +824,7 @@ pre {
 
 .row{}
 .row .card{display:inline-block;width:31%;margin:20px 0.5%;text-align:left}
-.row .card .card-img-top{height:160px;margin:0 auto}
+.row .card .card-img-top{width:100%;height:auto;margin:0 auto}
 
 @media screen and (max-width: 600px)  {
   .row .card{display:block;width:70%;margin:20px auto}
