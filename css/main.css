@@ -484,7 +484,7 @@ footer .theme-by {
   font-size: 27px;
   line-height: 1.1;
   display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'BMJUA', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
 }
@@ -827,5 +827,5 @@ pre {
 .row .card .card-img-top{width:100%;height:auto;margin:0 auto}
 
 @media screen and (max-width: 600px)  {
-  .row .card{display:block;width:70%;margin:20px auto}
+  .row .card{display:block;width:80%;margin:20px auto}
 }
