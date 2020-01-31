@@ -1,78 +1,41 @@
 ---
 layout: post
-title: Test markdown
-subtitle: Each post also has a subtitle
+title: Markdown
+subtitle: 마크다운문법 사용기
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [markdown]
 comments: true
 ---
 
-You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+마크다운 사용
+======
 
-**Here is some bold text**
+### 마크다운의 장점
+1. 문법이 쉽다. 
+2. 관리가 쉽다. 
+3. 지원가능한 플랫폼과 프로그램이 다양하다. 
+ 
+### 마크다운의 단점
+1. 표준이 없어 사용자마다 문법이 상이할 수 있다. 
+2. 모든 HTML 마크업을 대신하지 못한다. 
 
-## Here is a secondary heading
-
-Here's a useless table:
-
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+### 마크다운의 사용 
+메모장부터 전용 에디터까지 많은 곳에서 활용할 수 있다. 
+문법이 쉽기 때문에 꼭 전용 에디터를 사용할 필요는 없습니다만, 마크다운 코드의 하이라이트 효과를 원한다면 전용 에디터가 좋은 선택이 될 것 
+혹은 마크다운 문법을 지원하는 모든 곳에서 사용할 수 있으며, 일반 블로그나 워드프레스 외 Slack이나 Trello 같은 서비스에서 메세지를 작성하듯 사용할 수도 있다. 
+화면에 표현되는 스타일(CSS)은 설정에 따라 달라진다. 
+HTML과 마찬가지로 눈에 보이는 스타일은 무시하고 각 문법의 의미로 사용할 것. 
 
 
-How about a yummy crepe?
+마크다운 문법
+======
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+### 제목(HEADER)
 
-It can also be centered!
-
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .center-block :}
-
-Here's a code chunk:
-
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
+> # 제목 1
+> ## 제목 2
+> ### 제목 3
+> #### 제목 4
+> ##### 제목 5
+> ###### 제목 6
