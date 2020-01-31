@@ -3,10 +3,15 @@ layout: post
 title: Markdown
 subtitle: 마크다운문법 사용기
 gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
 tags: [markdown]
 comments: true
 ---
+
+마크다운(MarkDown) 정리. 
+파일 확장자가 .md로 된 파일이다. 사용법이 매우 쉽고, 빠르게 문서를 정리할 수 있습니다.
+물론 모든 HTML 마크업을 대신할 수 없기 때문에 지나친 의존보다는 쉽고 빠르게 작성하는 용도로 사용 가능하다.
+마크다운과 비슷한 형태로 문법이 좀 더 복잡하지만 확장자가 .adoc인 AsciiDoc 문법도 있다. 좀 더 다양한 형태의 문서를 만들 수 있지만, 문법이 좀 더 복잡하고 지원 플랫폼이 적다.
+
 
 마크다운 사용
 ======
