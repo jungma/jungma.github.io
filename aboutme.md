@@ -26,4 +26,4 @@ subtitle: 웹 퍼블리싱을 업으로 삼고 프론트엔드를 지향합니�
 </div>
 </div>
 
-<a href="https://jungma.github.io/resume/" class="text-center">VUE 컴포넌트를 활용한 이력서 바로가기</a>
+<div class="text-center"><a href="https://jungma.github.io/resume/">VUE 컴포넌트를 활용한 이력서 바로가기</a></div>
