@@ -848,7 +848,7 @@ pre {
           transform: translate(-50%, -50%);
   height: 160px;
   overflow: hidden;
-  font-family: 'Lato', sans-serif;
+  font-family: 'BMJUA', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 35px;
   line-height: 40px;
   color: #34495e;
@@ -885,6 +885,7 @@ pre {
   display: inline;
   float: left;
   margin: 0;
+  line-height:40px;
 }
 .content__container__list {
   margin-top: 0;
