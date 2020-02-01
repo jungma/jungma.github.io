@@ -9,7 +9,7 @@ subtitle: 웹 퍼블리싱을 업으로 삼고 프론트엔드를 지향합니�
 
 
 
-<div class="row">
+<div class="box">
 <div class="about_content">
   <div class="content__container">
     <p class="content__container__text">
@@ -17,10 +17,10 @@ subtitle: 웹 퍼블리싱을 업으로 삼고 프론트엔드를 지향합니�
     </p>
     
     <ul class="content__container__list">
-      <li class="content__container__list__item">world !</li>
-      <li class="content__container__list__item">bob !</li>
-      <li class="content__container__list__item">users !</li>
-      <li class="content__container__list__item">everybody !</li>
+      <li class="content__container__list__item">HTML</li>
+      <li class="content__container__list__item">CSS</li>
+      <li class="content__container__list__item">JAVASCRIPT</li>
+      <li class="content__container__list__item">VUE</li>
     </ul>
   </div>
 </div>
