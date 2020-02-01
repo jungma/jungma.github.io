@@ -9,7 +9,7 @@ subtitle: 웹 퍼블리싱을 업으로 삼고 프론트엔드를 지향합니�
 
 
 
-
+<div class="row">
 <div class="about_content">
   <div class="content__container">
     <p class="content__container__text">
@@ -23,4 +23,5 @@ subtitle: 웹 퍼블리싱을 업으로 삼고 프론트엔드를 지향합니�
       <li class="content__container__list__item">everybody !</li>
     </ul>
   </div>
+</div>
 </div>
