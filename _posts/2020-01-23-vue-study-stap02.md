@@ -78,3 +78,7 @@ vue/cli는 쉽게 vue 프로젝트 뼈대를 생성할 수 있게 도와주는 �
 5. App.vue : 메인 컴포넌트
 6. index.html : 메인 HTML 페이지 (App.vue를 이곳에 붙여넣음)
 7. App.vue를 작업해서 - main.js에서 렌더링해서 - index.html 에 뿌려짐
+
+<br/>
+<br/>
+<br/>
