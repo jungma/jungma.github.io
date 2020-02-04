@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+$red: #FF0000;
+$font01:'Apple SD Gothic Neo', AppleSDGothicNeo, 'Malgun Gothic', '맑은 고딕', sans-serif;
+
+#app{font-family: $font01;}
+
+/* MainTab */
+.mainTab{text-align:center;li{background:red}}
