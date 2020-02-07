@@ -17,6 +17,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/reset.scss";
 .mainTab{
     border-top: 1px solid rgb(227, 229, 232);
     border-bottom: 1px solid rgb(227, 229, 232);
@@ -34,5 +35,7 @@ export default {
         border:0;
         background:none;
     }
+    .router-link-exact-active{position:relative;color:#000;font-weight:bold;display:block;}
+    .router-link-exact-active:after{content:"";position:absolute;bottom:0;left:0;width:100%;height:3px;background:#000}
 }
 </style>

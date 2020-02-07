@@ -4,4 +4,24 @@
    License: none (public domain)
 */
 
-.mainTab{}
+a{color:#000}
+.mainTab{
+    border-top: 1px solid rgb(227, 229, 232);
+    border-bottom: 1px solid rgb(227, 229, 232);
+    text-align:center;
+    li{
+        display:inline-block;
+        width:105px;
+        height:54px;
+        font-size:15px;
+        line-height:54px;
+    }
+    button{
+        box-shadow: none;
+        outline: none;
+        border:0;
+        background:none;
+    }
+    .router-link-exact-active{position:relative;color:#000;font-weight:bold;display:block;}
+    .router-link-exact-active:after{content:"";position:absolute;bottom:0;left:0;width:100%;height:3px;background:#000}
+}
