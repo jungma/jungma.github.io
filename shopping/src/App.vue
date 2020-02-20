@@ -2,22 +2,25 @@
   <div id="app">
     
     <Nav></Nav>
-    <MainTab></MainTab>
+    <ul class="mainTab">
+    <li><router-link to="/">홈</router-link></li>
+    <li><router-link to="/Detail:new">신규</router-link></li>
+    <li><router-link to="/Detail:hot">인기</router-link></li>
+    <li><router-link to="/Detail:sale">세일</router-link></li>
+    <li><router-link to="/Detail:all">전체</router-link></li>
+    </ul>
     <router-view v-bind:포스트들="포스트들" />
-      
-
+    
   </div>
 </template>
 
 <script>
 import data from './assets/data.js'
 import Nav from './components/Nav.vue'
-import MainTab from './components/MainTab.vue'
 export default {
   name: 'app',
   components: {
     Nav,
-    MainTab,
   },
   data(){
     return {
@@ -46,20 +49,6 @@ export default {
     }
   },
   methods: {
-    // priceSort(){
-    //   // var 어레이 = [5,3,4,1,2];
-    //   // 어레이.sort(function(a,b){
-    //   //   return a - b
-    //   // });
-    //   //원룸들 = [{},{},{},{}]
-    //   this.원룸들.sort(function(a,b){
-    //     return a.price - b.price
-    //   });
-    //   //원룸들이라는 데이터를 정렬 해주셈 ~
-    // },
-    // sortBack(){
-
-    // },
   }
 }
 </script>

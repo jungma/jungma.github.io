@@ -2,18 +2,20 @@
     <div class="mainTab">
         <ul>
             <li><router-link to="/">홈</router-link></li>
-            <li><router-link to="/Detail">신규</router-link></li>
-            <li><button>인기</button></li>
-            <li><button>세일</button></li>
-            <li><button>전체</button></li>
+            <li><router-link to="/Detail:new">신규</router-link></li>
+            <li><router-link to="/Detail:hot">인기</router-link></li>
+            <li><router-link to="/Detail:sale">세일</router-link></li>
+            <li><router-link to="/Detail:all">전체</router-link></li>
         </ul>
     </div> 
 </template>
 
 <script>
-
 export default {
-
+  name: 'mainTab',
+  props: {
+ 
+  }
 }
 </script>
 

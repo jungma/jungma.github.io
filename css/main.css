@@ -973,3 +973,14 @@ pre {
             transform: translate3d(0, -25%, 0);
   }
 }
+
+* {
+  cursor: url(../img/cursor_off.png), auto;
+  cursor: -webkit-image-set(url(../img/cursor_off.png) 1x, url(../img/cursor_off@2x.png) 2x), auto;
+}
+
+* a:hover,
+* a:hover * {
+  cursor: url(../img/cursor.png), auto;
+  cursor: -webkit-image-set(url(../img/cursor.png) 1x, url(../img/cursor@2x.png) 2x), auto;
+}

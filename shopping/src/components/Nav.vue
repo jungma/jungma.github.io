@@ -54,6 +54,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/reset.scss";
 $bl : #1e1e1e;
 
 .navbar{padding:17px 1rem}
