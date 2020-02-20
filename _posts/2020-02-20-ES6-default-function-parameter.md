@@ -2,6 +2,7 @@
 layout: post
 title: ES6 기본 함수 매개변수(default function parameter)
 bigimg: /img/es6.png
+tags: [ES6, JAVASCRIPT]
 ---
 
 
