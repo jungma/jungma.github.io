@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ES6 기본 함수 매개변수(default function parameter)
-image: /img/es6.png
+bigimg: /img/es6.png
 ---
 
 
