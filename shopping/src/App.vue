@@ -4,12 +4,12 @@
     <Nav></Nav>
     <ul class="mainTab">
     <li><router-link to="/">홈</router-link></li>
-    <li><router-link to="/Detail:new">신규</router-link></li>
-    <li><router-link to="/Detail:hot">인기</router-link></li>
-    <li><router-link to="/Detail:sale">세일</router-link></li>
-    <li><router-link to="/Detail:all">전체</router-link></li>
+    <li><router-link to="/Detail/new">신규</router-link></li>
+    <li><router-link to="/Detail/hot">인기</router-link></li>
+    <li><router-link to="/Detail/sale">세일</router-link></li>
+    <li><router-link to="/Detail/all">전체</router-link></li>
     </ul>
-    <router-view v-bind:포스트들="포스트들" />
+     <router-view v-bind:포스트들="포스트들" />
     
   </div>
 </template>

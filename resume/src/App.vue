@@ -52,6 +52,7 @@
 import Contents from './contents.js'
 import RecordList from './components/RecordList.vue'
 import RecordTitle from './components/RecordTitle.vue'
+import 'es6-promise/auto'
 
 export default {
   name: 'index',

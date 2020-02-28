@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/KimWooHyun/resume#readme",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "es6-promise": "^4.2.8",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "vue": "^2.6.5",
