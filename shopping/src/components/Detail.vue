@@ -1,7 +1,11 @@
 
 <template>
     <div class="detail">
-        <transition name="fade"> <div v-show="show" v-bind:style="styleobj">{{ $route.params.id }}</div></transition>
+        <transition name="fade"> 
+            <div v-show="show" v-bind:style="styleobj">{{ $route.params.id }}  <div v-for="상품 in 상품들" :key="상품">{{ 상품 }}</div></div> 
+           
+        </transition>
+   
     </div> 
 </template>
 
@@ -13,11 +17,13 @@ export default {
     },
     data(){
      return {
+            상품들:['갤', '아', '엘'],
             show:true,
             styleobj :{
                   fontSize:'30px',
                   color:'red'
-             }
+             },
+             보여주까여 : true,
      }
     }
 
