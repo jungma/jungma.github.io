@@ -189,6 +189,7 @@ h1, h2, h3, h4, h5, h6 {font-family:"Noto Medium"; font-weight:normal; color:#22
 #footer .foot_btm dl{margin:0;width:75.4%;float:right;color:#999999;font-size:10px;}
 #footer .foot_btm dl a{color:#999999}
 #footer .foot_btm dl{margin:0;padding:0;width:75.4%;float:right;color:#999999;font-size:10px}
+#footer .foot_btm dl dt, #footer .foot_btm dl dd{float:left}
 #footer .foot_btm p{margin:0;padding:0;width:75.4%;float:right;color:#999999;font-size:10px}
 #footer .foot_btm p+p{font-family:"Noto Medium";padding:1px 0 0}
 #footer .menu li:before, #footer dl dt:before{display:none}
