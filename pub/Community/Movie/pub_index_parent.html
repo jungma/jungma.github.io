@@ -1,0 +1,506 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=high-dpi, minimal-ui"
+		/>
+		<meta name="description" content="" />
+		<meta name="google-site-verification" content="BFmEnM9KijGLhZEm4Q0cgECgwY2CBuoNGtFlMeklb70" />
+		<meta property="og:title" content="" />
+		<meta property="og:image" content="http://www.i-challenge.co.kr/images/common/kakao-meta-image.jpg" />
+		<link rel="apple-touch-icon" href="http://m.i-challenge.co.kr/images/icon.png">
+		<link rel="apple-touch-icon-precomposed" href="http://m.i-challenge.co.kr/images/icon128.png" />
+		<link rel="shortcut icon" href="http://m.i-challenge.co.kr/images/icon128.png" />
+		<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/style.css" />
+    <link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href=".http://m2.i-challenge.co.kr/Css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../Css/community2018.css" />
+    <script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="http://m.i-challenge.co.kr/Js/kakao.link.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/ui.js"></script>
+    <script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/swiper.min.js"></script>
+		<script>
+			var lnbDep1 = 3; //LNB depth 1
+			var allmenuDep1 = 5; //allmenu depth 1
+			var allmenuDep2 = 3; //allmenu depth 2
+
+			$(function () {
+				//lnb swipe 생성
+				var lnb = new Swiper('.lnb .swiper-container', {
+					scrollbar: '.swiper-scrollbar',
+					scrollbarHide: true,
+					slidesPerView: 'auto',
+					grabCursor: true
+				});
+
+				//lnb allmenu on/off 처리
+				$('.btn_allmenu').on('click', function () {
+					var _this = $(this);
+					if (_this.hasClass('on')) {
+						_this.removeClass('on');
+						$('.allmenu').slideUp();
+					} else {
+						_this.removeClass('on');
+						_this.addClass('on');
+						$('.allmenu').slideDown();
+					}
+
+				});
+			});
+
+
+		</script>
+	</head>
+
+	<body>
+		<!-- wrap :: start -->
+		<div id="wrap">
+
+			<!-- header :: start -->
+			<header id="header">
+				<div id="gnb">
+					<a href="#" class="btn_slide">
+						<span class="blind">슬라이드 메뉴</span>
+						<i></i>
+					</a>
+					<h1>
+						<a href="#">
+							<img src="../../Images/main/logo.png" alt="아이챌린지" />
+						</a>
+					</h1>
+					<a href="#" class="btn_srch">
+						<span class="blind">교재찾기</span>
+						<i></i>
+					</a>
+					<a href="#" class="btn_login">
+						<span class="blind">로그인</span>
+						<i></i>
+					</a>
+				</div>
+			</header>
+			<!-- header :: end -->
+
+			<!-- lnb :: start -->
+			<!-- [D] 메뉴명 3개인 경우 wd03 클래스 추가 -->
+			<div class="lnb wd03">
+				<div class="swiper-container">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<a href="#">교재 사용 후기</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#">엄마아빠 토닥토닥
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#">육아 영상</a>
+						</li>
+					</ul>
+				</div>
+				<div class="swiper-scrollbar"></div>
+				<a href="#" class="btn_allmenu">
+					<i>
+						<span class="blind">전체메뉴</span>
+					</i>
+				</a>
+			</div>
+			<!-- lnb :: end -->
+
+			<!-- allmenu :: start -->
+			<div class="allmenu">
+				<div class="m01">
+					<div class="tit">
+						<span>교재소개</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">아이챌린지 소개</a>
+						</li>
+						<li>
+							<a href="#">프로그램 특징</a>
+						</li>
+					</ul>
+				</div>
+				<div class="m02">
+					<div class="tit">
+						<span>교재쇼핑</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">월령프로그램</a>
+						</li>
+						<li>
+							<a href="#">단계프로그램</a>
+						</li>
+						<li>
+							<a href="#">ABC Bubbles</a>
+						</li>
+					</ul>
+				</div>
+				<div class="m03">
+					<div class="tit">
+						<span>놀이교육</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">놀이극장</a>
+						</li>
+						<li>
+							<a href="#">호비송</a>
+						</li>
+						<li>
+							<a href="#">호비애니메이션</a>
+						</li>
+						<li>
+							<a href="#">i-소리책</a>
+						</li>
+						<li>
+							<a href="#">에듀박스(미정)</a>
+						</li>
+					</ul>
+				</div>
+				<div class="m04">
+					<div class="tit">
+						<span>호비 멤버십</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">출석룰렛</a>
+						</li>
+						<li>
+							<a href="#">양육검사</a>
+						</li>
+						<li>
+							<a href="#">부모가이드</a>
+						</li>
+						<li>
+							<a href="#">도너츠몰</a>
+						</li>
+						<li>
+							<a href="#">프린트 학습지</a>
+						</li>
+					</ul>
+				</div>
+				<div class="m05">
+					<div class="tit">
+						<span>커뮤니티</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">교재 사용 후기</a>
+						</li>
+						<li>
+							<a href="#">엄마아빠 토닥토닥</a>
+						</li>
+						<li>
+							<a href="#">육아무비클립</a>
+						</li>
+					</ul>
+				</div>
+				<div class="m06">
+					<div class="tit">
+						<span>이벤트</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">진행중 이벤트</a>
+						</li>
+						<li>
+							<a href="#">종료된 이벤트</a>
+						</li>
+						<li>
+							<a href="#">당첨자 발표</a>
+						</li>
+						<li>
+							<a href="#">무료체험</a>
+						</li>
+					</ul>
+				</div>
+				<div class="m07">
+					<div class="tit">
+						<span>마이페이지</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">회원정보</a>
+						</li>
+						<li>
+							<a href="#">주문내역</a>
+						</li>
+						<li>
+							<a href="#">배송조회</a>
+						</li>
+						<li>
+							<a href="#">배송지 정보</a>
+						</li>
+						<li>
+							<a href="#">당첨자 발표</a>
+						</li>
+						<li>
+							<a href="#">종료된 이벤트</a>
+						</li>
+						<li>
+							<a href="#">마일리지</a>
+						</li>
+						<li>
+							<a href="#">나의 커뮤니티 활동</a>
+						</li>
+						<li>
+							<a href="#">구독 고객 안내사항</a>
+						</li>
+						<li>
+							<a href="#">회원 탈퇴</a>
+						</li>
+					</ul>
+				</div>
+				<div class="m08">
+					<div class="tit">
+						<span>고객센터</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">공지사항</a>
+						</li>
+						<li>
+							<a href="#">FAQ</a>
+						</li>
+						<li>
+							<a href="#">1:1 고객문의</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- allmenu :: end -->
+
+			<!-- container :: start -->
+			<div id="container">
+
+				<!-- content :: start -->
+				<!-- [D] 육아영상 class="movie" 추가 -->
+				<div id="content" class="community movie">
+					<div class="cont_top">
+						<div>
+							<span>부모나 자녀에게 추천할만한 영상을 공유하세요~</span>
+							<h3>육아영상</h3>
+						</div>
+					</div>
+					<div class="cont_benefit">
+						<p>영상 등록 혜택<em>(월 최대 3회)</em></p>
+						<a href="#" class="btn_write">등록</a>
+						<div class="benefit">
+							<div>
+								<p>마일리지
+									<em>50M</em>
+								</p>
+								<p>활동 지수
+									<em>100점</em> 지급(1일 1회)
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="cont_srch">
+						<div class="selwrap">
+							<select>
+								<option>전체</option>
+								<option>제목+내용</option>
+								<option>작성자</option>
+							</select>
+						</div>
+						<div class="srch">
+							<input type="text" />
+							<a href="#" class="btn_srch"></a>
+						</div>
+					</div>
+					<div class="cont_hashtag">
+						<div class="hashtag">
+							<span class="txt01">추천태그</span>
+							<div class="txt02">
+								<a href="#">핑크퐁</a>
+								<a href="#">옥토넛</a>
+								<a href="#">뽀로로</a>
+								<a href="#">영어동요</a>
+								<a href="#">레이디버그</a>
+							</div>
+						</div>
+					</div>
+					<div class="tab_type01">
+						<ul>
+							<li><a href="#">자녀</a></li>
+							<li class="on"><a href="#">부모</a></li>
+						</ul>
+					</div>
+					
+					<!-- [D] 부모 탭 일 경우 cont_sel 에 class="parent" 추가 -->
+					<div class="cont_sel parent">
+						<div class="selwrap02">
+							<select>
+								<option>전체</option>
+								<option>제목+내용</option>
+								<option>작성자</option>
+							</select>
+						</div>
+						<div class="btns">
+							<a href="#">전체재생</a>
+							<a href="#">선택재생</a>
+						</div>
+					</div>
+					<div class="cont_movielist">
+						<ul>
+							<li>
+								<div class="top">
+									<a href="#" class="movie">
+										<span class="age">만 1~2세</span>
+										<img src="https://img.youtube.com/vi/7aifDGSWYIU/hqdefault.jpg" alt="유투브 썸네일" />
+									</a>
+								</div>
+								<div class="btm">
+									<div class="txt01">
+										<span class="tit">깜부 한글놀이깜부 한글놀이</span>
+										<span class="chk01">
+											<input type="checkbox" id="chk01" />
+											<label for="chk01"></label>
+										</span>
+										
+									</div>
+									<div class="txt02">
+										<span class="name">호비맘</span>
+										<span class="date">18.04.05</span>
+									</div>
+									<div class="txt03">
+										<span class="read">조회 35</span>
+										<span class="recom">추천 10</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="top">
+									<a href="#" class="movie">
+										<span class="age">만 1~2세</span>
+										<img src="https://img.youtube.com/vi/7aifDGSWYIU/hqdefault.jpg" alt="유투브 썸네일" />
+									</a>
+								</div>
+								<div class="btm">
+									<div class="txt01">
+										<span class="tit">깜부 한글놀이깜부 한글놀이</span>
+										<span class="chk01">
+											<input type="checkbox" id="chk02" />
+											<label for="chk02"></label>
+										</span>
+										
+									</div>
+									<div class="txt02">
+										<span class="name">호비맘</span>
+										<span class="date">18.04.05</span>
+									</div>
+									<div class="txt03">
+										<span class="read">조회 35</span>
+										<span class="recom">추천 10</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="top">
+									<a href="#" class="movie">
+										<span class="age">만 1~2세</span>
+										
+									</a>
+								</div>
+								<div class="btm">
+									<div class="txt01">
+										<span class="tit">깜부 한글놀이깜부 한글놀이</span>
+										<span class="chk01">
+											<input type="checkbox" id="chk03" />
+											<label for="chk03"></label>
+										</span>
+										
+									</div>
+									<div class="txt02">
+										<span class="name">호비맘</span>
+										<span class="date">18.04.05</span>
+									</div>
+									<div class="txt03">
+										<span class="read">조회 35</span>
+										<span class="recom">추천 10</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="top">
+									<a href="#" class="movie">
+										<span class="age">만 1~2세</span>
+										
+									</a>
+								</div>
+								<div class="btm">
+									<div class="txt01">
+										<span class="tit">깜부 한글놀이깜부 한글놀이</span>
+										<span class="chk01">
+											<input type="checkbox" id="chk04" />
+											<label for="chk04"></label>
+										</span>
+										
+									</div>
+									<div class="txt02">
+										<span class="name">호비맘</span>
+										<span class="date">18.04.05</span>
+									</div>
+									<div class="txt03">
+										<span class="read">조회 35</span>
+										<span class="recom">추천 10</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<a href="#" class="btn_more_list">더보기</a>
+					</div>
+				</div>
+				<!-- content :: end -->
+
+			</div>
+			<!-- container :: end -->
+
+			<!-- footer :: start -->
+			<footer id="footer">
+				<ul class="foot_top">
+					<li>
+						<a href="javascript:goMenu('US0700');">이용약관</a>
+					</li>
+					<li class="sec">
+						<a href="javascript:goMenu('US0800');">개인정보처리방침</a>
+					</li>
+					<li>
+						<a href="javascript:goMenu('ET9900');">PC 버전</a>
+					</li>
+				</ul>
+				<div class="foot_btm">
+					<h2>
+						<img src="../../Images/main/logo_foot.jpg" alt="NE 능률" />
+					</h2>
+					<address>
+						<em>서울시 마포구 월드컵북로 396 누리꿈스퀘어 비즈니스타워 10층</em>
+					</address>
+					<dl>
+						<dt>대표이사</dt>
+						<dd>주민홍　</dd>
+						<dt>사업자등록번호</dt>
+						<dd>105-81-65267</dd>
+						<dt>통신판매업신고번호제</dt>
+						<dd> 2004-02120호</dd>
+						<dt>개인정보 보호 책임자(CPO) :</dt>
+						<dd>한유형 (
+							<a href="mailto:necpo@neungyule.com;">necpo@neungyule.com</a>)</dd>
+					</dl>
+					<p>COPYRIGHT ⓒ NE NEUNGYULE INC. ALL RIGHTS RESERVED.</p>
+					<p>ⓒ Benesse Corporation.</p>
+				</div>
+			</footer>
+			<!-- footer :: end -->
+		</div>
+		<!-- wrap :: end -->
+	</body>
+
+	</html>

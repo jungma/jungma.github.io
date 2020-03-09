@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=high-dpi, minimal-ui" />
+<meta name="description" content="" />
+<meta name="google-site-verification" content="BFmEnM9KijGLhZEm4Q0cgECgwY2CBuoNGtFlMeklb70" />
+<meta property="og:title" content="" />
+<meta property="og:image" content="http://www.i-challenge.co.kr/images/common/kakao-meta-image.jpg" />
+<link rel="apple-touch-icon" href="http://m.i-challenge.co.kr/images/icon.png">
+<link rel="apple-touch-icon-precomposed" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="shortcut icon" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/style.css" />
+<link rel="stylesheet" type="text/css" href="http://m.i-challenge.co.kr/Css/check.css" />
+<link rel="stylesheet" type="text/css" href="../../../Css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../../Css/play2018.css" />
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/ui.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/kakao.link.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/swiper.min.js"></script>
+<script>
+	
+	var lnbDep1 = 3; //LNB depth 1
+	var allmenuDep1 = 4; //allmenu depth 1
+	var allmenuDep2 = 3; //allmenu depth 2
+
+	$(function () {
+		//lnb swipe 생성
+		var lnb = new Swiper('.lnb .swiper-container', {
+			scrollbar: '.swiper-scrollbar',
+			scrollbarHide: true,
+			slidesPerView: 'auto',
+			grabCursor: true
+		});
+
+		//lnb allmenu on/off 처리
+		$('.btn_allmenu').on('click', function () {
+			var _this = $(this);
+			if (_this.hasClass('on')) {
+				_this.removeClass('on');
+				$('.allmenu').slideUp();
+			} else {
+				_this.removeClass('on');
+				_this.addClass('on');
+				$('.allmenu').slideDown();
+			}
+
+		});
+	});
+		
+</script>
+</head>
+
+<body>
+
+
+<div class="play happykid pop">
+	<div class="cont_pop">
+		<div class="pop_header">
+			<a href="javascript:history.back();" class="btn_back"><img src="http://m2.i-challenge.co.kr/Hobi/Membership/images/Parent/btn_back.png" alt="뒤로" /></a>
+			<span>기질검사 결과 샘플</span>
+		</div>
+		<!-- pop_con :: start -->
+		<div class="pop_con">
+		
+			<!-- [D]기존 테이블 내용 가져옴 -->
+			<p class="DetP02">해피키드 양육검사 &gt; 기질검사 결과 샘플</p>
+			<table class="DtBaby01Tb DtBaby02Tb" cellpadding="0" cellspacing="0">
+				<thead>
+					<tr>
+						<th><span>영·유아 기질검사</span> 결과</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<div class="DtB01Td01 DtB01Td02">
+								<h2><img src="http://m.i-challenge.co.kr/Images/happykid/check_bul04_img.gif" alt="∨"><span>기본 정보</span></h2>
+								<table class="BIfTb01" cellpadding="0" cellspacing="0">
+									<tbody>
+										<tr>
+											<td class="BIfTb01Tit01 BIfTb01Tit02">검사종류</td>
+											<td class="BIfTb01td01 BIfTb01td02">걸음마기 발달 검사</td>
+										</tr>
+										<tr>
+											<td class="BIfTb01Tit01 BIfTb01Tit02">자녀정보</td>
+											<td class="BIfTb01td01 BIfTb01td02">성명: <span>홍길동</span> / 연령(월령): <span class="TxtCl">21개월</span> / 성별: 남</td>
+										</tr>
+										<tr>
+											<td class="BIfTb01Tit01 BIfTb01Tit02">양육자 정보</td>
+											<td class="BIfTb01td01 BIfTb01td02">성명 : 홍아빠 (부)</td>
+										</tr>
+										<tr>
+											<td class="BIfTb01Tit01 BIfTb01Tit02">검사일자</td>
+											<td class="BIfTb01td01 BIfTb01td02">2017-09-03</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="DtB01Td01 DtB01Td02">
+								<h2><img src="http://m.i-challenge.co.kr/Images/happykid/check_bul04_img.gif" alt="∨"><span>검사 결과</span></h2>
+								<div class="TRstB"><strong>홍아빠</strong>님의 자녀 <span>홍길동</span>의 기질은 <span class="SpCl02">순한기질</span> 입니다.</div>
+								<div class="RstImg"><img src="http://m.i-challenge.co.kr/Images/happykid/check_result01_img.gif" width="100%" alt="검사결과 이미지"></div>
+								<div class="TScrB">
+									<h3><strong>[T점수]</strong></h3>
+									<p>검사 결과를 단순히 채점하여 나타내는 원 점수는 상대적인 비교를 할 수 없으므로, 본 해피키드에서는 개인의 검사 결과를 보다 정확하게 이해하게 해주기 위해 원 점수를 표준점수로 변환하여 제공합니다. 본 해피키드에서 제공하는 T점수는 표준점수의 일종으로 <span class="SpCl02">평균을 50, 표준편차를 10으로 전환한 점수</span>입니다. 그래서 검사 <span>결과 T 점수가 50이 나왔다면 자신의 점수가 보통의 수준</span>이라고 생각하시면 됩니다.</p>
+								</div>
+							</div>
+							<table class="BIfTb01 RstCtnTb01" cellpadding="0" cellspacing="0">
+								<tbody>
+									<tr>
+										<td class="TdbgC01_1 TdbgC02_1">&nbsp;</td>
+										<td class="RstCtnTbTit01">활동성</td>
+										<td class="RstCtnTbtd01">활동성 수준이 보통입니다. 이는 목욕이나 놀이, 옷입기와 같은 일상생활에서 신체 활동량과 신체 움직임이 보통 정도임을 의미합니다</td>
+									</tr>
+									<tr>
+										<td class="TdbgC01_1 TdbgC02_2">&nbsp;</td>
+										<td class="RstCtnTbTit01">규칙성</td>
+										<td class="RstCtnTbtd01">규칙성 수준이 높은 편입니다. 이는 배고픔, 배설, 수면 주기 등과 같은 생리적 특성이 매우 규칙적임을 의미합니다.</td>
+									</tr>
+									<tr>
+										<td class="TdbgC01_1 TdbgC02_3">&nbsp;</td>
+										<td class="RstCtnTbTit01">적응성</td>
+										<td class="RstCtnTbtd01">적응성 수준이 높은 편입니다. 이는 새롭거나 변화된 상황에서 다른 아이들에 비해서 금방 쉽게 잘 적응함을 의미합니다.</td>
+									</tr>
+									<tr>
+										<td class="TdbgC01_1 TdbgC02_4">&nbsp;</td>
+										<td class="RstCtnTbTit01">반응강도</td>
+										<td class="RstCtnTbtd01">반응강도 수준이 낮은 편입니다. 어떤 상황에 대한 반응이 기분이 좋을 때에는 그저 가벼운 미소를 보이거나 무표정하고, 기분이 나쁠 때에도 반응이 거의 차이가 없는 것을 의미합니다.</td>
+									</tr>
+									<tr>
+										<td class="TdbgC01_1 TdbgC02_5">&nbsp;</td>
+										<td class="RstCtnTbTit01">정서성</td>
+										<td class="RstCtnTbtd01">정서성 수준이 보통입니다. 전반적으로 즐겁고 기분이 좋을 때와 기분이 나쁘고 슬프고 화가 나있는 상태가 비슷한 수준임을 의미합니다.</td>
+									</tr>
+									<tr>
+										<td class="TdbgC01_1 TdbgC02_6">&nbsp;</td>
+										<td class="RstCtnTbTit01">예민성</td>
+										<td class="RstCtnTbtd01">예민성 수준이 보통입니다. 주변의 감각적 자극, 사물, 사회적 접촉에 대해 이 연령 영아와 유사한 정도로 민감함을 의미합니다.</td>
+									</tr>
+									<tr>
+										<td class="TdbgC01_1 TdbgC02_7">&nbsp;</td>
+										<td class="RstCtnTbTit01">지구성</td>
+										<td class="RstCtnTbtd01">지구성 수준이 보통입니다. 한가지 활동을 아주 오래 끈기 있게 하지는 못하지만 이 시기 다른 영아와 유사한 정도입니다.</td>
+									</tr>
+									<tr>
+										<td class="TdbgC01_1 TdbgC02_8">&nbsp;</td>
+										<td class="RstCtnTbTit01">주의분산형</td>
+										<td class="RstCtnTbtd01">주의산만성 수준이 보통입니다. <span>홍길동</span> 아기는 한가지 활동을 하고 있을 때 주위에서 소리가 난다던지 새로운 장난감이 제공되면 즉각 주의가 분산되어 하던 것을 그만두고 다른 장난감으로 가지는 않고, 전반적으로 이 연령의 다른 영아와 유사한 정도임을 의미합니다.</td>
+									</tr>
+									<tr>
+										<td class="TdbgC01_1 TdbgC02_9">&nbsp;</td>
+										<td class="RstCtnTbTit01">접근성</td>
+										<td class="RstCtnTbtd01">접근성 수준이 보통입니다. 이는 새로운 음식, 장난감, 낯선 사람 등과 같은 새로운 자극에 대해 아이가 처음 보이는 반응이 적극적으로 다가가거나 행동을 보이거나 피하려 하면서 양육자(주로 어머니) 뒤에 숨으려 하는 위축된 행동이 아니고, 처음에는 잠깐 동안 수줍어하고 경계하지만 곧 쉽게 적응이 됨을 의미합니다.</td>
+									</tr>                                                             
+								</tbody>
+							</table>  
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="DtB01Td01 DtB01Td02">
+								<h2><img src="http://m.i-challenge.co.kr/Images/happykid/check_bul04_img.gif" alt="∨"><span>기질 결과의 분석</span></h2>
+								<p class="RstDiscP01"><span class="SpName">홍길동</span> 아기는 '순한기질'을 가지고 태어났습니다.<br> 순한 기질의 영아는 다른 기질의 영아에 비해 양육하기가 훨씬 수월한 특성을 지닙니다. 다음에 제시된 순한 기질을 가진 영아의 장점과 단점 및 신경 써야 할 점 등을 보시고, 영아의 장점은 더욱 살려주소 단점은 보완하여 양육자와 원만한 상호작용이 이루어 질 수 있도록 신경 쓰면 좋습니다.</p>
+								<p class="RstDiscP01"><span>장점</span><br>순한 기질의 영아는 수면, 음식 섭취, 배설 등의 일상생활 습관에 있어서 대체적으로 규칙적입니다.<br>환경으로부터의 자극이나 욕구 좌절에 대해서도 크게 상처받지 않습니다. 새로운 음식을 주어도 잘 받아들이고, 낯선 대상에게도 스스럼없이 잘 접근하며, 환경의 변화에 대한 적응력도 높은 편입니다. 평온하고 행복한 정서가 지배적이며, 양육자나 성인의 요구에 순응하고 쉽게 적응하는 특성을 가지고 있습니다.</p>
+								<p class="RstDiscP01"><span>어려운점</span><br>순한 기질의 영아는 다른 기질의 영아에 비해 상대적으로 양육의 어려움이 크지 않습니다.<br>그러나 도움이 필요할 때 다른 기질의 아이들처럼 울거나 칭얼대지도 않고 표현을 잘 하지 않는 경우가 많습니다.<br>조용히 바라보는 것으로 자신의 의사를 표현하는 정도입니다. 이러한 특성 때문에 영아가 최적의 발달을 하기 위한 자극이 부족할 수도 있습니다. 이 시기 영아들에게는 충분한 감각적인 자극을 주어야 뇌 발달과 신체 발달이 촉진됩니다.<br>따라서 양육자(주로 어머니)는 아이가 요구하지 않아도 아이와 눈을 맞추고, 적절한 양의 시각과 청각적 자극이 있는 환경을 제공해 주는 노력이 필요합니다.<br><br>이렇게 '내 아이는 순한 기질이다'라는 객관적인 정보가 필요한 이유는 양육자가 아이의 기질에 맞는 양육방법을 사용함으로써 <span class="SpName">홍길동</span>아기가 가지고 있는 기질의 장점은 더 살리고, 단점을 보완할 수 있기 때문입니다. 또한 양육자가 아이에 대한 정보를 알면 아이를 대하는데 자신감을 가지게 되며, 양육의 일관성을 유지할 수 있습니다.<br>양육의 일관성은 자녀의 조화로운 성장을 위해 꼭 필요한 요소입니다.</p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="DtB01Td01 DtB01Td02">
+								<h2><img src="http://m.i-challenge.co.kr/Images/happykid/check_bul04_img.gif" alt="∨"><span>검사 결과 설명</span></h2>
+								<p class="RstDiscP01">검사는 기질을 활동성, 규칙성, 접근성, 적응성, 반응강도, 정서성, 지구성, 주의산만성, 예민성의 9가지 차원으로 측정합니다.</p>
+								<table class="RstDTb01" cellpadding="0" cellspacing="0">
+									<tbody>
+										<tr>
+											<td class="RstDtd01C">활동성</td>
+											<td class="RstDtd02C">영아가 깨어있는 동안에 일어나는 활동적 시간과 비활동적 시간의 비율을 의미합니다.</td>
+										</tr>
+										<tr>
+											<td class="RstDtd01C RstDtd03C">규칙성</td>
+											<td class="RstDtd02C RstDtd04C">수면 주기, 공복 주기, 배설 주기와 같은 생리적 기능의 예측가능성을 의미합니다.</td>
+										</tr>
+										<tr>
+											<td class="RstDtd01C">접근성</td>
+											<td class="RstDtd02C">새로운 음식, 장난감, 낯선 사람과 같은 새로운 자극에 대한 영아의 반응 형태를 의미합니다.</td>
+										</tr>
+										<tr>
+											<td class="RstDtd01C RstDtd03C">적응성</td>
+											<td class="RstDtd02C RstDtd04C">새롭거나 변화된 상황에 대한 반응을 의미합니다.</td>
+										</tr>
+										<tr>
+											<td class="RstDtd01C">반응강도</td>
+											<td class="RstDtd02C">기분이 긍정적이거나 부정적일 때 표현하는 반응의 세기를 의미합니다.</td>
+										</tr>
+										<tr>
+											<td class="RstDtd01C RstDtd03C">정서성</td>
+											<td class="RstDtd02C RstDtd04C">불쾌함, 슬픔, 적대적인 행동과 즐겁고 우호적인 행동의 상대적인 비율을 의미합니다.</td>
+										</tr>
+										<tr>
+											<td class="RstDtd01C">주의산만성</td>
+											<td class="RstDtd02C">진행 중인 행동을 방해하거나 방향을 바뀌게 하는 외부 자극이 있을 때 이에 반응하는 정도를 의미합니다.</td>
+										</tr>
+										<tr>
+											<td class="RstDtd01C RstDtd03C">지구성</td>
+											<td class="RstDtd02C RstDtd04C">영아가 한가지 활동을 오래 끈기 있게 하는 정도를 의미합니다.</td>
+										</tr>
+										<tr>
+											<td class="RstDtd01C">예민성</td>
+											<td class="RstDtd02C">주변의 자극에 대해 민감한 정도를 의미합니다.</td>
+										</tr>                                   
+									</tbody>
+								</table>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="DtB01Td01 DtB01Td02">
+								<h2><img src="http://m.i-challenge.co.kr/Images/happykid/check_bul04_img.gif" alt="∨"><span>기질검사의 의미</span></h2>
+								<p class="RstDiscP01">모든 아기들이 태어나면서부터 서로 다른 모습을 가졌듯이, 아기들이 보여주는 행동 패턴도 아기마다 서로 다릅니다.<br>낯선 장난감을 봐도 금방 손을 뻗쳐서 만지는 영아가 있는 반면, 엄마가 만져도 된다고 해도 엄마를 쳐다보며 선뜻 손을 뻗치지 못하는 영아도 있습니다.<br>이렇듯 영아가 외부의 자극이나 요구에 대한 반응을 행동으로 표현하는 데에서 나타나는 개인차를 '기질'이라고 합니다.<br>이러한 '기질'은 후의 성격의 기초가 되는 것으로, 영아가 발달을 하여도 계속 지니게 되는 선천적인 특성입니다.<br><br>양육자가 자녀의 기질을 알아야 하는 이유는 기질은 타고난 생물학적인 특성이므로 영아기에는 기질이 잘 변하지 않기 때문입니다.<br>특히 3세 이전의 영아들은 타고난 기질대로 행동하고 반응합니다. 즉 아기가 자신의 행동을 의도적으로 고칠 수 없으므로 어린 시기에는 양육자가 영아의 기질을 알고 이에 맞춰주어야 영아가 긍정적으로 발달할 수 있습니다.<br>그러나 기질이 고정불변은 아닙니다. 아이가 가지고 태어난 기질은 환경, 특히 양육자와의 상호작용에 따라 발달하면서 조금씩 달라질 수 있습니다.<br><br>영아의 기질과 양육자의 양육태도가 서로 조화를 이루는 것은 이후의 문제 행동과 사회성 발달 및 인지 발달과 깊은 관련이 있습니다. 예를 들어, 영아의 기질적 특성이 주의 집중 시간이 짧고 충동적이라면 이후 집이나 학교에서의 학습 상황에서 어려움을 경험하게 되고, 학습 경험을 획득하는 능력이나 학습이 일어나는 상황에 영향을 미친다는 연구 결과들이 많이 보고되고 있습니다.<br>영아의 특성이나 능력이 양육자의 요구 또는 기대와 잘 들어맞으면 바람직한 발달이 이루어지고 환경에 적응하는 능력이 높아지지만, 부조화를 이루면 발달이 저해되고 사회적 부적응이 유발될 수도 있습니다.</p>
+							</div>
+						</td>
+					</tr>     
+				</tbody> 
+			</table>
+			<!-- [D]기존 테이블 내용 가져옴 -->
+			
+		</div>
+		<!-- pop_con :: end -->
+		<div class="pop_btn">
+			<a href="#" class="btn_confirm">확인</a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

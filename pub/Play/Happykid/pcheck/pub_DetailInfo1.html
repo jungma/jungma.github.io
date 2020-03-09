@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=high-dpi, minimal-ui" />
+<meta name="description" content="" />
+<meta name="google-site-verification" content="BFmEnM9KijGLhZEm4Q0cgECgwY2CBuoNGtFlMeklb70" />
+<meta property="og:title" content="" />
+<meta property="og:image" content="http://www.i-challenge.co.kr/images/common/kakao-meta-image.jpg" />
+<link rel="apple-touch-icon" href="http://m.i-challenge.co.kr/images/icon.png">
+<link rel="apple-touch-icon-precomposed" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="shortcut icon" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/style.css" />
+<link rel="stylesheet" type="text/css" href="http://m.i-challenge.co.kr/Css/check.css" />
+<link rel="stylesheet" type="text/css" href="../../../Css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../../Css/play2018.css" />
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/ui.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/kakao.link.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/swiper.min.js"></script>
+<script>
+	
+	var lnbDep1 = 3; //LNB depth 1
+	var allmenuDep1 = 4; //allmenu depth 1
+	var allmenuDep2 = 3; //allmenu depth 2
+
+	$(function () {
+		//lnb swipe 생성
+		var lnb = new Swiper('.lnb .swiper-container', {
+			scrollbar: '.swiper-scrollbar',
+			scrollbarHide: true,
+			slidesPerView: 'auto',
+			grabCursor: true
+		});
+
+		//lnb allmenu on/off 처리
+		$('.btn_allmenu').on('click', function () {
+			var _this = $(this);
+			if (_this.hasClass('on')) {
+				_this.removeClass('on');
+				$('.allmenu').slideUp();
+			} else {
+				_this.removeClass('on');
+				_this.addClass('on');
+				$('.allmenu').slideDown();
+			}
+
+		});
+	});
+		
+</script>
+</head>
+
+<body>
+
+
+<div class="play happykid pop">
+	<div class="cont_pop">
+		<div class="pop_header">
+			<a href="javascript:history.back();" class="btn_back"><img src="http://m2.i-challenge.co.kr/Hobi/Membership/images/Parent/btn_back.png" alt="뒤로" /></a>
+			<span>부모양육태도검사 종류</span>
+		</div>
+		<!-- pop_con :: start -->
+		<div class="pop_con">
+		
+			<!-- [D]기존 테이블 내용 가져옴 -->
+			<table class="DtBaby01Tb DtBaby02Tb DtBaby03Tb" cellpadding="0" cellspacing="0">
+				<thead>
+					<tr>
+						<th>부모양육태도검사Ⅰ <span>(1 ~ 6개월)</span></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<div class="DtB01Td01 DtB01Td02 DtB01Td03">
+							<h2><img src="http://m.i-challenge.co.kr/Images/happykid/check_bul06_img.gif" alt="∨"><span>양육태도검사의 의미</span></h2>
+							<p>영아가 이 세상에 태어나서 최초로 관계를 맺는 대상이 바로 부모입니다. 부모가 자녀를 대하는 방법은 부모마다, 그리고 자녀에 따라서도 다르게 나타납니다. <br>일정한 문화 내에서 부모가 자녀의 성장과 발달을 위해 기르고 가르치는 태도 또는 행동의 경향성과 반응양식을 "양육태도"라고 합니다.<br>즉 양육자인 부모가 영아에게 취하는 일반적인 태도나 행동을 양육태도라고 말할 수 있습니다.<br>특히 영아를 둔 부모의 경우, 부모 역할을 제대로 수행하기 위해서는 부모가 되기 위한 마음의 준비와 자녀양육에 대한 기본적인 지식의 습득 등이 필요합니다.<br>부모 양육태도의 중요성은 계속 강조하여도 부족함이 없습니다.<br>부모 양육태도 및 양육행동은 자녀의 인지 발달, 사회성 발달, 정서 발달 등에 영향을 미치는 중요한 요인 중의 하나입니다.<br>따라서 본 검사를 통해 본인이 아이를 어떻게 대하고 있는지, 자녀의 발달 수준에 적절하게 양육하고 있는지를 점검해봄으로써 더 바람직한 자녀 발달, 바람직한 부모-자녀 관계를 위한 첫 걸음을 내딛을 수 있습니다. </p>	
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="DtB01Td01 DtB01Td02 DtB01Td03">
+								<h2><img src="http://m.i-challenge.co.kr/Images/happykid/check_bul06_img.gif" alt="∨"><span>검사 영역</span></h2>
+								<p>본 검사는 자녀 양육에 대해서 부모가 어떻게 생각하는지, 영아 발달에 대한 지식이 있는지, 영아에게 온정적이고 반응적으로 대하고 있는지 등의 내용을 21문항을 통해서 측정합니다.<br>이러한 문항 점수에 기초하여 부모님의 자녀양육태도를 바람직한 부모, 노력형 부모, 초보형 부모로 구분하게 됩니다.</p>
+							</div>
+						</td>
+					</tr>            
+				</tbody> 
+			</table>
+			<!-- [D]기존 테이블 내용 가져옴 -->
+			
+		</div>
+		<!-- pop_con :: end -->
+		<div class="pop_btn">
+			<a href="javascript:history.back();" class="btn_confirm">확인</a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

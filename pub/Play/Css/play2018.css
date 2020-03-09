@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/* 양육검사 > 양육검사란 */
+.happykid .tab_type01{margin:20px 0 0}
+.happykid .tab_type01 li a{color:#222}
+.happykid .tab_type01 li.on a{color:#1dbdc3}
+.happykid .cont{padding:0 15px;border-top:7px solid #ebeff2}
+.happykid .cont.cont01{border-top:0}
+.happykid .cont01:after{display:none}
+.happykid .cont h4{height:45px;line-height:47px;font-size:19px;color:#000;font-family:"Noto Medium"}
+.happykid .cont.cont01 h4{margin:10px 0 0}
+.happykid .cont.cont01 .detail{background:#f3f5f6;padding:15px;margin:0 0 15px}
+.happykid .cont.cont01 .detail p{line-height:1.6;font-size:14px;color:#222;font-family:"Noto Light";}
+.happykid .cont.cont01 .detail p{margin:0 0 12px}
+.happykid .cont.cont01 .detail p:last-child{margin:0}
+.happykid .cont.cont02{position:relative;padding:0}
+.happykid .cont.cont02 h4{padding:0 15px;border-bottom:1px solid #ebeff2}
+.happykid .cont.cont02 .noti{position:absolute;top:14px;right:15px;font-size:12px;color:#000;font-family:"Noto Light";}
+.happykid .cont.cont02 .noti:before{content:"※";display:inline-block;position:relative;top:0;left:0;margin:0 2px 0 0}
+.happykid .cont.cont02 .detail{clear:Both;padding:0 15px}
+.happykid .cont.cont02 .detail h5{position:relative;float:left;padding:0 0 0 37px;margin:23px 0 0;font-size:16px;color:#222;font-family:"Noto Medium"}
+.happykid .cont.cont02 .detail h5:before{position:absolute;top:-5px;left:0;content:"";display:block;width:29px;height:26px;background:url(../Images/Ico/ico_happykid.png) no-repeat 0 0;background-size:50px;}
+.happykid .cont.cont02 .detail .btn_sample{display:block;float:right;margin:20px 0 0;width:37%;height:27px;line-height:29px;border-radius:3px;background:#1dbdc3;text-align:center;color:#fff;font-size:13px;font-family:"Noto Regular"}
+.happykid .cont.cont02 .detail p{clear:both;padding:13px 0 0;color:#222;font-size:14px;font-family:"Noto Light";line-height:1.6}
+.happykid .cont.cont02 .detail p:first-child{margin:6px 0 0}
+.happykid .cont.cont02 .detail ul{margin:15px 0}
+.happykid .cont.cont02 .detail ul li{float:left;width:32%;margin:0 0 0 2%;background:#ebeff2}
+.happykid .cont.cont02 .detail ul li:first-child{margin:0}
+.happykid .cont.cont02 .detail ul li a{position:relative;display:block;width:100%;height:80px;text-align:center;line-height:1.3}
+.happykid .cont.cont02 .detail ul li a:after{content:"";display:block;position:absolute;bottom:13px;left:50%;margin:0 0 0 -9px;width:18px;height:19px;background:url(../Images/Ico/ico_happykid.png) no-repeat 0 -29px;background-size:50px}
+.happykid .cont.cont02 .detail ul:after{content:"";display:block;clear:both}
+.happykid .cont.cont02 .detail ul li a span{display:block;padding:11px 0 0;font-size:14px;color:#222;font-family:"Noto Medium"}
+.happykid .cont.cont02 .detail ul li a span em{display:block;font-family:"Noto Light";}
+.happykid .cont.cont02 .detail.d02{border-top:7px solid #ebeff2}
+.happykid .cont.cont02 .detail.d02 h5:before{width:26px;height:26px;background-position:0 -52px}
+.happykid .cont.cont02 .detail.d03{border-top:7px solid #ebeff2}
+.happykid .cont.cont02 .detail.d03 li{width:23.5%;}
+.happykid .cont.cont02 .detail.d03 ul li a{height:65px}
+.happykid .cont.cont02 .detail.d03 h5:before{width:32px;height:26px;background-position:0 -82px}
+.happykid .cont_doughnut .cont{padding:0;border-top:0}
+.happykid .DtBaby01Tb{padding-top:0;margin-top:0}
+
+/* 양육검사 > 검사하기 */
+.happykid.checklist .cont.cont01 ol{height:80px;padding:22px 0 15px}
+.happykid.checklist .cont.cont01 ol li{position:relative;float:left;display:table;width:29%;margin:0 0 0 6.5%;height:48px;border:2px solid #ccc;border-radius:6px}
+.happykid.checklist .cont.cont01 ol li:first-child{margin:0}
+.happykid.checklist .cont.cont01 ol li:after{position:absolute;top:12px;left:50%;margin:0 0 0 62%;content:"";display:block;width:8px;height:15px;background:url(../Images/Ico/ico_happykid.png) no-repeat 0 -113px;background-size:50px;}
+.happykid.checklist .cont.cont01 ol li:nth-child(3):after{display:none}
+.happykid.checklist .cont.cont01 ol li span{display:table-cell;text-align:center;vertical-align:middle;line-height:1.1;color:#222;font-size:14px;font-family:"Noto Medium"}
+.happykid.checklist .cont.cont01 ol li.on{border:2px solid #22b8bd}
+.happykid.checklist .cont.cont01 ol li.on span{color:#22b8bd}
+.happykid.checklist .cont.cont02 ul{padding:0 15px 20px}
+.happykid.checklist .cont.cont02 ul li{clear:both}
+.happykid.checklist .cont.cont02 ul li p{margin:0 0 10px;padding:20px 0 0;font-size:16px;color:#222;font-family:"Noto Medium"}
+.happykid.checklist .cont.cont02 .cont_sel{width:100%;height:35px;margin:10px 0 0}
+.happykid.checklist .cont.cont02 .cont_sel .selwrap02{float:left;width:62%}
+.happykid.checklist .cont.cont02 .cont_sel .btns{float:right;width:36%}
+.happykid.checklist .cont.cont02 .cont_sel .btns a{float:left;width:100%;height:35px;line-height:37px;border-radius:3px;color:#fff;font-family:"Noto Demi";font-size:14px;background:#22b8bd;text-align:center}
+.happykid.checklist .cont.cont02 .btn_type{position:relative;display:table;width:100%;min-height:61px}
+.happykid.checklist .cont.cont02 .btn_type:after{content: "";display: block;position:absolute;bottom:0;left:50%;margin:0 0 0 -9px;width:18px;height:19px;background: url(../Images/Ico/ico_happykid.png) no-repeat 0 -29px;background-size: 50px;}
+.happykid.checklist .cont.cont02 .btn_type span{display:table-cell;line-height:1.2;padding:0 0 20px;vertical-align:middle}
+.happykid.checklist .cont.cont02 .type .noti{position:inherit;float:left;margin:10px 0 0;display:block;width:62%;font-size:13px;color:#666}
+.happykid.checklist .cont.cont02 .type .noti:before{content:"※";float:left;display:block;margin:0 4px 0 0}
+.happykid.checklist .cont.cont02 .type .btn_coupon{float:right;display:block;margin:10px 0 0;width:36%;height:28px;background:#a2a2a2;border-radius:3px;color:#fff;text-align:center;line-height:30px;font-size:13px;font-family: "Noto Regular";}
+.happykid.checklist .cont.cont02 .tblwrap table th{padding:5px 0}
+.happykid.checklist .cont.cont02 .use .tblwrap table td{border-bottom: 1px solid #ccc;padding:7px 0}
+.happykid.checklist .cont.cont02 .use .tblwrap .btn_start{padding:0 12px;height:20px;line-height:22px;border:1px solid #1dbdc3;border-radius:3px;text-align:center;color:#1dbdc3;font-size:12px;font-family:"Noto Medium"}
+.happykid.checklist .cont.cont02 .use .tblwrap .btn_result{padding:0 12px;height:20px;line-height:22px;border:1px solid #222;border-radius:3px;text-align:center;color:#222;font-size:12px;font-family:"Noto Medium"}
+.happykid.checklist .cont.cont02 .use .tblwrap tr:last-child td{border-bottom:0}
+
+/* 레이어_검사하기 */
+.lpop.mycheck .lpop_wrap .lpop_con{padding:13px 13px 20px 13px}
+.lpop.mycheck .lpop_wrap .lpop_con .selwrap{width:100%}
+.lpop.mycheck .used_mileage{clear:both;padding:17px 0;background:url(../Images/Ico/ico_dot.gif) repeat-x 100% 100%;background-size:5px}
+.lpop.mycheck .used_mileage .txt01{display:block;padding:0 0 0 22px;font-size:14px;color:#22b8bd}
+.lpop.mycheck .used_mileage .txt02{position:relative;display:block;width:100%;padding:0 0 0 22px;margin:22px 0 0;font-size:14px;color:#f14a16;font-family:"Noto Bold"}
+.lpop.mycheck .used_mileage .txt02 span{display:block}
+.lpop.mycheck .used_mileage .txt02 .lt{width:63%;float:left}
+.lpop.mycheck .used_mileage .txt02 .rt{float:right;color:#666;font-family:"Noto Demi";}
+.lpop.mycheck .used_mileage .txt02 .rt em{position:relative;padding:0 17px 0 5px;font-family:"Noto Bold"}
+.lpop.mycheck .used_mileage .txt02:after{content:"";clear:both;display:block}
+.lpop.mycheck .used_mileage .txt02 .rt em:after{content:"";display:block;position:absolute;top:3px;right:0;width:13px;height:13px;background:url(../Images/Ico/ico_happykid.png) no-repeat 0 -152px;background-size:50px;}
+.lpop.mycheck .used_mileage .txt03 .lt{width:43%;float:left;color:#f14a16;font-size:16px}
+.lpop.mycheck .used_mileage .txt03 .lt em{position:relative;padding:0 17px 0 5px;font-family:"Noto Bold"}
+.lpop.mycheck .used_mileage .txt03 .lt em:after{content:"";display:block;position:absolute;top:6px;right:0;width:13px;height:13px;background:url(../Images/Ico/ico_happykid.png) no-repeat 0 -152px;background-size:50px;}
+.lpop.mycheck .used_mileage .txt03{display:block;width:100%;padding:0 0 0 22px;font-size:14px;font-family:"Noto Demi";color:#666}
+.lpop.mycheck .used_mileage .txt03 .rt{float:right;color:#666}
+.lpop.mycheck .used_mileage .txt03 .rt .tx{display:inline-block;margin:0 0 0 2px;color:#222}
+.lpop.mycheck .used_mileage .txt03 .rt em{color:#222}
+.lpop.mycheck .used_mileage .txt03 span{display:block}
+.lpop.mycheck .used_mileage .txt03 .rt em{position:relative;padding:0 17px 0 5px;font-family:"Noto Bold"}
+.lpop.mycheck .used_mileage .txt03 .rt em:after{content:"";display:block;position:absolute;top:3px;right:0;width:13px;height:13px;background:url(../Images/Ico/ico_happykid.png) no-repeat 0 -152px;background-size:50px;}
+.lpop.mycheck .used_mileage:after{clear:both;content:"";display:block}
+.lpop.mycheck .used_coupon{padding:15px 0;background:url(../Images/Ico/ico_dot.gif) repeat-x 100% 100%;background-size:5px}
+.lpop.mycheck .used_coupon td .selwrap02{width:90%;margin:0 auto}
+.lpop.mycheck .used_coupon td.nolist{color:#666}
+.lpop.mycheck .play{padding:15px 0;background:url(../Images/Ico/ico_dot.gif) repeat-x 100% 100%;background-size:5px;text-align:center}
+.lpop.mycheck .play .txt{position:relative;display:block;width:94%;margin:0 auto;padding:0 0 0 16px;color:#22b8bd;font-size:14px;text-align:left}
+.lpop.mycheck .play .txt:before{display:block;content:"※";position:absolute;top:0;left:0;margin:0 4px 0 0}
+.lpop.mycheck .play .btn_play{display:inline-block;margin:7px auto 0;padding:0 45px;height:35px;line-height:37px;border-radius:3px;background:#22b8bd;color:#fff;font-size:14px;font-family:"Noto Demi";}
+.lpop.mycheck .noti{width:94%;margin:0 auto;padding:15px 0 0}
+.lpop.mycheck .noti li{position:relative;display:block;padding:0 0 0 16px;color:#666;font-size:14px;font-family:"Noto Demi";}
+.lpop.mycheck .noti li:before{content:"※";display:block;position:absolute;top:0;left:0;margin:0 4px 0 0}
+
+/* iphon se */
+@media only screen and (max-width: 320px) {
+.mypage.mileage .cont_info .tit p{font-size:11px}
+.pop.mypage.mileage .cont_mileageinfo .txt li{font-size:13px}
+}

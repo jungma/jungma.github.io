@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=high-dpi, minimal-ui" />
+<meta name="description" content="" />
+<meta name="google-site-verification" content="BFmEnM9KijGLhZEm4Q0cgECgwY2CBuoNGtFlMeklb70" />
+<meta property="og:title" content="" />
+<meta property="og:image" content="http://www.i-challenge.co.kr/images/common/kakao-meta-image.jpg" />
+<link rel="apple-touch-icon" href="http://m.i-challenge.co.kr/images/icon.png">
+<link rel="apple-touch-icon-precomposed" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="shortcut icon" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="stylesheet" type="text/css" href="http://polly90.com/pub/Css/style.css" />
+<link rel="stylesheet" type="text/css" href="http://polly90.com/pub/Css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="http://polly90.com/pub/Css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../../Css/hobi2018.css" />
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="http://polly90.com/pub/Js/ui.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/kakao.link.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="http://polly90.com/pub/Js/swiper.min.js"></script>
+<script>
+	
+	var lnbDep1 = 3; //LNB depth 1
+	var allmenuDep1 = 4; //allmenu depth 1
+	var allmenuDep2 = 3; //allmenu depth 2
+
+	$(function () {
+		//lnb swipe 생성
+		var lnb = new Swiper('.lnb .swiper-container', {
+			scrollbar: '.swiper-scrollbar',
+			scrollbarHide: true,
+			slidesPerView: 'auto',
+			grabCursor: true
+		});
+
+		//lnb allmenu on/off 처리
+		$('.btn_allmenu').on('click', function () {
+			var _this = $(this);
+			if (_this.hasClass('on')) {
+				_this.removeClass('on');
+				$('.allmenu').slideUp();
+			} else {
+				_this.removeClass('on');
+				_this.addClass('on');
+				$('.allmenu').slideDown();
+			}
+
+		});
+	});
+			
+	$(function(){
+		
+		//호비멤버십>부모가이드>추천컨텐츠 스와이프
+		var appendNumber = 4;
+		var prependNumber = 1;
+		var swiper = new Swiper('.swiper-container.swiper-container01', {
+			slidesPerView: 3,
+			centeredSlides: true,
+			pagination: {
+				el: '.swiper-container01 .swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-container01 .swiper-button-next',
+				prevEl: '.swiper-container01 .swiper-button-prev',
+			},
+		});
+		//swiper.prependSlide('<div class="swiper-slide"><a>Slide ' + (--prependNumber) + '</a></div>');
+	
+		//호비멤버십>부모가이드>도너츠몰 인기상품 스와이프
+		var swiper2 = new Swiper('.swiper-container.swiper-container02', {
+			slidesPerView: 3,
+			spaceBetween: 5,
+			slidesPerGroup: 3,//몇개씩 그룹 짓는지
+			loop: true,
+			loopFillGroupWithBlank: true,
+			pagination: {
+				el: '.swiper-container02 .swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-container02 .swiper-button-next',
+				prevEl: '.swiper-container02 .swiper-button-prev',
+			},
+		});
+			
+	});
+</script>
+</head>
+
+<body>
+
+	<!-- wrap :: start -->
+	<div id="wrap">
+
+		<!-- container :: start -->
+		<div id="container">
+
+			<!-- content :: start -->
+			<div id="content" class="hobi pop">
+				<div class="cont_pop">
+					<div class="pop_header">
+						<a href="#" class="btn_back"><img src="../../Images/btn_back.png" alt="" /></a>
+						<span>텍스트텍스트</span>
+					</div>
+					<div class="pop_con">
+						<div class="selwrap">
+							<select>
+								<option>STEP1 18개월</option>
+								<option>STEP1 18개월</option>
+								<option>STEP1 18개월</option>
+							</select>
+						</div>
+						<div class="txt">텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트텍스트</div>
+						<div class="img"><img src="../../Images/thum03.jpg" alt="" /></div>
+					</div>
+					<div class="pop_btn">
+						<a href="#" class="btn_confirm">확인</a>
+					</div>
+				</div>
+			</div>
+			<!-- content :: end -->
+
+		</div>
+		<!-- container :: end -->
+
+	</div>
+	<!-- wrap :: end -->
+</body>
+</html>

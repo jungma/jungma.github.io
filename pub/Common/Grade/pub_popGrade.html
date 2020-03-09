@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=high-dpi, minimal-ui" />
+<meta name="description" content="" />
+<meta name="google-site-verification" content="BFmEnM9KijGLhZEm4Q0cgECgwY2CBuoNGtFlMeklb70" />
+<meta property="og:title" content="" />
+<meta property="og:image" content="http://www.i-challenge.co.kr/images/common/kakao-meta-image.jpg" />
+<link rel="apple-touch-icon" href="http://m.i-challenge.co.kr/images/icon.png">
+<link rel="apple-touch-icon-precomposed" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="shortcut icon" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/style.css" />
+<link rel="stylesheet" type="text/css" href="../../Css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Mypage/Css/Mypage2018.css" />
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/ui.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/kakao.link.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/swiper.min.js"></script>
+<script>
+	
+	var lnbDep1 = 3; //LNB depth 1
+	var allmenuDep1 = 4; //allmenu depth 1
+	var allmenuDep2 = 3; //allmenu depth 2
+
+	$(function () {
+		//lnb swipe 생성
+		var lnb = new Swiper('.lnb .swiper-container', {
+			scrollbar: '.swiper-scrollbar',
+			scrollbarHide: true,
+			slidesPerView: 'auto',
+			grabCursor: true
+		});
+
+		//lnb allmenu on/off 처리
+		$('.btn_allmenu').on('click', function () {
+			var _this = $(this);
+			if (_this.hasClass('on')) {
+				_this.removeClass('on');
+				$('.allmenu').slideUp();
+			} else {
+				_this.removeClass('on');
+				_this.addClass('on');
+				$('.allmenu').slideDown();
+			}
+
+		});
+	});
+		
+</script>
+<script>
+
+$(function(){
+	
+	//텝메뉴 숨김/보임
+	$('.tab_type04 ul li').each(function(index){
+		$(this).click(function(e){
+			$('.tab_type04 ul li').removeClass('on');
+			$(this).addClass('on');
+			$('.tab_cont>ul>li').hide();
+			$('.tab_cont>ul>li').eq(index).show();
+			e.preventDefault(); 
+		});
+	});
+	
+})
+</script>
+</head>
+
+<body>
+	<!-- wrap :: start -->
+	<div id="wrap">
+
+<div class="pop grade">
+	<div class="cont_pop">
+		<div class="pop_header">
+			<a href="javascript:history.back();" class="btn_back"><img src="http://m2.i-challenge.co.kr/Hobi/Membership/images/Parent/btn_back.png" alt="뒤로" /></a>
+			<span>등급 혜택 보기</span>
+		</div>
+		<div class="pop_con">
+		
+			<!-- cont_grade :: start -->
+			<div class="cont_grade">
+			
+				<!-- my_grade :: start -->
+				<div class="my_grade">
+					<!-- [D] 등급에 따라서 <em class="ico vip">VIP</em>  클래스 추가 : class="vvip" / class="vip" / class="gold" / class="silver" / class="welcome"  -->
+					<p class="txt01">
+						<em class="ico vvip">VVIP</em>전지현님의 등급은 VVIP 입니다.
+					</p>
+					<!--
+					<p class="txt01">
+						<em class="ico vip">VIP</em>전지현님의 등급은 VIP 입니다.
+					</p>
+					<p class="txt01">
+						<em class="ico gold">GOLD</em>전지현님의 등급은 GOLD 입니다.
+					</p>
+					<p class="txt01">
+						<em class="ico siver">SILVER</em>전지현님의 등급은 SILVER 입니다.
+					</p>
+					<p class="txt01">
+						<em class="ico welcome">WELCOME</em>전지현님의 등급은 WELCOME 입니다.
+					</p>
+					-->
+					<p class="txt02">현재 등급에 대한 점수는 <strong>46,100</strong>점입니다.<a href="#" class="btn_grdchk">등급 점수 확인</a></p>
+					<p class="txt03">다음 달 VVIP 등급이 되시려면 이번 달 말까지 3,900점을 더 올리세요. 등급을 올려 더 많은 혜택을 누리세요! </p>
+					<a href="#" class="btn_grdinfo">등급 점수 적립 안내</a>
+				</div>
+				<!-- my_grade :: end -->
+			
+				<div class="tab_type04">
+					<ul>
+						<li class="on"><a href="#">등급 혜택</a></li>
+						<li><a href="#">등급 안내</a></li>
+						<li class="underline" role="presentation"><span class="blind">언더라인</span></li>
+					</ul>
+				</div>
+				
+				<div class="tab_cont">
+					<ul>
+						<!-- 등급 혜택 내용 :: start -->
+						<li>
+						
+							<!-- accodian :: start  -->
+							<ul class="accodian">
+								<li class="grade_01">
+									<div class="top">
+										<button>목록 펼치기 버튼</button>
+										<em class="ico">VVIP</em>
+										<span><strong>VVIP</strong> 등급 혜택</span>
+									</div>
+									<div class="btm">
+										<ol>
+											<li>
+												<em>1</em> 쿠폰 지급 (년간)
+												<ul class="s_list">
+													<li>
+														<div class="s_top"><span>월<em> X 1</em></span></div>
+														<div class="s_btm">
+															<span>호비 애니메이션 이용권</span>
+															<em>(1일 무제한)</em>
+														</div>
+													</li>
+													<li>
+														<div class="s_top"><span><em>X 1</em></span></div>
+														<div class="s_btm">
+															<span>양육검사 이용권</span>
+															<em>(발달검사, 기질검사, 부모양육태도 검사 중 택1)</em>
+														</div>
+													</li>
+													<li>
+														<div class="s_top"><span><em>X 1</em></span></div>
+														<div class="s_btm">
+															<span>프린트 학습지 이용권</span>
+															<em>(3개월 이용 가능)</em>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li><em>2</em> 도너츠몰 15% 할인 (최대 3건) </li>
+											<li><em>3</em> 호비쇼 무료 입장권 </li>
+											<li><em>4</em> 율동놀이 세미나 당첨 우선권 (당첨 확률 ↑)</li>
+											<li><em>5</em> 잇츠온 1만원 상당 무료 교환 쿠폰</li>
+											<li><em>6</em> 우리 아이 생일 축하 선물 지급 (도너츠 포인트 5,000개)</li>
+											<li><em>7</em> 등급 대상 이벤트 진행 </li>
+										</ol>
+									</div>
+								</li>
+								<li class="grade_02">
+									<div class="top">
+										<button>목록 펼치기 버튼</button>
+										<em class="ico">VIP</em>
+										<span><strong>VIP</strong> 등급 혜택</span>
+									</div>
+									<div class="btm">
+										<ol>
+											<li>
+												<em>1</em> 쿠폰 지급 (년간)
+												<ul class="s_list">
+													<li>
+														<div class="s_top"><span><em>X 2</em></span></div>
+														<div class="s_btm">
+															<span>호비 애니메이션 이용권</span>
+															<em>(1일 무제한)</em>
+														</div>
+													</li>
+													<li>
+														<div class="s_top"><span><em>X 1</em></span></div>
+														<div class="s_btm">
+															<span>양육검사 이용권</span>
+															<em>(발달검사, 기질검사, 부모양육태도 검사 중 택1)</em>
+														</div>
+													</li>
+													<li>
+														<div class="s_top"><span><em>X 1</em></span></div>
+														<div class="s_btm">
+															<span>프린트 학습지 이용권</span>
+															<em>(3개월 이용 가능)</em>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li><em>2</em> 도너츠몰 10% 할인 (최대 3건) </li>
+											<li><em>3</em> 호비쇼 60% 할인권 </li>
+											<li><em>4</em> 율동놀이 세미나 당첨 우선권 (당첨 확률 ↑)</li>
+											<li><em>5</em> 우리 아이 생일 축하 선물 지급 (도너츠 포인트 3,000개)</li>
+											<li><em>6</em> 등급 대상 이벤트 진행 </li>
+										</ol>
+									</div>
+								</li>
+								<li class="grade_03">
+									<div class="top">
+										<button>목록 펼치기 버튼</button>
+										<em class="ico">GOLD</em>
+										<span><strong>GOLD</strong> 등급 혜택</span>
+									</div>
+									<div class="btm">
+										<ol>
+											<li>
+												<em>1</em> 쿠폰 지급 (년간)
+												<ul class="s_list">
+													<li>
+														<div class="s_top"><span><em>X 1</em></span></div>
+														<div class="s_btm">
+															<span>호비 애니메이션 이용권</span>
+															<em>(1일 무제한)</em>
+														</div>
+													</li>
+													<li>
+														<div class="s_top"><span><em>X 1</em></span></div>
+														<div class="s_btm">
+															<span>양육검사 이용권</span>
+															<em>(발달검사, 기질검사, 부모양육태도 검사 중 택1)</em>
+														</div>
+													</li>
+													<li>
+														<div class="s_top"><span><em>X 1</em></span></div>
+														<div class="s_btm">
+															<span>프린트 학습지 이용권</span>
+															<em>(3개월 이용 가능)</em>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li><em>2</em> 도너츠몰 5% 할인 (최대 3건) </li>
+											<li><em>3</em> 우리 아이 생일 축하 선물 지급 (도너츠 포인트 2,000개)</li>
+											<li><em>4</em> 등급 대상 이벤트 진행 </li>
+										</ol>
+									</div>
+								</li>
+								<li class="grade_04">
+									<div class="top">
+										<button>목록 펼치기 버튼</button>
+										<em class="ico">SILVER</em>
+										<span><strong>SILVER</strong> 등급 혜택</span>
+									</div>
+									<div class="btm">
+										<ol>
+											<li>
+												<em>1</em> 쿠폰 지급 (년간)
+												<ul class="s_list">
+													<li>
+														<div class="s_top"><span><em>X 1</em></span></div>
+														<div class="s_btm">
+															<span>호비 애니메이션 이용권</span>
+															<em>(1일 무제한)</em>
+														</div>
+													</li>
+													<li>
+														<div class="s_top"><span><em>X 1</em></span></div>
+														<div class="s_btm">
+															<span>프린트 학습지 이용권</span>
+															<em>(3개월 이용 가능)</em>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li><em>2</em> 우리 아이 생일 축하 선물 지급 (도너츠 포인트 1,000개)</li>
+										</ol>
+									</div>
+								</li>
+								<li class="grade_05">
+									<div class="top">
+										<button>목록 펼치기 버튼</button>
+										<em class="ico">WELCOME</em>
+										<span><strong>WELCOME</strong> 등급 혜택</span>
+									</div>
+									<div class="btm">
+										<ol>
+											<li>
+												<em>1</em> 쿠폰 지급 (년간)
+												<ul class="s_list">
+													<li>
+														<div class="s_top"><span><em>X 1</em></span></div>
+														<div class="s_btm">
+															<span>프린트 학습지 이용권</span>
+															<em>(3개월 이용 가능)</em>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li><em>2</em> 우리 아이 생일 축하 선물 지급 (도너츠 포인트 500개)</li>
+										</ol>
+									</div>
+								</li>
+							</ul>
+							<script>
+							$(function(){
+								acodian.click('.cont_grade .accodian > li > .top > button');
+							}) ;
+							</script>
+							<!-- accodian :: end  -->
+							
+							<div class="notice">
+								<h4>참고하세요.</h4>
+								<ul>
+									<li>쿠폰 유효기간은 지급일부터 1년입니다.</li>
+									<li>호비쇼와 율동놀이 세미나는 신청 후 미참석 시 패널티 적용(등급 점수 5,000점 차감)</li>
+								</ul>
+							</div>
+						</li>
+						<!-- 등급 혜택 내용 :: end -->
+						
+						<!-- 등급 안내 내용 :: start -->
+						<li style="display:none;">
+							<div class="graph">
+								<ul>
+									<li>
+										<div class="gra01">
+											<span>등급 점수</span>
+											<p>2천점 미만</p>
+										</div>
+										<span class="gra02">WELCOME</span>
+									</li>
+									<li>
+										<div class="gra01">
+											<span>등급 점수</span>
+											<p>2천점 미만<br />3천점 미만</p>
+										</div>
+										<span class="gra02">SILVER</span>
+									</li>
+									<li>
+										<div class="gra01">
+											<span>등급 점수</span>
+											<p>3천점 미만<br />4천점 미만</p>
+										</div>
+										<span class="gra02">GOLD</span>
+									</li>
+									<li>
+										<div class="gra01">
+											<span>등급 점수</span>
+											<p>4천점 미만<br />5천점 미만</p>
+										</div>
+										<span class="gra02">VIP</span>
+									</li>
+									<li>
+										<div class="gra01">
+											<span>등급 점수</span>
+											<p>5천점 이상</p>
+										</div>
+										<span class="gra02">VVIP</span>
+									</li>
+								</ul>
+							</div>
+							<dl class="txtwrap">
+								<dt>아이챌린지 등급이란?</dt>
+								<dd>아이챌린지 교재 구매, 도너츠몰 구매, 호비APP 다운로드, 친구 추천, 이벤트 참여 등 <strong>활동에 따라 등급 점수로 등급이 산정되어, 등급에 대한 혜택이 주어집니다.</strong></dd>
+							</dl>
+							<dl class="txtwrap02">
+								<dt>등급은 WELCOME부터 VVIP까지 5개의 등급입니다.</dt>
+								<dd>최근 1년 간 활동 내역으로 통해 매월 1일 등급을 산정합니다.</dd>
+								<dd>한번 상향된 등급은 1년간 유지됩니다. </dd>
+								<dd>등급 유지 기간 종료 시 등급이 재산정됩니다.</dd>
+								<dd>등급별 혜택 종류, 규모, 지급방식 등은 내부 정책에 의하여 변경될 수 있습니다.</dd>
+								<dd>회원 탈퇴 시 등급 점수는 삭제되며, 재가입해도 복구되지 않습니다.</dd>
+							</dl>
+							<div class="tblwrap">
+								<table title="등급 점수 적립 방법" summary="구분, 적립 방법, 등급 점수">
+									<caption>등급 점수 적립 방법 테이블</caption>
+									<colgroup>
+										<col width="20%" />
+										<col width="19%" />
+										<col width="36%" />
+										<col width="25%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col" colspan="2">적립 방법</th>
+											<th scope="col">등급 점수</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="2">구매</td>
+											<td colspan="2" class="txtlt">교재(월령/단계프로그램) 결제 금액 </td>
+											<td class="txtlt">교재 출고된 기준으로 5% 점수로 환산</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="txtlt">도너츠몰 상품 결제 건수 </td>
+											<td>건별 1,000점</td>
+										</tr>
+										<tr>
+											<td rowspan="2">고객 서비스 수신 동의</td>
+											<td colspan="2" class="txtlt">고객 서비스 수신 항목(이메일, SMS, 전화, DM) 전체 수신 동의<br />- 개별 수신 동의 시 각 1,000점</td>
+											<td>4,000점</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="txtlt">유효 기간 3년 이상 설정</td>
+											<td>1,000점</td>
+										</tr>
+										<tr>
+											<td rowspan="2">호비APP</td>
+											<td colspan="2" class="txtlt">다운로드</td>
+											<td>1,000점</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="txtlt">푸시 알림 수신 동의+광고성 정보알림 수신 동의</td>
+											<td>2,000점</td>
+										</tr>
+										<tr>
+											<td rowspan="4">친구 추천</td>
+											<td rowspan="2" class="txtlt">추천인</td>
+											<td>피추천자 회원가입</td>
+											<td>5,000점</td>
+										</tr>
+										<tr>
+											<td>피추천자 구독 신청</td>
+											<td>10,000점</td>
+										</tr>
+										<tr>
+											<td rowspan="2" class="txtlt">피추천인</td>
+											<td>피추천자 회원가입</td>
+											<td>3,000점</td>
+										</tr>
+										<tr>
+											<td>피추천자 구독 신청</td>
+											<td>5,000점</td>
+										</tr>
+										<tr>
+											<td rowspan="4" class="bdnone">참여 활동</td>
+											<td colspan="2" class="txtlt">로그인</td>
+											<td>일별 10점</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="txtlt">교재 사용 후기 작성<br />- 해당 월 받은 교재 후기 작성<br />- 각 후기 종류별 월 최대 3건에 대한 점수 적립</td>
+											<td>일반 후기:<br />건별 200점<br />프리미엄 후기:<br />건별 500점<br />우수 후기:<br />건별 800점<br /></td>
+										</tr>
+										<tr>
+											<td colspan="2" class="txtlt">엄마아빠 토닥토닥, 육아무비클립, 포토 갤러리(PC전용) 작성<br />- 각 메뉴별 월 최대 3건에 대한 점수 적립 </td>
+											<td>건별 100점</td>
+										</tr>
+										<tr>
+											<td colspan="2" class="txtlt bdnone">이벤트 참여</td>
+											<td class="bdnone">진행 범위에 따라 다름<br />(이벤트 진행 시 별도 표기 예정)</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<ul class="txtwrap03">
+								<li>교재(월령/단계프로그램) 결제 금액은 <em>출고된 상품의 금액으로</em> 등급 점수가 환산됨</li>
+								<li>고객 서비스 수신 동의 및 호비APP 푸시 알림 수신 동의는 등급  산정 시점에  상태로 등급 점수가 계산됨</li>
+							</ul>
+						</li>
+						<!-- 등급 안내 내용 :: end -->
+					</ul>
+				</div>
+
+			</div>
+			<!-- cont_grade :: end -->
+		
+
+		</div>
+	</div>
+</div>
+
+	</div>
+	<!-- wrap :: end -->
+</body>
+</html>

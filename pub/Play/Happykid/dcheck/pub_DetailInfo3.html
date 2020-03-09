@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=high-dpi, minimal-ui" />
+<meta name="description" content="" />
+<meta name="google-site-verification" content="BFmEnM9KijGLhZEm4Q0cgECgwY2CBuoNGtFlMeklb70" />
+<meta property="og:title" content="" />
+<meta property="og:image" content="http://www.i-challenge.co.kr/images/common/kakao-meta-image.jpg" />
+<link rel="apple-touch-icon" href="http://m.i-challenge.co.kr/images/icon.png">
+<link rel="apple-touch-icon-precomposed" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="shortcut icon" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/style.css" />
+<link rel="stylesheet" type="text/css" href="http://m.i-challenge.co.kr/Css/check.css" />
+<link rel="stylesheet" type="text/css" href="../../../Css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../../Css/play2018.css" />
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/ui.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/kakao.link.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/swiper.min.js"></script>
+<script>
+	
+	var lnbDep1 = 3; //LNB depth 1
+	var allmenuDep1 = 4; //allmenu depth 1
+	var allmenuDep2 = 3; //allmenu depth 2
+
+	$(function () {
+		//lnb swipe 생성
+		var lnb = new Swiper('.lnb .swiper-container', {
+			scrollbar: '.swiper-scrollbar',
+			scrollbarHide: true,
+			slidesPerView: 'auto',
+			grabCursor: true
+		});
+
+		//lnb allmenu on/off 처리
+		$('.btn_allmenu').on('click', function () {
+			var _this = $(this);
+			if (_this.hasClass('on')) {
+				_this.removeClass('on');
+				$('.allmenu').slideUp();
+			} else {
+				_this.removeClass('on');
+				_this.addClass('on');
+				$('.allmenu').slideDown();
+			}
+
+		});
+	});
+		
+</script>
+</head>
+
+<body>
+
+
+<div class="play happykid pop">
+	<div class="cont_pop">
+		<div class="pop_header">
+			<a href="javascript:history.back();" class="btn_back"><img src="http://m2.i-challenge.co.kr/Hobi/Membership/images/Parent/btn_back.png" alt="뒤로" /></a>
+			<span>발달검사 종류</span>
+		</div>
+		<!-- pop_con :: start -->
+		<div class="pop_con">
+			
+			<!-- [D]기존 테이블 내용 가져옴 -->
+			<table class="DtBaby01Tb" cellpadding="0" cellspacing="0">
+				<thead>
+					<tr>
+						<th><span>유아기</span> 발달검사</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<div class="DtB01Td01">
+								<h2><img src="http://m.i-challenge.co.kr/Images/happykid/check_bul02_img.gif" alt="∨"><span>발달검사의 의미</span></h2>
+								<p>본 검사는 유아의 발달 수준을 측정하기 위한 것으로 유아를 올바로 이해하고 평가하기 위한 가장 기초적인 검사입니다.<br>본 검사의 결과는 유아 개인별 발달 수준에 적합한 양육과 교육을 시행할 수 있는 기반이 되며, 유아의 미래 발달 수준을 예측할 수 있는 근거가 됩니다. <br>또한 유아가 행동상의 문제를 보이거나 특정 능력이 결핍되는 등 발달상에 나타날 수 있는 문제점들을 주기적인 검사를 통해서 미리 점검할 수 있으며, 문제를 해결하고 대처해나갈 수 있는 진단과 치료를 위한 '기초 선행자료'가 됩니다.</p>	
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="DtB01Td01">
+								<h2><img src="http://m.i-challenge.co.kr/Images/happykid/check_bul02_img.gif" alt="∨"><span>검사 영역</span></h2>
+								<p>해피-키드에서 실시하는 '유아기 발달검사'는 유아의 전인적인 발달을 알아보기 위해 다음의 5가지 영역으로 나누어 유아의 발달 수준을 파악합니다.</p>
+								<p class="DiscP01"><strong>신체발달</strong><br>유아의 대·소근육 협응 능력, 신체적인 힘, 지구력, 순발력, 조정 능력 등을 측정합니다.</p>
+								<p class="DiscP01"><strong>사회성발달</strong><br>유아가 또래 및 성인과 관계를 맺고 유지하는 능력을 측정합니다.</p>
+								<p class="DiscP01"><strong>인지발달</strong><br>유아의 사물에 대한 개념, 수 개념, 신체 부분에 대한 개념, 분류 개념 등 인지 능력을 측정합니다.</p>
+								<p class="DiscP01"><strong>언어발달</strong><br>유아의 타인과의 의사소통 능력, 자신의 감정과 생각을 바르고 정확하게 표현하는 능력, 타인의 말을 이해하는 능력, 비언어적인 의사소통 능력 등을 측정합니다.</p>
+								<p class="DiscP01"><strong>생활습관발달</strong><br>유아가 밥 먹기, 옷 입기 등 일상생활과 관련된 일을 스스로 해낼 수 있는 능력을 측정합니다.</p>
+							</div>
+						</td>
+					</tr>						
+				</tbody> 
+			</table>
+			<!-- [D]기존 테이블 내용 가져옴 -->
+			
+		</div>
+		<!-- pop_con :: end -->
+		<div class="pop_btn">
+			<a href="javascript:history.back();" class="btn_confirm">확인</a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

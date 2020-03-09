@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=high-dpi, minimal-ui" />
+<meta name="description" content="" />
+<meta name="google-site-verification" content="BFmEnM9KijGLhZEm4Q0cgECgwY2CBuoNGtFlMeklb70" />
+<meta property="og:title" content="" />
+<meta property="og:image" content="http://www.i-challenge.co.kr/images/common/kakao-meta-image.jpg" />
+<link rel="apple-touch-icon" href="http://m.i-challenge.co.kr/images/icon.png">
+<link rel="apple-touch-icon-precomposed" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="shortcut icon" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/style.css" />
+<link rel="stylesheet" type="text/css" href="http://m.i-challenge.co.kr/Css/check.css" />
+<link rel="stylesheet" type="text/css" href="../../../Css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../../Css/play2018.css" />
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/ui.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/kakao.link.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/swiper.min.js"></script>
+<script>
+	
+	var lnbDep1 = 3; //LNB depth 1
+	var allmenuDep1 = 4; //allmenu depth 1
+	var allmenuDep2 = 3; //allmenu depth 2
+
+	$(function () {
+		//lnb swipe 생성
+		var lnb = new Swiper('.lnb .swiper-container', {
+			scrollbar: '.swiper-scrollbar',
+			scrollbarHide: true,
+			slidesPerView: 'auto',
+			grabCursor: true
+		});
+
+		//lnb allmenu on/off 처리
+		$('.btn_allmenu').on('click', function () {
+			var _this = $(this);
+			if (_this.hasClass('on')) {
+				_this.removeClass('on');
+				$('.allmenu').slideUp();
+			} else {
+				_this.removeClass('on');
+				_this.addClass('on');
+				$('.allmenu').slideDown();
+			}
+
+		});
+	});
+		
+</script>
+</head>
+
+<body>
+
+
+<div class="play happykid pop">
+	<div class="cont_pop">
+		<div class="pop_header">
+			<a href="javascript:history.back();" class="btn_back"><img src="http://m2.i-challenge.co.kr/Hobi/Membership/images/Parent/btn_back.png" alt="뒤로" /></a>
+			<span>부모양육태도검사 결과 샘플</span>
+		</div>
+		<!-- pop_con :: start -->
+		<div class="pop_con">
+		
+			<!-- [D]기존 테이블 내용 가져옴 -->
+			<table class="DtBaby01Tb DtBaby03Tb" cellpadding="0" cellspacing="0">
+				<thead>
+					<tr>
+						<th><span>부모양육태도검사</span> 결과</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<div class="DtB01Td01 DtB01Td03">
+								<h2><img src="http://m.i-challenge.co.kr/Images/happykid/check_bul06_img.gif" alt="∨"><span>기본 정보</span></h2>
+								<table class="BIfTb01" cellpadding="0" cellspacing="0">
+								  <tbody>
+									<tr>
+									  <td class="BIfTb01Tit01 BIfTb01Tit03">검사종류</td>
+									  <td class="BIfTb01td01 BIfTb01td03">부모양육태도검사 (인터넷용)</td>
+									</tr>
+									<tr>
+									  <td class="BIfTb01Tit01 BIfTb01Tit03">자녀정보</td>
+									  <td class="BIfTb01td01 BIfTb01td03">성명: <span>홍길동</span> / 연령(월령): <span class="TxtCl">21개월</span> / 성별: 남</td>
+									</tr>
+									<tr>
+									  <td class="BIfTb01Tit01 BIfTb01Tit03">양육자 정보</td>
+									  <td class="BIfTb01td01 BIfTb01td03">성명 : 홍아빠 (부)</td>
+									</tr>
+									<tr>
+									  <td class="BIfTb01Tit01 BIfTb01Tit03">검사일자</td>
+									  <td class="BIfTb01td01 BIfTb01td03">2017-09-03</td>
+									</tr>
+								  </tbody>
+								</table>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							<div class="DtB01Td01 DtB01Td03">
+								<h2><img src="http://m.i-challenge.co.kr/Images/happykid/check_bul06_img.gif" alt="∨"><span>검사 결과</span></h2>
+								<div class="TRstB"><strong>홍아빠</strong> 님의 자녀양육태도는 <span class="SpCl02">민주형</span> 입니다.</div>
+								
+								<div class="RstImg"><img src="http://m.i-challenge.co.kr/Images/happykid/check_result02_img.gif" width="100%" alt="검사결과 이미지"></div>
+							</div>
+							<table class="BIfTb01 RstCtnTb01" cellpadding="0" cellspacing="0">
+								<tbody>
+									<tr>
+										<td class="TdbgC01_1 TdbgC02_1">&nbsp;</td>
+										<td class="RstCtnTbTit01">과보호적 양육태도</td>
+										<td class="RstCtnTbtd01"><strong>홍아빠</strong>님의 과보호적 양육태도 수준은 낮은 편입니다. 이는 <strong>홍아빠</strong>님이 전반적으로 <span class="SpName">홍길동</span> 아기의 능력을 인정하고 아이가 스스로 경험해보고 성취감을 느낄 수 있도록 독립적인 행동을 조장하고 계심을 의미합니다. 점차 개월수가 늘어나면서 아이가 자신이 혼자서 하겠다고 하는 의지를 표현하는 일이 많아질 것입니다. 그 한 예가 '싫어'라고 대답하는 경우입니다. 이것은 자연스러운 발달 현상입니다. 아이가 2세 전후가 되면 자율성과 독립성을 발달시켜야 하는 나이입니다. 이럴 때 양육자는 아이의 능력을 과소평가하기보다는 현재 아이의 능력에 기초해서 혼자 시도해보고 숙달해볼 수 있는 기회를 주실 필요가 있습니다.</td>
+									</tr>
+									<tr>
+										<td class="TdbgC01_1 TdbgC02_2">&nbsp;</td>
+										<td class="RstCtnTbTit01">긍정적인 언어적 상호작용</td>
+										<td class="RstCtnTbtd01"><strong>홍아빠</strong>님은 <span class="SpName">홍길동</span> 아기의 발달 수준에 비추어 볼 때 대체로 긍정적인 언어적 상호작용을 해주시고 계신 편입니다.<br>영아기는 언어 발달이 매우 미숙한 시기이지만 큰 변화를 보이는 시기로, 성인과의 상호작용에서 의사소통이 될만큼 발달하게 됩니다. 즉 많은 잠재력을 지니고 태어난 영아는 다양한 경험을 통해서 환경과 상호작용을 하게 되므로 의사소통을 할 양육자가 지속적인 반응을 보여 주는 등 언어 발달을 북돋워 줄 수 있는 자극을 제공해주는 일이 무엇보다도 중요합니다. 영아들에게 들려주는 언어는 이들에게 영양분이 될 뿐만 아니라, 이들이 건강하고 정서적으로 안정된 영아로 자라나게 하는 원동력이 됩니다. 양육자는 영아에게 많은 언어를 들려주어야 합니다. 특히 영아의 생활과 관련있는 일상적인 일을 언어로 표현해 주는 것이 좋고, 영아의 울음이나 발성, 몸짓 등의 의미를 말로 다시 표현해 주는 것이 좋습니다. 영아의 언어 발달은 놀이, 일상생활, 책 읽어주기 등과 같은 다양한 환경에서 자연스러운 방법으로 습득됩니다. 듣기, 말하기, 읽기, 쓰기가 통합적으로 발달합니다. <strong>홍아빠</strong>님은 자연스러운 일상생활 속에서 <span class="SpName">홍길동</span> 아기가 경험하고 있는 실생활과 연관지어서 <strong>홍길동</strong> 아기의 언어 발달을 조장할 수 있도록 좀 더 민감하게 반응해 주실 필요가 있습니다.</td>
+									</tr>
+									<tr>
+										<td class="TdbgC01_1 TdbgC02_3">&nbsp;</td>
+										<td class="RstCtnTbTit01">민감한 반응</td>
+										<td class="RstCtnTbtd01"><strong>홍아빠</strong>님은 대체로 <span class="SpName">홍길동</span> 아기의 요구를 잘 알아서 돌봐주시고 계신 편입니다. <span class="SpName">홍길동</span> 아기와 같은 영아에게는 민감한 양육자의 역할이 매우 중요합니다. 예를 들면, 아이의 가려운 곳을 잘 알아서 긁어주는 역할을 하는 양육자가 필요합니다. 이 시기의 영아는 아직 의사소통 기술이 발달하지 않았기 때문에 양육자가 아이의 상태와 마음을 읽기 위해 더 세심한 관찰을 할 필요가 있습니다. 영아의 약한 요구 표시에도 양육자가 잘 알아서 돌봐주는 경험이 쌓이게 되면 영아는 양육자 뿐 아니라 세상에 대한 신뢰감이 발달하게 됩니다. 이러한 신뢰감은 이후의 인지 발달 및 사회정서 발달과도 밀접하게 관련이 됩니다. 따라서 영아가 보이는 신호, 예를 들어, 눈동자가 어디를 향했는지, 어떤 표정을 하고 있는지, 손은 어디를 향하고 있는지 등을 살펴봄으로써 '나 심심해요. 같이 놀아주세요' '나 몸이 불편해요. 좀 봐 주세요' '이거 이렇게 하는거 맞아요?'와 같은 메시지를 잘 지각하여 정확히 해석해야 하고, 적절하고 즉각적으로 반응해주는 역할이 필요합니다.</td>
+									</tr>
+									<tr>
+										<td class="TdbgC01_1 TdbgC02_4">&nbsp;</td>
+										<td class="RstCtnTbTit01">발달적으로 적합한 상호작용</td>
+										<td class="RstCtnTbtd01"><strong>홍아빠</strong>님은 <span class="SpName">홍길동</span> 아기의 발달 수준에 적절한 상호작용을 하고 계신 편이며, 아이의 탐색과 학습을 잘 격려해주고 계십니다. 영아기는 인지적으로 가장 왕성한 활동을 하는 시기일 뿐 아니라 예민한 시기로 지능의 기초가 형성되는 중요한 시기입니다. 아주 어린 영아들도 사물을 탐색하는 과정에서 빨기, 잡기, 던지기, 치기 등 다양한 방법을 사용하는데, 이러한 과정을 통하여 사물의 특성을 파악해 갑니다. 영아는 자신이 원하는 사물을 탐색하는 동안 흥미를 갖게 되고, 문제가 해결되었을 때에는 기쁨을 표현합니다. 즉 영아는 사물을 탐색하고 문제를 해결하는 과정에서 지적인 기쁨을 느끼고 표현합니다. 특히 만 2세까지의 시기를 '감각운동기'라고 합니다.<br>이 말은 영아들이 직접 오감을 통해 느껴보고 움직여 보는 것이 이 시기의 지능 발달과 밀접한 관련이 있다는 뜻입니다. 따라서 양육자는 영아가 자유롭게 주변 환경을 탐색해 볼 수 있는 기회를 제공하고, 아이가 탐색을 하고 있을 때 이것을 언어로 표현하고 격려해주는 것이 필요합니다. 지나치게 많은 놀잇감이 제공되는 경우나 혹은 부족한 경우, 또 발달에 적절하지 않은 놀잇감이 제공되는 경우 영아의 흥미는 저하될 수 있습니다.<br>8~12개월의 영아는 놀잇감을 다양한 방법으로 탐색하며 놀기를 즐깁니다. 이 시기에는 영아가 손으로 치거나, 두드리거나, 발로 차거나, 흔들어 보는 등 여러 가지 방법으로 탐색할 수 있도록 놀잇감을 제공해 주어야 합니다. 12~18개월 정도가 되면 여러 가지 시행착오를 통하여 놀이를 즐기게 됩니다. 이 시기에는 자신이 원하는 놀잇감을 직접 선택하게 하고, 탐색을 통해서 새로운 놀이 방법을 만들어 내어 다양한 방법으로 놀이를 할 수 있도록 격려해 주는 양육자의 역할이 필요합니다. 특히 영아기의 행동은 탐색과 놀이를 구분하기가 어렵습니다. 영아는 탐색을 거쳐 환경이 익숙해진 후에 놀이를 하게 되는데, 이러한 탐색과 놀이를 통해서 폭넓은 학습을 하게 됩니다.</td>
+									</tr>
+									<tr>
+										<td class="TdbgC01_1 TdbgC02_5">&nbsp;</td>
+										<td class="RstCtnTbTit01">온정적 양육태도</td>
+										<td class="RstCtnTbtd01">모든 연령의 아이들이 그러하지만 특히 이 시기의 아이들은 심리적으로 안정되어 있을 때 가장 잘 배울 수 있습니다. 이것은 아이들이 좋아하고 신뢰할 수 있는 사람과 함께 있어야 한다는 것을 의미합니다. 특히 양육자(주로 양육자)가 자녀에게 관심을 보이고 따뜻하게 대하고 애정 표현을 자주 해주시고 반응적일 때, 아이는 안정적으로 주변을 탐색하고 양육자를 의지하여 세상에 한 발 더 내딛을 수 있습니다. 이런 측면에서 <strong>홍아빠</strong>님은 <span class="SpName">홍길동</span> 아기에게 매우 온정적이십니다.</td>
+									</tr>                        
+							  </tbody>
+							</table>  
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							<div class="DtB01Td01 DtB01Td03">
+								<h2><img src="http://m.i-challenge.co.kr/Images/happykid/check_bul06_img.gif" alt="∨"><span>양육태도검사 결과의 분석</span></h2>
+								<p class="RstDiscP01">
+									<strong>홍아빠</strong>님의 양육태도는 매우 바람직합니다.<br>
+									<br>
+									<span class="SpName">홍길동</span> 아기의 현재 발달과 능력에 대한 지식을 충분히 갖추고 계시며, 황혜주 아기를 사랑하는 마음이 충만한 듯 합니다.<br>
+									<br>
+									애정 표현도 잘 해주고 계십니다. <strong>홍아빠</strong>님은 아이의 요구에 대해 매우 민감하게 반응하는 민감한 부모의 역할을 잘 수행하고 계시며, 아이를 개별적인 존재로 인정하고 아이의 능력을 존중하여 아이가 스스로 판단하고 생각하고 결정할 수 있도록 잘 안내를 하고 있습니다.<br>
+									<br>
+									이러한 <strong>홍아빠</strong>님의 양육방식은 아이가 자신에 대해 긍정적인 자아 개념을 갖도록 돕습니다.<br>
+									더 나아가 주변 환경에 대한 탐색을 적극적으로 하고 호기심을 자극하여, 창의적이고 유능한 아동으로 섲아할 수 있는 밑거름이 됩니다.<br>
+									<br>
+									또한 <strong>홍아빠</strong>님은 아이의 현재 발달 수준과 변화하는 발달 상태에 맞추어 아이와 상호작용을 하는 능력이 뛰어나십니다.<br>
+									아이에게 제시하는 언어적 자극도 적절하며, 좋은 언어적 모델이 되고 있습니다.<br>
+									의존성보다는 아이의 자율성을 조장해주고 계십니다.<br>
+									<br>
+									<strong>홍아빠</strong>님께서는 현재 <span class="SpName">홍길동</span> 아기의 발달 수준에 있어 '매우 바람직한 양육자'의 역할을 하고 계시며, 앞으로 더 나은 자녀발달을 위한 토대를 잘 쌓고 계십니다.
+								</p>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+						<div class="DtB01Td01 DtB01Td03">
+								<h2><img src="http://m.i-challenge.co.kr/Images/happykid/check_bul06_img.gif" alt="∨"><span>검사 결과 설명</span></h2>
+								<p class="RstDiscP01">본 검사는 부모님의 양육태도를 온정적 양육태도, 과보호적 양육태도, 긍정적인 언어적 상호작용, 발달적으로 적합한 상호작용, 민감한 반응의 5가지 영역으로 측정합니다.</p>
+								<table class="RstDTb01" cellpadding="0" cellspacing="0">
+									<tbody>
+										<tr>
+											<td class="RstDtd01C">온정적 양육태도</td>
+											<td class="RstDtd02C">자녀에게 관심을 보이고, 애정 표현을 자주 해주고, 자녀가 안정감을 느낄 수 있도록 해주는 양육태도를 의미합니다.</td>
+										</tr>
+										<tr>
+											<td class="RstDtd01C RstDtd03C">과보호적 양육태도</td>
+											<td class="RstDtd02C RstDtd04C">자녀의 독립적인 행동보다는 의존성을 조장하는 양육행동을 의미합니다.</td>
+										</tr>
+										<tr>
+											<td class="RstDtd01C">긍정적인 언어적 상호작용</td>
+											<td class="RstDtd02C">이 시기의 영아는 언어 발달이 급속하게 이루어지는 시기입니다.<br>자녀에게 언어적 자극을 많이 주고, 자녀의 언어에 민감하게 반응해주는 것과 관련된 양육태도를 의미합니다.</td>
+										</tr>
+										<tr>
+											<td class="RstDtd01C RstDtd03C">발달적으로 적합한 상호작용</td>
+											<td class="RstDtd02C RstDtd04C">이 시기의 영아는 인지 발달이 급속하게 이루어지는 시기입니다.<br>자녀의 발달 수준에 맞게 적절한 상호작용을 해주는 것과 관련된 양육태도를 의미합니다.</td>
+										</tr>
+										<tr>
+											<td class="RstDtd01C">민감한 반응</td>
+											<td class="RstDtd02C">자녀가 보내는 신호를 잘 지각하여 정확히 해석하고, 이에 적절하고 즉각적인 반응을 해주는 것과 관련된 양육태도를 의미합니다.</td>
+										</tr>                                 
+								  </tbody>
+								</table>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							<div class="DtB01Td01 DtB01Td03">
+								<h2><img src="http://m.i-challenge.co.kr/Images/happykid/check_bul06_img.gif" alt="∨"><span>양육태도검사의 의미</span></h2>
+								<p class="RstDiscP01">영아가 이 세상에 태어나서 최초로 관계를 맺는 대상이 바로 부모입니다. 부모가 자녀를 대하는 방법은 부모마다, 그리고 자녀에 따라서도 다르게 나타납니다. 일정한 문화 내에서 부모가 자녀의 성장과 발달을 위해 기르고 가르치는 태도 또는 행동의 경향성과 반응양식을 "양육태도"라고 합니다.<br>즉 양육자인 부모가 영아에게 취하는 일반적인 태도나 행동을 양육태도라고 말할 수 있습니다.<br><br>특히 영아를 둔 부모의 경우, 부모 역할을 제대로 수행하기 위해서는 부모가 되기 위한 마음의 준비와 자녀양육에 대한 기본적인 지식의 습득 등이 필요합니다. 부모 양육태도의 중요성은 계속 강조하여도 부족함이 없습니다.<br>부모 양육태도 및 양육행동은 자녀의 인지 발달, 사회성 발달, 정서 발달 등에 영향을 미치는 중요한 요인 중의 하나입니다.<br><br>따라서 본 검사를 통해 본인이 아이를 어떻게 대하고 있는지, 자녀의 발달 수준에 적절하게 양육하고 있는지를 점검해봄으로써 더 바람직한 자녀 발달, 바람직한 부모-자녀 관계를 위한 첫 걸음을 내딛을 수 있습니다.</p>
+							</div>
+						</td>
+					</tr>     
+			  </tbody> 
+			</table>
+			<!-- [D]기존 테이블 내용 가져옴 -->
+			
+		</div>
+		<!-- pop_con :: end -->
+		<div class="pop_btn">
+			<a href="#" class="btn_confirm">확인</a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

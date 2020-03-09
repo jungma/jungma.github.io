@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=high-dpi, minimal-ui" />
+<meta name="description" content="" />
+<meta name="google-site-verification" content="BFmEnM9KijGLhZEm4Q0cgECgwY2CBuoNGtFlMeklb70" />
+<meta property="og:title" content="" />
+<meta property="og:image" content="http://www.i-challenge.co.kr/images/common/kakao-meta-image.jpg" />
+<link rel="apple-touch-icon" href="http://m.i-challenge.co.kr/images/icon.png">
+<link rel="apple-touch-icon-precomposed" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="shortcut icon" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/style.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/check.css" />
+<link rel="stylesheet" type="text/css" href="../../Css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../Css/play2018.css" />
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/ui.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/kakao.link.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/swiper.min.js"></script>
+<script>
+	
+	var lnbDep1 = 2; //LNB depth 1
+	var allmenuDep1 = 4; //allmenu depth 1
+	var allmenuDep2 = 2; //allmenu depth 2
+
+	$(function () {
+		//lnb swipe 생성
+		var lnb = new Swiper('.lnb .swiper-container', {
+			scrollbar: '.swiper-scrollbar',
+			scrollbarHide: true,
+			slidesPerView: 'auto',
+			grabCursor: true
+		});
+
+		//lnb allmenu on/off 처리
+		$('.btn_allmenu').on('click', function () {
+			var _this = $(this);
+			if (_this.hasClass('on')) {
+				_this.removeClass('on');
+				$('.allmenu').slideUp();
+			} else {
+				_this.removeClass('on');
+				_this.addClass('on');
+				$('.allmenu').slideDown();
+			}
+
+		});
+	});
+		
+</script>
+<script>
+
+$(function(){
+		
+	//호비멤버십>부모가이드>추천컨텐츠 스와이프
+	var appendNumber = 4;
+	var prependNumber = 1;
+	var swiper = new Swiper('.swiper-container.swiper-container01', {
+		slidesPerView: 3,
+		loopAdditionalSlides:3,     
+		loop: true,
+		centeredSlides: true,
+		pagination: {
+			el: '.swiper-container01 .swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.cont_swipe .swiper-button-next',
+			prevEl: '.cont_swipe .swiper-button-prev',
+		},
+	});
+	//swiper.prependSlide('<div class="swiper-slide"><a>Slide ' + (--prependNumber) + '</a></div>');
+	
+	//호비멤버십>부모가이드>도너츠몰 인기상품 스와이프
+	var swiper2 = new Swiper('.swiper-container.swiper-container02', {
+		slidesPerView: 1,
+		loop: true,
+		loopFillGroupWithBlank: true,
+		pagination: {
+			el: '.swiper-container02 .swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-container02 .swiper-button-next',
+			prevEl: '.swiper-container02 .swiper-button-prev',
+		},
+	});
+			
+});
+</script>
+</head>
+
+<body>
+<div class="pop couponlist">
+	<div class="cont_pop">
+		<div class="pop_header">
+			<a href="javascript:history.back();" class="btn_back"><img src="http://m2.i-challenge.co.kr/Hobi/Membership/images/Parent/btn_back.png" alt="뒤로" /></a>
+			<span>나의 쿠폰 내역</span>
+		</div>
+		<!-- pop_con :: start -->
+		<div class="pop_con">
+			<div class="mycoupon">
+				<ul>
+					<li>
+						<span class="stit">양육검사</span>
+						<span class="scon"><em>256</em>개</span>
+					</li>
+					<li>
+						<span class="stit">호비 애니메이션</span>
+						<span class="scon"><em>00</em>개</span>
+					</li>
+					<li>
+						<span class="stit">프린트 학습지</span>
+						<span class="scon"><em>256</em>개</span>
+					</li>
+				</ul>
+			</div>
+			<span class="noti">등록 가능 기간이 지나면 쿠폰이 소멸됩니다.</span>
+			<div class="tblwrap">
+				<table title="나의 쿠폰 내역" summary="쿠폰명, 등록 가능 기간">
+					<caption>나의 쿠폰 내역 테이블</caption>
+					<colgroup>
+						<col width="50%">
+						<col width="50%">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="col">쿠폰명</th>
+							<th scope="col">등록 가능 기간</th>
+						</tr>				
+						<tr>
+							<td>양육검사 이용권</td>
+							<td>18.00.00 ~ 20.00.00</td>
+						</tr>
+						<tr>
+							<td>양육검사 이용권</td>
+							<td>18.00.00 ~ 20.00.00</td>
+						</tr>
+						<tr>
+							<td>양육검사 이용권</td>
+							<td>18.00.00 ~ 20.00.00</td>
+						</tr>
+						<tr>
+							<td>양육검사 이용권</td>
+							<td>18.00.00 ~ 20.00.00</td>
+						</tr>
+						<tr>
+							<td>양육검사 이용권</td>
+							<td>18.00.00 ~ 20.00.00</td>
+						</tr>
+						<tr>
+							<td>양육검사 이용권</td>
+							<td>18.00.00 ~ 20.00.00</td>
+						</tr>
+						<tr>
+							<td>양육검사 이용권</td>
+							<td>18.00.00 ~ 20.00.00</td>
+						</tr>
+						<tr>
+							<td>양육검사 이용권</td>
+							<td>18.00.00 ~ 20.00.00</td>
+						</tr>
+						<tr>
+							<td>양육검사 이용권</td>
+							<td>18.00.00 ~ 20.00.00</td>
+						</tr>
+						<tr>
+							<td>양육검사 이용권</td>
+							<td>18.00.00 ~ 20.00.00</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- pop_con :: end -->
+	</div>
+</div>
+</body>
+</html>

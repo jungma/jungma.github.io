@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=high-dpi, minimal-ui" />
+<meta name="description" content="" />
+<meta name="google-site-verification" content="BFmEnM9KijGLhZEm4Q0cgECgwY2CBuoNGtFlMeklb70" />
+<meta property="og:title" content="" />
+<meta property="og:image" content="http://www.i-challenge.co.kr/images/common/kakao-meta-image.jpg" />
+<link rel="apple-touch-icon" href="http://m.i-challenge.co.kr/images/icon.png">
+<link rel="apple-touch-icon-precomposed" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="shortcut icon" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/style.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Mypage/Css/Mypage2018.css" />
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/ui.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/kakao.link.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/swiper.min.js"></script>
+<script>
+	
+	var lnbDep1 = 3; //LNB depth 1
+	var allmenuDep1 = 4; //allmenu depth 1
+	var allmenuDep2 = 3; //allmenu depth 2
+
+	$(function () {
+		//lnb swipe 생성
+		var lnb = new Swiper('.lnb .swiper-container', {
+			scrollbar: '.swiper-scrollbar',
+			scrollbarHide: true,
+			slidesPerView: 'auto',
+			grabCursor: true
+		});
+
+		//lnb allmenu on/off 처리
+		$('.btn_allmenu').on('click', function () {
+			var _this = $(this);
+			if (_this.hasClass('on')) {
+				_this.removeClass('on');
+				$('.allmenu').slideUp();
+			} else {
+				_this.removeClass('on');
+				_this.addClass('on');
+				$('.allmenu').slideDown();
+			}
+
+		});
+	});
+		
+</script>
+<script>
+
+$(function(){
+	//도너츠전환 안내 슬라이드 on/off 처리
+	$('.btn_open').on('click', function(e){
+		e.preventDefault();
+		tabOnOff($(this), '#beltBn');
+	});
+	
+	//도너츠전환 안내 슬라이드 on/off 처리s
+	$('.tab_type02 li').on('click', function(e){
+		e.preventDefault();
+		$('.tab_type02 li').removeClass("on");
+		$(this).addClass("on");
+		
+		if($('.tab_type02 li.period').hasClass("on")){
+			$(".cont_period").show();
+		}else{
+			$(".cont_period").hide();
+		}
+	});
+})
+</script>
+</head>
+
+<body>
+	<!-- wrap :: start -->
+	<div id="wrap">
+
+<div class="mypage mileage pop">
+	<div class="cont_pop">
+		<div class="pop_header">
+			<a href="javascript:history.back();" class="btn_back"><img src="http://m2.i-challenge.co.kr/Hobi/Membership/images/Parent/btn_back.png" alt="뒤로" /></a>
+			<span>도너츠 상세 내역</span>
+		</div>
+		<div class="pop_con">
+		
+			<!-- cont_donuts :: start -->
+			<div class="cont_donuts">
+				<span class="noti">현재<em>4,760 개</em>사용 가능합니다.</span>
+				<a href="#" class="btn_donutsmall">도너츠몰</a>
+				
+				<div class="tblwrap">
+					<table title="도너츠" summary="전환 도너츠, 적립 도너츠, 사용 도너츠">
+						<caption>도너츠 테이블</caption>
+						<colgroup>
+							<col width="33%" />
+							<col width="33%" />
+							<col width="*" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">전환 도너츠</th>
+								<th scope="col">적립 도너츠</th>
+								<th scope="col">사용 도너츠</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>5,000 개</td>
+								<td>4,500 개</td>
+								<td>14,500 개</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			
+			</div>
+			<!-- cont_donuts :: end -->
+			
+			<!-- cont_detail :: start -->
+			<div class="cont_detail">
+				<div class="tab_type02">
+					<ul>
+						<li class="on"><a href="#">1개월</a></li>
+						<li><a href="#">3개월</a></li>
+						<li><a href="#">6개월</a></li>
+						<li class="period"><a href="#">기간설정</a></li>
+					</ul>
+				</div>
+				
+				<div class="selwrap03">
+					<select>
+						<option>전체</option>
+						<option>적립</option>
+						<option>차감</option>
+						<option>소멸</option>
+					</select>
+				</div>
+				<div class="cont_period">
+					<div class="lt">
+						<div class="selwrap03">
+							<select>
+								<option>2018</option>
+								<option>2017</option>
+								<option>2016</option>
+							</select>
+						</div>
+						<div class="selwrap03">
+							<select>
+								<option>01</option>
+								<option>02</option>
+								<option>03</option>
+							</select>
+						</div>
+						<div class="selwrap03">
+							<select>
+								<option>01</option>
+								<option>02</option>
+								<option>03</option>
+							</select>
+						</div>
+					</div>
+					<span>~</span>
+					<div class="rt">
+						<div class="selwrap03">
+							<select>
+								<option>2018</option>
+								<option>2017</option>
+								<option>2016</option>
+							</select>
+						</div>
+						<div class="selwrap03">
+							<select>
+								<option>01</option>
+								<option>02</option>
+								<option>03</option>
+							</select>
+						</div>
+						<div class="selwrap03">
+							<select>
+								<option>01</option>
+								<option>02</option>
+								<option>03</option>
+							</select>
+						</div>
+					</div>
+						
+					<a href="#">조회하기</a>
+				</div>
+				<div class="tblwrap">
+					<table title="상세내역" summary="일자, 구분, 내용, 마일리지">
+						<caption>상세내역 테이블</caption>
+						<colgroup>
+							<col width="22%" />
+							<col width="12%" />
+							<col width="43%" />
+							<col width="*" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">일자</th>
+								<th scope="col">구분</th>
+								<th scope="col">내용</th>
+								<th scope="col">도너츠</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>18.04.25</td>
+								<td>차감</td>
+								<td>애니메이션 쿠폰 구매애니메이션 쿠폰 구매애니메이션 쿠폰 구매</td>
+								<td class="minus">-100 M</td>
+							</tr>
+							<tr>
+								<td>18.04.25</td>
+								<td>적립</td>
+								<td>로그인</td>
+								<td>100 M</td>
+							</tr>
+							<tr>
+								<td>18.04.25</td>
+								<td>적립</td>
+								<td>로그인</td>
+								<td>100 M</td>
+							</tr>
+							<tr>
+								<td>18.04.25</td>
+								<td>적립</td>
+								<td>애니메이션 쿠폰 구매애니메이션 쿠폰 구매애니메이션 쿠폰 구매</td>
+								<td>100 M</td>
+							</tr>
+							<tr>
+								<td>18.04.25</td>
+								<td>적립</td>
+								<td>로그인</td>
+								<td>100 M</td>
+							</tr>
+							<tr>
+								<td>18.04.25</td>
+								<td>적립</td>
+								<td>로그인</td>
+								<td>100 M</td>
+							</tr>
+							<tr>
+								<td>18.04.25</td>
+								<td>적립</td>
+								<td>로그인</td>
+								<td>100 M</td>
+							</tr>
+							<tr>
+								<td>18.04.25</td>
+								<td>적립</td>
+								<td>로그인</td>
+								<td>100 M</td>
+							</tr>
+							<tr>
+								<td>18.04.25</td>
+								<td>적립</td>
+								<td>로그인</td>
+								<td>100 M</td>
+							</tr>
+							<tr>
+								<td>18.04.25</td>
+								<td>적립</td>
+								<td>로그인</td>
+								<td>100 M</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btn_paging">
+					<button class="btn_prev"><span class="blind">이전</span></button>
+					<span class="present">2</span>
+					<span class="all">/ 10</span>
+					<button class="btn_next"><span class="blind">다음</span></button>
+				</div>
+			</div>
+			<!-- cont_detail :: end -->
+		</div>
+	</div>
+</div>
+
+
+	</div>
+	<!-- wrap :: end -->
+</body>
+</html>

@@ -1,0 +1,450 @@
+﻿@charset "utf-8";
+
+/* 멤버쉽 > 부모가이드 */
+.hobi.membership .cont_btm{padding:20px 15px 0}
+.hobi.membership .cont_srch{height:35px;margin:0 0 15px}
+.hobi.membership .cont_srch .selwrap{position:relative;width:68%;height:35px;float:left}
+.hobi.membership .cont_srch .selwrap select{width:100%;height:33px;line-height:35px;padding:0 0 0 9px;border:1px solid #222;background:none;color:#666;font-size:14px;font-family:"Noto Demi";-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+.hobi.membership .cont_srch .selwrap:after{content:"";position:absolute;top:16px;right:10px;display:block;width:10px;height:6px;background:url(../../Community/Images/Ico/ico_parent.png) no-repeat 0 -33px;background-size:22px}
+.hobi.membership .cont_srch .btn_add{display:block;float:right;width:29%;height:35px;line-height:37px;font-size:13px;color:#fff;background:#22b8bd;text-align:center;border-radius:5px}
+.hobi.membership .cont_recommend{display:table;position:relative;width:100%;height:58px;margin:0 0 15px;background:#f2efe6;text-align:center;letter-spacing:-1px}
+.hobi.membership .cont_recommend div{display:table-cell;vertical-align:middle;position:relative;width:100%;font-size:16px;color:#222;font-family:"Noto Medium"}
+.hobi.membership .cont_recommend div span{display:block;padding:4px 0 0}
+.hobi.membership .cont_purchase{height:35px;margin:0 0 15px;font-size:14px;color:#222}
+.hobi.membership .cont_purchase span{display:block;width:41%;height:35px;line-height:37px;float:left;font-family:"Noto Medium";font-size:13px}
+.hobi.membership .cont_purchase .selwrap{position:relative;width:59%;height:35px;float:left}
+.hobi.membership .cont_purchase .selwrap select{width:100%;height:33px;line-height:35px;padding:0 0 0 9px;border:1px solid #222;background:none;color:#666;font-size:14px;font-family:"Noto Demi";-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+.hobi.membership .cont_purchase .selwrap:after{content:"";position:absolute;top:16px;right:10px;display:block;width:10px;height:6px;background:url(../../Community/Images/Ico/ico_parent.png) no-repeat 0 -33px;background-size:22px}
+.hobi.membership .cont_btm .cont_swipe{margin:0 0 15px}
+.hobi.membership .cont_swipe{position:relative}
+.hobi.membership .swiper-container.swiper-container01{width:100%;height:216px;margin:0 auto}
+.hobi.membership .swiper-container.swiper-container01 .swiper-slide {position:relative;height:210px;text-align:center;font-size:18px;background:#fff;/* Center slide text vertically */display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
+.hobi.membership .swiper-container.swiper-container01 .swiper-slide .cont{display:block;width:100%;height:100%;background:#fff}
+.hobi.membership .swiper-container.swiper-container01 .swiper-slide .cont .cont_img{width:100%;margin:10px 0;height:143px;text-align:center}
+.hobi.membership .swiper-container.swiper-container01 .swiper-slide .cont .cont_img img{width:100%;height:100%;max-width:135px}
+.hobi.membership .swiper-container.swiper-container01 .swiper-slide .cont .btn_go{display:block;width:53%;height:23px;line-height:25px;margin:0 auto;cursor:pointer;border:1px solid #000;border-radius:3px;font-size:11px;color:#000}
+.hobi.membership .swiper-container.swiper-container01 .append-buttons {text-align:center;margin-top:20px}
+.hobi.membership .swiper-container.swiper-container01 .append-buttons a {display: inline-block;border: 1px solid #007aff;color: #007aff;text-decoration: none;padding: 4px 10px;border-radius: 4px;margin: 0 10px;font-size: 13px;}
+.hobi.membership .swiper-container.swiper-container01 .swiper-slide.swiper-slide-prev:before, .swiper-container01 .swiper-slide.swiper-slide-next:before{content:"";display:block;width:100%;height:100%;position:absolute;top:0;left:0}
+.hobi.membership .swiper-container.swiper-container01 .swiper-slide{background:#fff;border:1px solid #ccc}
+.hobi.membership .swiper-container.swiper-container01 .swiper-wrapper{transform: translate3d(235px, 0px, 50%) !important;}
+.hobi.membership .swiper-container.swiper-container01 .swiper-slide.swiper-slide-active{width:48% !important;border:2px solid #222;box-shadow:6px 6px 6px rgba(140,140,140,0.1);transform: translate(-50%,0px);z-index:10;margin-right:0}
+.hobi.membership .swiper-container.swiper-container01 .swiper-slide.swiper-slide-active .cont .btn_go{position:relative;top:8px;margin:0 auto}
+.hobi.membership .swiper-container.swiper-container01 .swiper-slide.swiper-slide-prev{width:48% !important;transform: translate(0,0px);opacity:0.6}
+.hobi.membership .swiper-container.swiper-container01 .swiper-slide.swiper-slide-next{width:48% !important;transform: translate(-92%,0px);opacity:0.6}
+.hobi.membership .swiper-container.swiper-container01 .swiper-slide.swiper-slide-next:first-child{transform: translate(-100%,0px);}
+.hobi.membership .cont_swipe .swiper-button-prev{left:-10px;width:19px;height:36px;background:url(../Images/btn_swipe_prev_active.png) no-repeat 0 0;background-size:19px;}
+.hobi.membership .cont_swipe .swiper-button-prev.swiper-button-disabled{width:19px;height:36px;background:url(../Images/btn_swipe_prev.png) no-repeat 0 0;background-size:19px;}
+.hobi.membership .cont_swipe .swiper-button-next{right:-10px;width:19px;height:36px;background:url(../Images/btn_swipe_next_active.png) no-repeat 0 0;background-size:19px;}
+.hobi.membership .cont_swipe .swiper-button-next.swiper-button-disabled{width:19px;height:36px;background:url(../Images/btn_swipe_next.png) no-repeat 0 0;background-size:19px;}
+.hobi.membership .cont_doughnut .swiper-slide{width:100%;padding:18px 0 60px;background:#ebeff2;text-align:center}
+.hobi.membership .cont_doughnut .swiper-slide .tit{font-size:20px;color:#222;font-family:"Noto Medium"}
+.hobi.membership .cont_doughnut .swiper-slide .tit em{color:#1dbdc3}
+.hobi.membership .cont_doughnut .swiper-slide .stit{padding:4px 0 12px;line-height:1.4;font-size:14px;color:#222;font-family:"Noto Demi"}
+.hobi.membership .cont_doughnut .swiper-slide .cont_swipe{padding:0 15px}
+.hobi.membership .cont_doughnut .swiper-slide .cont_swipe .cont{width:31%;height:170px;float:left;margin:0 1.15%}
+.hobi.membership .cont_doughnut .swiper-slide .cont_swipe .cont a{display:block;width:100%;height:100%}
+.hobi.membership .cont_doughnut .swiper-slide .cont_swipe .cont .cont_img{display:block;width:100%;height:120px;background:#fff}
+.hobi.membership .cont_doughnut .swiper-slide .cont_swipe .cont .cont_img img{width:100%;height:100px;margin:10px 0;max-width:93px}
+.hobi.membership .cont_doughnut .swiper-slide .cont_swipe .cont .cont_txt{display:block;line-height:1.4;padding:9px 0;font-size:12px;color:#222;font-family:"Noto Demi"}
+.hobi.membership .cont_doughnut .swiper-slide .swiper-container.swiper-container02 {width:100%;height:205px;padding:15px 0 25px}
+.hobi.membership .cont_doughnut .swiper-slide .swiper-container.swiper-container02 .swiper-slide {text-align: center;font-size: 18px;/* Center slide text vertically */display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
+.hobi.membership .swiper-container.swiper-container02 .swiper-pagination{bottom:15px}
+.hobi.membership .swiper-container.swiper-container02 .swiper-pagination-bullet{width:10px;height:10px;background:#aeaeae;opacity:1;margin:0 2px}
+.hobi.membership .swiper-container.swiper-container02 .swiper-pagination-bullet-active{background:#1dbdc3}
+.hobi.membership .cont_doughnut .swiper-slide .noti{position:absolute;bottom:45px;left:0;width:100%;text-align:center;font-size:10px;color:#999;font-family:"Noto Demi"}
+.hobi.membership .cont_doughnut .swiper-slide .noti em{color:#222}
+
+/* 부모가이드 > 컨텐츠 팝업 */
+.hobi.pop{padding:90px 0 0 !important}
+.hobi.pop .cont_pop .pop_header{position:relative;width:100%;height:48px;border-bottom:1px solid #ebeff2;text-align:center}
+.hobi.pop .cont_pop .pop_header span{display:block;height:48px;line-height:50px;font-size:19px;font-family:"Noto Medium";color:#222}
+.hobi.pop .cont_pop .pop_header .btn_back{position:absolute;top:0;left:0;display:block;height:48px;width:48px;text-align:center}
+.hobi.pop .cont_pop .pop_header .btn_back img{position:absolute;top:50%;left:50%;width:20px;height:14px;margin:-7px 0 0 -10px}
+.hobi.pop .cont_pop .pop_con{padding:20px 15px 0}
+.hobi.pop .cont_pop .selwrap{position:relative;width:100%;height:35px;float:none}
+.hobi.pop .cont_pop .selwrap select{width:100%;height:33px;line-height:35px;padding:0 0 0 9px;border:1px solid #222;background:none;color:#222;font-size:14px;font-family:"Noto Demi";-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+.hobi.pop .cont_pop .selwrap:after{content:"";position:absolute;top:16px;right:10px;display:block;width:10px;height:6px;background:url(../../Community/Images/Ico/ico_parent.png) no-repeat 0 -33px;background-size:22px}
+.hobi.pop .cont_pop .txt{padding:15px 0 0;font-size:14px;color:#222;text-align:center;word-break: break-all;}
+.hobi.pop .cont_pop .img{margin:15px 0 0;text-align:center}
+.hobi.pop .cont_pop .img img{width:100%;max-width:580px;margin:0 auto}
+.hobi.pop .cont_pop .pop_btn{padding:15px 0}
+.hobi.pop .cont_pop .pop_btn .btn_confirm{display:block;width:32%;height:35px;line-height:37px;margin:0 auto;background:#1dbdc3;color:#fff;font-size:14px;font-family: "Noto Demi";text-align:center;border-radius:20px}
+.hobi.pop .cont_pop .tab_type01{height:44px;margin:15px 0 0;padding:0}
+.hobi.pop .cont_pop .tab_type01 li{width:50%;height:44px;float:left;border:1px solid #ccc;border-bottom:1px solid #1dbdc3}
+.hobi.pop .cont_pop .tab_type01 li:last-child{border-left:0}
+.hobi.pop .cont_pop .tab_type01 li:first-child{border-right:0}
+.hobi.pop .cont_pop .tab_type01 li.on{border:1px solid #1dbdc3;border-bottom:1px solid #fff}
+.hobi.pop .cont_pop .tab_type01 li.on:last-child{border-left:1px solid #1dbdc3}
+.hobi.pop .cont_pop .tab_type01 li.on:first-child{border-left:1px solid #1dbdc3}
+.hobi.pop .cont_pop .tab_type01 li a{display:block;width:100%;height:100%;text-align:center;line-height:46px;font-size:16px;color:#999}
+.hobi.pop .cont_pop .tab_type01 li.on a {color:#1dbdc3}
+
+/* 놀이교육 > 호비송 */
+.hobi.song .cont_song{padding:0 15px;margin:20px 0 0}
+.hobi.song .cont_song h4{position:relative;font-size:19px;line-height:23px;padding:0 0 0 23px;margin:0 0 15px;color:#000;font-family: "Noto Medium"}
+.hobi.song .cont_song h4:before{content:"";display:block;position:absolute;top:2px;left:0;width:19px;height:19px;background:url(../Images/Ico/ico_hobisong.png) no-repeat -0 0;background-size:50px}
+.hobi.song .cont_song .song{margin:0 0 15px}
+.hobi.song .cont_song .song:after{content:"";clear:both;display:block}
+.hobi.song .cont_song .song .lt{width:84px;height:84px;float:left}
+.hobi.song .cont_song .song .lt img{width:100%}
+.hobi.song .cont_song .song .rt{width:86%;width :-webkit-calc(100% - 84px);width :-moz-calc(100% - 84px);width :calc(100% - 84px);float:left;height:84px;background:#f3f8f8}
+.hobi.song .cont_song .song .rt .play{margin:13px 0 0 15px}
+.hobi.song .cont_song .song .rt .play a{display:inline-block;width:35px;height:35px;margin:0 5px 0 0;background:url(../Images/Ico/ico_hobisong.png) no-repeat 0 -23px;background-size:50px}
+.hobi.song .cont_song .song .rt .play .btn_pause{background-position:0 -100px}
+.hobi.song .cont_song .song .rt .play .btn_stop{background-position:0 -61px}
+.hobi.song .cont_song .song .rt .time{display:block;margin:0 0 0 15px;font-size:13px;color:#222;font-family:"Noto Demi";letter-spacing:0}
+.hobi.song .cont_song .btns{width:100%;margin:0 0 15px;vertical-align:top}
+.hobi.song .cont_song .btns a{position:relative;display:block;float:left;width:31%;height:35px;padding:0 18px 0 0;line-height:38px;margin:0 0 0 3.5%;font-size:14px;color:#fff;background:#22b8bd;border-radius:30px;text-align:center}
+.hobi.song .cont_song .btns a:first-child{margin:0}
+.hobi.song .cont_song .btns a:after{content:"";position:absolute;top:9px;right:14%;display:block;width:18px;height:18px;background:url(../Images/Ico/ico_hobisong.png) no-repeat -33px 0;background-size:50px}
+.hobi.song .cont_song .btns:after{clear:both;content:"";display:block}
+.hobi.song .cont_song .noti{font-size:12px;color:#666;text-align:center;font-family:"Noto Lite"}
+.hobi.song .tab_cont{padding:0 15px 25px}
+.hobi.song .tab_cont .cont_dance .play{width:100%;max-width:580px;margin:20px auto 0}
+.hobi.song .tab_cont .cont_dance .play a{display:block;margin:0 0 15px}
+.hobi.song .tab_cont .cont_dance .play a img{width:100%}
+.hobi.song .tab_cont .cont_dance .btns{width:100%;margin:0 0 20px}
+.hobi.song .tab_cont .cont_dance .btns a{position:relative;display:block;float:left;width:31%;height:35px;padding:0 18px 0 0;line-height:38px;margin:0 0 0 3.5%;font-size:14px;color:#fff;background:#22b8bd;border-radius:30px;text-align:center}
+.hobi.song .tab_cont .cont_dance .btns a:first-child{margin:0}
+.hobi.song .tab_cont .cont_dance .btns a:after{content:"";position:absolute;top:9px;right:14%;display:block;width:18px;height:18px;background:url(../Images/Ico/ico_hobisong.png) no-repeat -33px 0;background-size:50px}
+.hobi.song .tab_cont .cont_dance .btns:after{clear:both;content:"";display:block}
+.hobi.song .tab_cont .cont_lyrics img{width:100%;max-width:580px}
+.hobi.song .cont_sns{border:1px solid #22b8bd;border-top:0;border-radius:10px;overflow:hidden;text-align:center}
+.hobi.song .cont_sns h4{height:35px;line-height:37px;background:#22b8bd;color:#fff;font-size:16px}
+.hobi.song .cont_sns p{padding:15px 0 0;font-size:14px;color:#505050}
+.hobi.song .cont_sns ul{padding:10px 0 15px}
+.hobi.song .cont_sns ul li{display:inline-block;width:43px;margin:0 3px}
+.hobi.song .cont_sns ul li a{display:block;width:100%}
+.hobi.song .cont_sns ul li a img{width:100%}
+
+/* 놀이교육 > 호비애니메이션 */
+.hobi.animation{}
+.hobi.animation .cont_recom h4{position:relative;margin:13px 15px 8px;padding:0 0 0 20px;font-size:19px;line-height:25px;color:#000;font-family: "Noto Medium"}
+.hobi.animation .cont_recom h4:before{content:"";display:block;position:absolute;top:4px;left:0;width:19px;height:19px;background:url(../Images/Ico/ico_animation.png) no-repeat -0 0;background-size:100px}
+.hobi.animation .cont_recom .cont_swipe{}
+.hobi.animation .cont_recom .cont_swipe .swiper-container:before{content:"";display:block}
+.hobi.animation .cont_recom .cont_swipe .swiper-container{max-width:100%}
+.hobi.animation .cont_recom .cont_swipe .swiper-wrapper{}
+.hobi.animation .cont_recom .cont_swipe .swiper-slide{width:72% !important;min-height:100px}
+.hobi.animation .cont_recom .cont_swipe .swiper-container .cont{width:100%}
+.hobi.animation .cont_recom .cont_swipe .swiper-container .cont a{display:block;width:100%;padding:22px 0;background:#000}
+.hobi.animation .cont_recom .cont_swipe .swiper-container .cont img{width:100%}
+.hobi.animation .cont_recom .cont_swipe .swiper-container .cont span{display:block;margin:10px 0 0;width:100%;text-align:center;color:#222;font-size:14px;font-family: "Noto Demi";}
+.hobi.animation .bn_band{position:relative;display:block;width:100%;height:45px;line-height:47px;padding:0 0 0 15px;margin:17px 0 0;background:#9ebff2;font-size:16px;color:#fff;font-family: "Noto Medium"}
+.hobi.animation .bn_band:before{content:"";display:block;position:absolute;top:16px;right:15px;width:9px;height:14px;background:url(../Images/Ico/ico_animation.png) no-repeat 0 -23px;background-size:100px}
+.hobi.animation .bn_band:after{content:"";display:block;position:absolute;top:0;right:44px;width:87px;height:46px;background:url(../Images/Ico/ico_animation.png) no-repeat 0 -41px;background-size:100px}
+.hobi.animation .tab_type01{margin:20px 0 0}
+.hobi.animation .tab_type01 a{position:relative}
+.hobi.animation .tab_type01 a .txt{position:absolute;top:-1px;left:-1px;display:block;width:30px;height:17px;line-height:19px;background:#f14a16;color:#fff;font-size:11px;text-align:center}
+.hobi.animation .cont_noti{display:table;margin:15px 15px 0;width:100%;width :-webkit-calc(100% - 30px);width :-moz-calc(100% - 30px);width :calc(100% - 30px);height:60px;background:#f3f8f8;}
+.hobi.animation .cont_noti>div{display:table-cell;vertical-align:middle}
+.hobi.animation .cont_noti .noti{display:inline-block;padding:0 0 0 10px;color:#222;font-size:14px;vertical-align: middle;}
+.hobi.animation .cont_noti .btn_coupon{display:inline-block;float:right;height:27px;line-height:29px;padding:0 11px;font-size:13px;background:#fff;border:1px solid #000;color:#000;margin: 10px 15px 0 0;border-radius:3px}
+.hobi.animation .cont_sel{margin:15px 0 0;min-height:35px;padding:0 15px}
+.hobi.animation .cont_sel .btns{float:left;width:28%}
+.hobi.animation .cont_sel .btns a{display:block;width:100%;height:35px;line-height:37px;border-radius:3px;color:#fff;font-family:"Noto Demi";font-size:14px;background:#22b8bd;text-align:center}
+.hobi.animation .cont_sel .selwrap02{float:right;width:31%}
+.hobi.animation .cont_list{width:100%;padding:0 15px;margin:10px 0 0}
+.hobi.animation .cont_list li{width:48%;float:left}
+.hobi.animation li.nolist{width:100% !important;height:200px;display:table;text-align:center;font-size:15px;color:#666;font-family:"Noto Demi"}
+.hobi.animation li.nolist span{display:table-cell;vertical-align:middle;text-align:Center;font-size:15px;color:#222;font-family:"Noto Light"}
+.hobi.animation .cont_list li:nth-child(2n){float:right;margin-left:4%}
+.hobi.animation .cont_list li:nth-child(2n-1){clear:both}
+.hobi.animation .cont_list li .top{position:relative;width:100%}
+.hobi.animation .cont_list li .top .list{display:block;width:100%;overflow:hidden;background:#e4e4e4;border:1px solid #ccc}
+.hobi.animation .cont_list li .top .list img{width:100%}
+.hobi.animation .cont_list li .top .txt{position:absolute;top:0;left:0;width:45px;height:28px;line-height:30px;background:#39a6e5;text-align:center;font-size:11px;color:#fff;font-family: "Noto Demi";}
+.hobi.animation .cont_list li .btm{height:40px;display:table;margin:10px 0}
+.hobi.animation .cont_list li .btm .tit{display:table-cell;vertical-align:top;width:100%;font-size:15px;font-family: "Noto Medium";color:#222}
+.hobi.animation .cont_mylist{width:100%;padding:0 15px}
+.hobi.animation .cont_mylist .noti{display:block;margin:15px 0 0;font-size:14px;color:#666}
+.hobi.animation .cont_mylist ul{margin:10px 0 0}
+.hobi.animation .cont_mylist li{width:100%;clear:both;margin:0 0 15px}
+.hobi.animation .cont_mylist li .lt{float:left;position:relative;width:47%}
+.hobi.animation .cont_mylist li .lt .list{display:block;width:100%;overflow:hidden;background:#e4e4e4;border:1px solid #ccc}
+.hobi.animation .cont_mylist li .lt .list img{width:100%}
+.hobi.animation .cont_mylist li .lt .txt{position:absolute;top:0;left:0;width:45px;height:28px;line-height:30px;background:#39a6e5;text-align:center;font-size:11px;color:#fff;font-family: "Noto Demi";}
+.hobi.animation .cont_mylist li .lt .btn_delete{position:absolute;top:0;right:0;display:block;width:25px;height:24px}
+.hobi.animation .cont_mylist li .lt .btn_delete:after{content:"";position:absolute;top:5px;left:5px;display:block;width:15px;height:14px;background:url(../Images/Ico/ico_animation.png) no-repeat 0 -91px;background-size:100px}
+.hobi.animation .cont_mylist li .rt{width:50%;float:right}
+.hobi.animation .cont_mylist li:after{clear:both;content:"";display:block}
+.hobi.animation .cont_mylist li .rt .tit{width:100%;font-size:15px;font-family: "Noto Medium";color:#222;display: inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;white-space: normal;line-height: 1.4;height: 38px;min-height: 38px;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.hobi.animation .cont_mylist li .rt .txt01{display:block;margin:10px 0 0;font-size:12px;color:#22b8bd}
+.hobi.animation .cont_mylist li .rt .txt02{display:block;margin:3px 0 0;font-size:14px;color:#666}
+
+/* 놀이교육 > 호비애니메이션 > 상세보기 */
+.hobi.animation.view .cont_view{position:relative;padding:0 15px}
+.hobi.animation.view .cont_view h4{position:relative;height:34px;line-height:36px;margin:10px 0 0 20px;font-size:16px;color:#000;font-family: "Noto Medium"}
+.hobi.animation.view .cont_view .btn_back{position:absolute;top:0;left:5px;display:block;width:27px;height:34px}
+.hobi.animation.view .cont_view .btn_back:after{position:absolute;top:10px;left:10px;content:"";display:block;width:9px;height:15px;background:url(../Images/Ico/ico_animation.png) no-repeat 0 -109px;background-size:100px}
+.hobi.animation.view .play{position:relative;width:100%;margin:5px 0 0}
+.hobi.animation.view .play a{display:block;width:100%;padding:27px 0;background:#000}
+.hobi.animation.view .play a img{display:block;width:100%}
+.hobi.animation.view .play .pre_end{display:block;position:absolute;top:0;left:0;width:100%;height:100%}
+.hobi.animation.view .play .pre_end:before {content: "";position: absolute;top: 0;left: 0;display: block;width: 100%;height: 100%;opacity: 0.5;background: #000}
+.hobi.animation.view .play .pre_end .txt_wrap{display:block;position:absolute;top:50%;left:0;margin:-20px 0 0;width:100%;height:40px;line-height:1.4;font-size:14px;color:#fff;text-align:center;font-family: "Noto Medium"}
+.hobi.animation.view .play .pre_end .txt_wrap em{color:#f1c516}
+.hobi.animation.view .cont_view .txt01{margin:10px 0 0;min-height:30px}
+.hobi.animation.view .cont_view .btn_like{position:relative;float:left;display:block;width:30px;height:30px}
+.hobi.animation.view .cont_view .btn_like:after{position:absolute;top:7px;left:0;content:"";display:block;width:23px;height:19px;background:url(../Images/Ico/ico_animation.png) no-repeat 2px -131px;background-size:100px}
+.hobi.animation.view .cont_view .btn_like.on:after{background-position:-78px -131px;background-size:100px}
+.hobi.animation.view .cont_view .txt01 .btn_play{display:block;height:27px;line-height:29px;padding:0 20px;margin:4px 0 0 0;text-align:center;float:right;font-size:13px;color:#222;border:1px solid #222;border-radius:3px}
+.hobi.animation.view .cont_view .txt01 .txt{display:block;float:right;line-height:32px;font-size:14px;color:#666}
+.hobi.animation.view .cont_view .txt01 .txt em{color:#22b8bd;margin:0 2px 0 0}
+.hobi.animation.view .cont_view .txt02{margin:15px 0 0;padding:15px 0 0;border-top:1px solid #ccc;color:#222;font-size:14px}
+.hobi.animation.view .cont_list{margin:15px 0 23px}
+.hobi.animation.view .cont_list .tit{display:block;height:38px;font-size:14px;line-height:1.3;color:#222;font-family: "Noto Medium"}
+.hobi.animation.view .cont_list .txt02{display:block;margin:10px 0 0;font-size:15px;color:#222;text-align:center;font-family: "Noto Medium"}
+.hobi.animation.view .cont_list:after{content:"";display:block;clear:both}
+
+.hobi.animation .cont_intro{position:relative;padding:0 15px}
+.hobi.animation .cont_intro h4{position:relative;height:34px;line-height:36px;margin:10px 0 0 20px;font-size:16px;color:#000;font-family: "Noto Medium"}
+.hobi.animation .cont_intro .btn_back{position:absolute;top:0;left:5px;display:block;width:27px;height:34px}
+.hobi.animation .cont_intro .btn_back:after{position:absolute;top:10px;left:10px;content:"";display:block;width:9px;height:15px;background:url(../Images/Ico/ico_animation.png) no-repeat 0 -109px;background-size:100px}
+.hobi.animation .cont_intro .tab_type01{padding:0;margin:10px 0 0}
+.hobi.animation .cont_intro .tab_cont{margin:20px 0 25px;border-top:1px solid #666}
+.hobi.animation .cont_intro .tab_cont ul li ul li{padding:20px 0;clear:both;border-bottom:1px solid #e0e0e0}
+.hobi.animation .cont_intro .tab_cont ul li ul li:after{clear:both;content:"";display:block}
+.hobi.animation .cont_intro.season01 .cont01 .img{display:block;width:144px;margin:0 0 10px}
+.hobi.animation .cont_intro.season01 .cont01 .img>img{width:100%}
+.hobi.animation .cont_intro.season01 .cont01 dt{margin:0 0 10px;font-size:15px;color:#222;font-family: "Noto Medium"}
+.hobi.animation .cont_intro.season01 .cont01 dd{font-size:14px;color:#505050;line-height:1.4}
+.hobi.animation .cont_intro.season01 .cont02 .img{float:left;display:block;width:83px;vertical-align:top}
+.hobi.animation .cont_intro.season01 .cont02  dl{float:left;display:block;width:83%;width :-webkit-calc(100% - 83px);width :-moz-calc(100% - 83px);width :calc(100% - 83px);}
+.hobi.animation .cont_intro.season01 .cont02  dl dt{padding:0 0 0 15px;font-size:16px;color:#222;font-family:"Noto Bold"}
+.hobi.animation .cont_intro.season01 .cont02  dl dt em{display:inline-block;margin:0 0 0 5px;font-size:14px;color:#22b8bd;font-family:"Noto Demi";}
+.hobi.animation .cont_intro.season01 .cont02  dl dd{padding:0 0 0 15px;margin:5px 0 0;font-size:14px;color:#505050}
+.hobi.animation .cont_intro.season02 .cont01 .img{display:block;width:100%;max-width:580px;margin:15px 0 0}
+.hobi.animation .cont_intro.season02 .cont01 .img>img{width:100%}
+.hobi.animation .cont_intro.season02 .cont01 dt{margin:0 0 10px;font-size:15px;color:#222;font-family: "Noto Medium"}
+.hobi.animation .cont_intro.season02 .cont01 dd{font-size:14px;color:#505050;line-height:1.4}
+.hobi.animation .cont_intro.season02 .cont01 td{border-bottom: 1px solid #ccc;}
+.hobi.animation .cont_intro.season02 .cont01 tr:last-child td, td.bdnon{border-bottom:0 !important}
+.hobi.animation .cont_intro.season02 .cont02 .img{float:left;display:block;width:83px;vertical-align:top}
+.hobi.animation .cont_intro.season02 .cont02  dl{float:left;display:block;width:83%;width :-webkit-calc(100% - 83px);width :-moz-calc(100% - 83px);width :calc(100% - 83px);}
+.hobi.animation .cont_intro.season02 .cont02  dl dt{padding:0 0 0 15px;font-size:16px;color:#222;font-family:"Noto Bold"}
+.hobi.animation .cont_intro.season02 .cont02  dl dt em{display:inline-block;margin:0 0 0 5px;font-size:14px;color:#22b8bd;font-family:"Noto Demi";}
+.hobi.animation .cont_intro.season02 .cont02  dl dd{padding:0 0 0 15px;margin:5px 0 0;font-size:14px;color:#505050}
+
+/* 멤버쉽 > 출석룰렛 */
+.hobi.attendance{position:relative}
+.hobi.attendance .cont_roulette{position:relative;background:#ebeff2;width:100%}
+.hobi.attendance .cont_roulette:before{content:"";display:block;position:absolute;top:79px;left:0;width:99px;height:152px;background:url(../Images/att/bg_lt.png) no-repeat 0 0;background-size:99px}
+.hobi.attendance .cont_roulette:after{content:"";display:block;position:absolute;top:0;right:0;width:114px;height:359px;background:url(../Images/att/bg_rt.png) no-repeat 0 0;background-size:114px}
+.hobi.attendance .cont_roulette .tit{z-index:1;position:relative;padding:0 15px 20px;text-align:center;min-height:133px}
+.hobi.attendance .cont_roulette .tit .tx01{padding:16px 0 0;margin:0 0 0 -35px;font-size:19px;color:#000}
+.hobi.attendance .cont_roulette .tit .tx01 span{display:inline-block;content:"";width:40px;height:39px;background:url(../Images/att/bg_talk.png) no-repeat;background-size:40px}
+.hobi.attendance .cont_roulette .tit .tx02{font-size:36px;color:#000;font-family: "Noto Light"}
+.hobi.attendance .cont_roulette .tit .tx02 span{color:#22b8bd;font-family:"Noto Medium"}
+.hobi.attendance .cont_roulette .tit .tx02 strong{font-family:"Noto Medium"}
+.hobi.attendance .cont_roulette .tit .tx03{font-size:12px;color:#000;font-family:"Noto Medium"}
+.hobi.attendance .the_wheel{position:relative;width:310px;height:310px;}
+.hobi.attendance .the_wheel:before{position:absolute;top:-1px;left:50%;margin:0 0 0 -15px;content:"";display:block;width:30px;height:27px;background:url(../Images/att/ico_arow.png) no-repeat 0 0;background-size:30px}
+.hobi.attendance .the_wheel:after{z-index:10;position:absolute;top:-3px;left:-3px;display:block;content:"";width:315px;height:315px;border:7px solid #fff;border-radius:100%}
+.hobi.attendance .cont_roulette .roulet{z-index:1;position:relative;width:310px;height:310px;margin:0 auto}
+.hobi.attendance .cont_roulette .roulet:before{position:absolute;bottom:-30px;left:50%;content:"";display:block;width:274px;height:56px;margin:0 0 0 -137px;background:url(../Images/att/bg_shadow.png) no-repeat 0 0;background-size:274px}
+.hobi.attendance .cont_roulette .roulet:after{position:absolute;top:50%;left:50%;margin:-43px 0 0 -43px;display:block;content:"";width:86px;height:86px;background:#434242;opacity:0.2;border-radius:50%}
+.hobi.attendance .cont_roulette .btn_start{z-index:10;display:block;position:absolute;top:50%;left:50%;width:54px;height:54px;line-height:1.2;margin:-27px 0 0 -27px;text-align:center;background:#fff;border-radius:50%}
+.hobi.attendance .cont_roulette .btn_start span{display:block;padding:16px 0 0;font-size:10px;font-family: "Noto Bold";color:#000}
+.hobi.attendance .cont_roulette .btn_start em{display:block;font-size:13px;font-family: "Noto Bold";color:#22b8bd}
+.hobi.attendance .cont_roulette .noti{width:350px;margin:0 auto;padding:30px 15px 20px;line-height:1.3}
+.hobi.attendance .cont_roulette .noti h4{position:relative;float:left;width:86px;font-size:20px;color:#222;font-family:"Noto Medium"}
+.hobi.attendance .cont_roulette .noti h4:after{content:"";display:block;position:absolute;top:6px;right:0;width:1px;height:38px;background:#d3d7d9}
+.hobi.attendance .cont_roulette .noti h4 em{display:block;color:#22b8bd}
+.hobi.attendance .cont_roulette .noti ol{float:left;width:86%;width :-webkit-calc(100% - 86px);width :-moz-calc(100% - 86px);width :calc(100% - 86px)}
+.hobi.attendance .cont_roulette .noti:after{content:"";display:block;clear:both}
+.hobi.attendance .cont_roulette .noti ol li{padding:2px 0 1px 14px;color:#222;font-size:12px}
+.hobi.attendance .cont_roulette .noti ol li em{display:inline-block;width:10px;height:10px;line-height:12px;margin:2px 4px 0 0;vertical-align:top;text-align:center;border-radius:5px;background:#abadaf;color:#fff;font-size:7px;}
+.hobi.attendance .cont_roulette .noti ol li strong{font-family:"Noto Medium"}
+.hobi.attendance .cont_mylist{padding:10px 15px 25px}
+.hobi.attendance .cont_mylist h4{height:36px;line-height:38px;font-size:16px;font-family:"Noto Medium";color:#222;border-bottom:1px solid #999}
+.hobi.attendance .cont_mylist .cont_sel{width:100%;height:35px;margin:15px 0;}
+.hobi.attendance .cont_mylist .selwrap02{float:left;width:49%;margin:0 0 0 2%}
+.hobi.attendance .cont_mylist .selwrap02:first-child{margin:0}
+.hobi.attendance .cont_mylist .tblwrap td{border-bottom: 1px solid #ccc}
+.hobi.attendance .cont_mylist .tblwrap tr:last-child td{border-bottom:0}
+
+/* 놀이교육 > 놀이극장 MP3 */
+.hobi.dvd .cont_nomember{padding:0 0 25px}
+.hobi.dvd .cont_nomember h4{padding:20px 0;text-align:center;font-size:19px;color:#000;line-height:1.4;font-family:"Noto Demi"}
+.hobi.dvd .cont_nomember h4 em{color:#22b8bd}
+.hobi.dvd .cont_nomember ul li{width:33.3%;height:95px;float:left}
+.hobi.dvd .cont_nomember ul:after{content:"";display:block;clear:both}
+.hobi.dvd .cont_nomember ul li.m01:before{content:"";display:block;width:40px;height:30px;margin:0 auto 10px;background:url(../Images/Ico/ico_dvd.png) no-repeat 0 0;background-size:70px}
+.hobi.dvd .cont_nomember ul li.m02:before{content:"";display:block;width:30px;height:30px;margin:0 auto 10px;background:url(../Images/Ico/ico_dvd.png) no-repeat 0 -33px;background-size:70px}
+.hobi.dvd .cont_nomember ul li.m03:before{content:"";display:block;width:30px;height:26px;margin:0 auto 10px;background:url(../Images/Ico/ico_dvd.png) no-repeat 0 -67px;background-size:70px}
+.hobi.dvd .cont_nomember ul li{text-align:center;font-size:14px;color:#222;border-left:1px solid #e0e0e0;font-family:"Noto Medium";}
+.hobi.dvd .cont_nomember ul li:first-child{border-left:0}
+.hobi.dvd .cont_nomember ul li em{display:block;margin:3px 0 0;line-height:1.3;font-size:11px;color:#505050;font-family:"Noto Demi"}
+.hobi.dvd .cont_nomember .play{width:100%;margin:20px 0 0;text-align:center}
+.hobi.dvd .cont_nomember .play a{position:relative;display:block;width:100%;height:100%}
+.hobi.dvd .cont_nomember .play a img{width:100%;max-width:640px}
+.hobi.dvd .cont_nomember .play a em{position:absolute;top:15%;left:0;display:block;width:100%;font-size:16px;color:#ebeff2;font-family:"Noto Medium";}
+.hobi.dvd .cont_nomember .play a:after{position:absolute;top:50%;left:50%;display:block;content:"";width:55px;height:55px;margin:-27px 0 0 -27px;background:url(../Images/Ico/ico_dvd.png) no-repeat 0 -97px;background-size:70px}
+.hobi.dvd .cont_nomember .noti{display:block;padding:15px 0;text-align:center;line-height:1.3;font-size:12px;color:#666}
+.hobi.dvd .cont_nomember .noti:before{content:"※";display:inline-block;margin:0 3px 0 0}
+.hobi.dvd .cont_nomember .info{padding:15px 0;margin:0 15px;line-height:1.7;font-size:14px;color:#222;font-family:"Noto Demi";text-align:center;background: url(../../Play/Images/Ico/ico_dot.gif) repeat-x 100% 0;background-size: 5px;}
+.hobi.dvd .cont_nomember .info em{background:#d3f1f2}
+.hobi.dvd .cont_nomember .btns{text-align:center}
+.hobi.dvd .cont_nomember .btns a{display:inline-block;padding:0 13px;margin:0 2px;height:35px;line-height:37px;border-radius:20px;text-align:center;font-size:14px;font-family:"Noto Demi"}
+.hobi.dvd .cont_nomember .btns a.btn_shopping{color:#fff;background:#1dbdc3;border:1px solid #1dbdc3}
+.hobi.dvd .cont_nomember .btns a.btn_hobiapp{color:#1dbdc3;background:#fff;border:1px solid #1dbdc3}
+.hobi.dvd .cont_mp3{padding:0 15px;margin:20px 0 15px}
+.hobi.dvd .cont_mp3 h4{position:relative;width:69%;height:35px;float:left;font-size:19px;line-height:23px;padding:0 0 0 23px;color:#000;font-family: "Noto Medium"}
+.hobi.dvd .cont_mp3 h4:before{content:"";display:block;position:absolute;top:2px;left:0;width:19px;height:19px;background:url(../Images/Ico/ico_dvd.png) no-repeat 0 -156px;background-size:70px}
+.hobi.dvd .cont_mp3 .selwrap02{width:31%;float:right;margin:-8px 0 0;}
+.hobi.dvd .cont_mp3 .mp3{margin:0 0 15px}
+.hobi.dvd .cont_mp3 .mp3:after{content:"";clear:both;display:block}
+.hobi.dvd .cont_mp3 .thum_img{clear:both;float:left;width:85px;height:84px;border:1px solid #ccc;background:#f4f4f4}
+.hobi.dvd .cont_mp3 .thum_img img{width:100%}
+.hobi.dvd .cont_mp3 .txt{position:relative;float:right;width:86%;min-height:84px;width :-webkit-calc(100% - 85px);width :-moz-calc(100% - 85px);width :calc(100% - 85px);}
+.hobi.dvd .cont_mp3 .txt .txt01 .step{display:inline-block;padding:0 8px;margin:0 5px 0 0;min-width:43px;height:22px;line-height:24px;background:#22b8bd;text-align:center;font-family:"Noto Light";font-size:11px;color:#fff}
+.hobi.dvd .cont_mp3 .txt .txt01{padding:0 0 0 10px;color:#222;font-size:14px;font-family:"Noto Demi"}
+.hobi.dvd .cont_mp3 .txt .txt02{padding:5px 0 0 10px;color:#22b8bd;font-size:14px;font-family:"Noto Demi"}
+.hobi.dvd .cont_mp3 .txt .btn_allDown{position:absolute;bottom:0;margin:0 0 0 10px;display:inline-block;padding:0 15px;height:27px;line-height:29px;border:1px solid #222;color:#222;font-size:13px;border-radius:3px}
+.hobi.dvd .cont_mp3 .tblwrap tr:last-child td{border-bottom:0}
+.hobi.dvd .cont_mp3 .tblwrap .btn_down{position:relative;display:inline-block;width:80%;height:30px;}
+.hobi.dvd .cont_mp3 .tblwrap .btn_down:after{position:absolute;top:8px;left:50%;margin-left:-9px;content:"";display:block;width:18px;height:15px;background:url(../Images/Ico/ico_dvd.png) no-repeat 0 -180px;background-size:70px}
+.hobi.dvd .cont_mp3 .tblwrap table td{padding:5px 0}
+.hobi.dvd .cont_app{padding:0 15px 15px;text-align:center;overflow:hidden}
+.hobi.dvd .cont_app .top{width:100%;height:34px;line-height:36px;background:#22b8bd;border-top-left-radius:5px;border-top-right-radius:5px;}
+.hobi.dvd .cont_app .top h4{float:left;padding:0 0 0 15px;font-size:16px;color:#fff;font-family:"Noto Medium";line-height:inherit}
+.hobi.dvd .cont_app .top .btn_go{float:right;display:block;font-size:13px;color:#fff}
+.hobi.dvd .cont_app .top .btn_go:after{content:"";display:inline-block;width:5px;height:8px;margin:0 10px 0 3px;background:url(../Images/Ico/ico_dvd.png) no-repeat 0 -199px;background-size:70px}
+.hobi.dvd .cont_app .top:after{content:"";display:block;clear:both}
+.hobi.dvd .cont_app .btm{min-height:100px;padding:15px 0;background:#f3f8f8;border:1px solid #22b8bd;border-top:0;border-bottom-left-radius:5px;border-bottom-right-radius:5px;}
+.hobi.dvd .cont_app .btm:after{content:"";display:inline-block;width:55px;height:56px;background:url(../Images/Etc/bg_apps.png) no-repeat 0 0;background-size:55px}
+.hobi.dvd .cont_app .btm div{display:inline-block;width:210px;padding:0 0 0 15px;text-align:left;font-size:13px;color:#222}
+.hobi.dvd .cont_app .btm div:after{clear:both;content:"";display:block;}
+.hobi.dvd .cont_app .btm div em{position:Relative;display:block;width:81%}
+.hobi.dvd .cont_app .btm div em:before{content:"";display:block;width:100%;height:60%;position:absolute;bottom:0;left:0;background:#f2d3da}
+.hobi.dvd .cont_app .btm div em span{position:relative;z-index:1}
+.hobi.dvd .cont_past{padding:20px 15px 0;border-top:7px solid #ebeff2}
+.hobi.dvd .cont_past h4{position:relative;height:21px;margin:0 0 15px;float:left;font-size:19px;line-height:23px;padding:0 0 0 23px;color:#000;font-family: "Noto Medium"}
+.hobi.dvd .cont_past h4:before{content:"";display:block;position:absolute;top:2px;left:0;width:19px;height:19px;background:url(../Images/Ico/ico_dvd.png) no-repeat 0 -156px;background-size:70px}
+.hobi.dvd .cont_past .date{display:block;height:21px;line-height:23px;float:right;font-size:14px;color:#22b8bd;font-family:"Noto Demi"}
+.hobi.dvd .cont_past .date:after{content:"";clear:both;display:block}
+.hobi.dvd .cont_past .tab_type01{clear:both;padding:0}
+.hobi.dvd .cont_past .accodian{margin:20px 0 25px;border-top:1px solid #666}
+.hobi.dvd .cont_past .accodian .btm{display:none;}
+.hobi.dvd .cont_past .accodian li{padding:20px 0 0;border-bottom:1px solid #e0e0e0}
+.hobi.dvd .cont_past .top{position:relative;width:100%;padding:0 0 20px}
+.hobi.dvd .cont_past .top:after{content:"";display:block;clear:both}
+.hobi.dvd .cont_past .top button{z-index:1;position:absolute;top:50%;right:0;margin-top:-30px;width:40px;height:40px;font-size:0}
+.hobi.dvd .cont_past .top button:after{position:absolute;top:15px;left:10px;content:"";display:block;width:19px;height:12px;background:url(../Images/Ico/ico_dvd.png) no-repeat -52px -211px;background-size:70px}
+.hobi.dvd .cont_past .top.on button:after{background-position:0 -211px;background-size:70px}
+.hobi.dvd .cont_past .btm{width:100%;margin:0 0 0}
+.hobi.dvd .cont_past .btm:after{content:"";display:block;clear:both}
+.hobi.dvd .cont_past .thum_img{clear:both;float:left;width:85px;height:84px;border:1px solid #ccc;background:#f4f4f4}
+.hobi.dvd .cont_past .thum_img img{width:100%}
+.hobi.dvd .cont_past .txt{position:relative;float:right;width:86%;min-height:84px;width :-webkit-calc(100% - 85px);width :-moz-calc(100% - 85px);width :calc(100% - 85px);}
+.hobi.dvd .cont_past .txt .txt01 .step{display:inline-block;padding:0 8px;margin:0 5px 0 0;min-width:43px;height:22px;line-height:24px;background:#22b8bd;text-align:center;font-family:"Noto Light";font-size:11px;color:#fff}
+.hobi.dvd .cont_past .txt .txt01{padding:0 0 0 10px;color:#222;font-size:14px;font-family:"Noto Demi"}
+.hobi.dvd .cont_past .txt .txt02{padding:5px 0 0 10px;color:#22b8bd;font-size:14px;font-family:"Noto Demi"}
+.hobi.dvd .cont_past .txt .btn_allDown{position:absolute;bottom:0;margin:0 0 0 10px;display:inline-block;padding:0 15px;height:27px;line-height:29px;border:1px solid #222;color:#222;font-size:13px;border-radius:3px}
+.hobi.dvd .cont_past .tblwrap tr:last-child td{border-bottom:0}
+.hobi.dvd .cont_past .tblwrap .btn_down{position:relative;display:inline-block;width:80%;height:30px;}
+.hobi.dvd .cont_past .tblwrap .btn_down:after{position:absolute;top:8px;left:50%;margin-left:-9px;content:"";display:block;width:18px;height:15px;background:url(../Images/Ico/ico_dvd.png) no-repeat 0 -180px;background-size:70px}
+.hobi.dvd .cont_past .tblwrap table td{padding:5px 0}
+.hobi.dvd .cont_mp3 .cont_info{display:block;clear:both;padding:0 0 10px}
+.hobi.dvd .cont_mp3 .cont_info .info{padding:15px 0;margin:0 15px;line-height:1.7;font-size:14px;color:#222;font-family:"Noto Demi";text-align:center}
+.hobi.dvd .cont_mp3 .cont_info .info em{background:#d3f1f2}
+.hobi.dvd .cont_mp3 .cont_info .btns{text-align:center}
+.hobi.dvd .cont_mp3 .cont_info .btns a{display:inline-block;padding:0 13px;margin:0 2px;height:35px;line-height:37px;border-radius:20px;text-align:center;font-size:14px;font-family:"Noto Demi"}
+.hobi.dvd .cont_mp3 .cont_info .btns a.btn_shopping{color:#fff;background:#1dbdc3;border:1px solid #1dbdc3}
+.hobi.dvd .cont_mp3 .cont_info .btns a.btn_hobiapp{color:#1dbdc3;background:#fff;border:1px solid #1dbdc3}
+
+/* 놀이교육 > 소리책 */
+.hobi.sori .cont_sori{padding:0 15px;margin:20px 0 0}
+.hobi.sori .cont_sori .sori{min-height:84px;}
+.hobi.sori .cont_sori .lt{width:84px;height:84px;float:left}
+.hobi.sori .cont_sori .lt img{width:100%;border:1px solid #ccc}
+.hobi.sori .cont_sori .rt{width:86%;width :-webkit-calc(100% - 84px);width :-moz-calc(100% - 84px);width :calc(100% - 84px);float:left;height:84px}
+.hobi.sori .cont_sori .noti{clear:both;width:100%;margin:15px 0 0;font-size:12px;color:#666;text-align:center;font-family:"Noto Lite"}
+.hobi.sori .cont_sori .selwrap02{margin:0 0 0 10px;width:45%}
+.hobi.sori .cont_sori .info{margin:5px 0 0 10px;font-size:13px;color:#222}
+.hobi.sori .cont_sori .info em{color:#22b8bd}
+.hobi.sori .cont_sori .sori:after{content:"";clear:both;display:block}
+.hobi.sori .tab_cont{padding:15px 15px 25px}
+.hobi.sori .tab_cont .cont_mp3 .tit{font-size:16px;color:#222;font-family:"Noto Medium";}
+.hobi.sori .song{margin:15px 0}
+.hobi.sori .song:after{content:"";clear:both;display:block}
+.hobi.sori .song .lt{width:84px;height:84px;float:left}
+.hobi.sori .song .lt img{width:100%}
+.hobi.sori .song .rt{width:86%;width :-webkit-calc(100% - 84px);width :-moz-calc(100% - 84px);width :calc(100% - 84px);float:left;height:84px;background:#f3f8f8}
+.hobi.sori .song .rt .play{margin:13px 0 0 15px}
+.hobi.sori .song .rt .play a{display:inline-block;width:35px;height:35px;margin:0 5px 0 0;background:url(../Images/Ico/ico_hobisong.png) no-repeat 0 -23px;background-size:50px}
+.hobi.sori .song .rt .play .btn_pause{background-position:0 -100px}
+.hobi.sori .song .rt .play .btn_stop{background-position:0 -61px}
+.hobi.sori .song .rt .time{display:block;margin:0 0 0 15px;font-size:13px;color:#222;font-family:"Noto Demi";letter-spacing:0}
+.hobi.sori .tab_cont .cont_mp3 .img{text-align:center}
+.hobi.sori .tab_cont .cont_mp3 .img img{width:100%;max-width:580px}
+.hobi.sori .tab_cont .cont_guide{text-align:center}
+.hobi.sori .tab_cont .cont_guide img{width:100%;max-width:600px}
+.hobi.sori .cont_mp3 .txt_info{text-align:center;font-size:14px;color:#52c2c7}
+.hobi.sori .cont_mp3 .accodian{margin:10px 0 25px;border-top:1px solid #666}
+.hobi.sori .cont_mp3 .accodian .btm{display:none;}
+.hobi.sori .cont_mp3 .accodian li{padding:20px 0 0;border-bottom:1px solid #e0e0e0}
+.hobi.sori .cont_mp3 .top{position:relative;width:100%;padding:0 0 20px}
+.hobi.sori .cont_mp3 .top:after{content:"";display:block;clear:both}
+.hobi.sori .cont_mp3 .top button{z-index:1;position:absolute;top:50%;right:0;margin-top:-30px;width:40px;height:40px;font-size:0}
+.hobi.sori .cont_mp3 .top button:after{position:absolute;top:15px;left:10px;content:"";display:block;width:19px;height:12px;background:url(../Images/Ico/ico_dvd.png) no-repeat -52px -211px;background-size:70px}
+.hobi.sori .cont_mp3 .top.on button:after{background-position:0 -211px;background-size:70px}
+.hobi.sori .cont_mp3 .btm{width:100%;margin:0;}
+.hobi.sori .cont_mp3 .btm:after{content:"";display:block;clear:both}
+.hobi.sori .cont_mp3 .thum_img{clear:both;float:left;width:85px;min-height:84px;background:#f4f4f4}
+.hobi.sori .cont_mp3 .thum_img img{width:100%}
+.hobi.sori .cont_mp3 .top .txt{position:relative;float:right;width:86%;min-height:84px;width :-webkit-calc(100% - 85px);width :-moz-calc(100% - 85px);width :calc(100% - 85px);}
+.hobi.sori .cont_mp3 .txt .txt01{padding:0 0 0 10px;color:#222;font-size:14px;font-family:"Noto Demi"}
+.hobi.sori .cont_mp3 .txt .txt02{padding:5px 0 0 10px;color:#22b8bd;font-size:14px;font-family:"Noto Demi"}
+.hobi.sori .cont_mp3 .txt .btn_all{margin:10px 0 0 10px;display:inline-block;padding:0 15px;height:27px;line-height:29px;border:1px solid #222;color:#222;font-size:13px;border-radius:3px}
+.hobi.sori .cont_mp3 .btm .tit{display:table;width:100%;height:38px;background:#22b8bd;text-align:center}
+.hobi.sori .cont_mp3 .btm .tit span{display:table-cell;vertical-align:middle;font-size:15px;color:#fff}
+.hobi.sori .cont_mp3 .sub{padding:10px 12px;background:#f1f5f7}
+.hobi.sori .cont_mp3 .sub .lt{width:84px;float:left;border:1px solid #ccc}
+.hobi.sori .cont_mp3 .sub .lt img{width:100%}
+.hobi.sori .cont_mp3 .sub .rt{display:table;width:86%;width :-webkit-calc(100% - 84px);width :-moz-calc(100% - 84px);width :calc(100% - 84px);float:left;background:#f3f8f8}
+.hobi.sori .cont_mp3 .sub:after{content:"";display:block;clear:both}
+.hobi.sori .cont_mp3 .sub .rt .detail{display:table-cell;vertical-align:middle;width:87%;width :-webkit-calc(100% - 66px);width :-moz-calc(100% - 66px);width :calc(100% - 66px)}
+.hobi.sori .cont_mp3 .sub .rt .detail .stit{padding:0 5px 0 0;margin:0 0 0 10px;font-size:14px;color:#222;font-family:"Noto Medium"}
+.hobi.sori .cont_mp3 .sub .rt .detail .scont{padding:0 5px 0 0;margin:0 0 0 10px;font-size:13px;color:#666;font-family:"Noto Demi"}
+.hobi.sori .cont_mp3 .sub .rt .play{display:table-cell;vertical-align:middle;width:66px}
+.hobi.sori .cont_mp3 .sub .rt .play a{display:inline-block;width:29px;height:29px;margin:0 1px;background:url(../Images/Ico/ico_sori.png) no-repeat 0 0;background-size:30px}
+.hobi.sori .cont_mp3 .sub .rt .play .btn_pause{background-position:0 -72px}
+.hobi.sori .cont_mp3 .sub .rt .play .btn_stop{background-position:0 -36px}
+.hobi.sori .cont_mp3 .sub .rt .time{clear:both;display:block;margin:0 0 0 10px;font-size:13px;color:#666;font-family:"Noto Demi";letter-spacing:0}
+.hobi.sori .cont_app{padding:0 0 15px;text-align:center;overflow:hidden}
+.hobi.sori .cont_app .top{width:100%;height:34px;line-height:36px;background:#22b8bd;border-top-left-radius:5px;border-top-right-radius:5px;}
+.hobi.sori .cont_app .top h4{float:left;padding:0 0 0 15px;font-size:16px;color:#fff;font-family:"Noto Medium";line-height:inherit}
+.hobi.sori .cont_app .top .btn_go{float:right;display:block;font-size:13px;color:#fff}
+.hobi.sori .cont_app .top .btn_go:after{content:"";display:inline-block;width:5px;height:8px;margin:0 10px 0 3px;background:url(../Images/Ico/ico_dvd.png) no-repeat 0 -199px;background-size:70px}
+.hobi.sori .cont_app .top:after{content:"";display:block;clear:both}
+.hobi.sori .cont_app .btm{min-height:100px;padding:15px 0;background:#f3f8f8;border:1px solid #22b8bd;border-top:0;border-bottom-left-radius:5px;border-bottom-right-radius:5px;}
+.hobi.sori .cont_app .btm:after{content:"";display:inline-block;width:55px;height:56px;background:url(../Images/Etc/bg_apps.png) no-repeat 0 0;background-size:55px}
+.hobi.sori .cont_app .btm div{display:inline-block;width:210px;padding:0 0 0 15px;text-align:left;font-size:13px;color:#222}
+.hobi.sori .cont_app .btm div:after{clear:both;content:"";display:block;}
+.hobi.sori .cont_app .btm div em{position:Relative;display:block;width:81%}
+.hobi.sori .cont_app .btm div em:before{content:"";display:block;width:100%;height:60%;position:absolute;bottom:0;left:0;background:#f2d3da}
+.hobi.sori .cont_app .btm div em span{position:relative;z-index:1}
+.hobi.sori .cont_app .btm div em+em{width:59%}
+.hobi.sori .cont_app .btm div em strong{color:#f61818}
+
+/* iphon se */
+@media only screen and (max-width: 320px) {
+.hobi.membership .cont_purchase span{font-size:12px}
+.hobi.song .cont_song .btns a:after{right:9%}
+.hobi.song .tab_cont .cont_dance .btns a:after{right:9%}
+.hobi.animation .cont_mylist li .rt .txt01{font-size:11px}
+.hobi.animation .cont_noti .noti{font-size:12px}
+.hobi.animation .cont_noti .btn_coupon{padding:0 5px}
+.hobi.attendance .cont_roulette .noti{width:320px;}
+.hobi.dvd .cont_nomember .btns a, .hobi.dvd .cont_mp3 .cont_info .btns a{padding:0 5px}
+}
+
+/* iphon old */
+@media all and (min-width:321px) and (max-width: 350px){
+.hobi.animation .cont_noti .noti{font-size:12px}
+.hobi.animation .cont_noti .btn_coupon{padding:0 5px}
+.hobi.dvd .cont_nomember .btns a, .hobi.dvd .cont_mp3 .cont_info .btns a{padding:0 7px}
+}

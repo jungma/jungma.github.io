@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=high-dpi, minimal-ui" />
+<meta name="description" content="" />
+<meta name="google-site-verification" content="BFmEnM9KijGLhZEm4Q0cgECgwY2CBuoNGtFlMeklb70" />
+<meta property="og:title" content="" />
+<meta property="og:image" content="http://www.i-challenge.co.kr/images/common/kakao-meta-image.jpg" />
+<link rel="apple-touch-icon" href="http://m.i-challenge.co.kr/images/icon.png">
+<link rel="apple-touch-icon-precomposed" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="shortcut icon" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/style.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/check.css" />
+<link rel="stylesheet" type="text/css" href="../../Css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="../Css/play2018.css" />
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/ui.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/kakao.link.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/swiper.min.js"></script>
+<script>
+	
+	var lnbDep1 = 2; //LNB depth 1
+	var allmenuDep1 = 4; //allmenu depth 1
+	var allmenuDep2 = 2; //allmenu depth 2
+
+	$(function () {
+		//lnb swipe 생성
+		var lnb = new Swiper('.lnb .swiper-container', {
+			scrollbar: '.swiper-scrollbar',
+			scrollbarHide: true,
+			slidesPerView: 'auto',
+			grabCursor: true
+		});
+
+		//lnb allmenu on/off 처리
+		$('.btn_allmenu').on('click', function () {
+			var _this = $(this);
+			if (_this.hasClass('on')) {
+				_this.removeClass('on');
+				$('.allmenu').slideUp();
+			} else {
+				_this.removeClass('on');
+				_this.addClass('on');
+				$('.allmenu').slideDown();
+			}
+
+		});
+	});
+		
+</script>
+<script>
+
+$(function(){
+		
+	//호비멤버십>부모가이드>추천컨텐츠 스와이프
+	var appendNumber = 4;
+	var prependNumber = 1;
+	var swiper = new Swiper('.swiper-container.swiper-container01', {
+		slidesPerView: 3,
+		loopAdditionalSlides:3,     
+		loop: true,
+		centeredSlides: true,
+		pagination: {
+			el: '.swiper-container01 .swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.cont_swipe .swiper-button-next',
+			prevEl: '.cont_swipe .swiper-button-prev',
+		},
+	});
+	//swiper.prependSlide('<div class="swiper-slide"><a>Slide ' + (--prependNumber) + '</a></div>');
+	
+	//호비멤버십>부모가이드>도너츠몰 인기상품 스와이프
+	var swiper2 = new Swiper('.swiper-container.swiper-container02', {
+		slidesPerView: 1,
+		loop: true,
+		loopFillGroupWithBlank: true,
+		pagination: {
+			el: '.swiper-container02 .swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-container02 .swiper-button-next',
+			prevEl: '.swiper-container02 .swiper-button-prev',
+		},
+	});
+			
+});
+</script>
+</head>
+
+<body>
+	<!-- wrap :: start -->
+	<div id="wrap">
+
+		<!-- header :: start -->
+		<header id="header">
+			<div id="gnb">
+				<a href="#" class="btn_slide">
+					<span class="blind">슬라이드 메뉴</span>
+					<i></i>
+				</a>
+				<h1>
+					<a href="#">
+						<img src="http://polly90.com/pub/Images/main/logo.png" alt="아이챌린지" />
+					</a>
+				</h1>
+				<a href="#" class="btn_srch">
+					<span class="blind">교재찾기</span>
+					<i></i>
+				</a>
+				<a href="#" class="btn_login">
+					<span class="blind">로그인</span>
+					<i></i>
+				</a>
+			</div>
+		</header>
+		<!-- header :: end -->
+
+		<!-- lnb :: start -->
+		<!-- [D] 메뉴명 3개인 경우 wd03 클래스 추가 -->
+		<div class="lnb wd03">
+			<div class="swiper-container">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide">
+						<a href="#">출석룰렛</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#">양육검사</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#">부모가이드</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#">도너츠몰</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#">프린트 학습지</a>
+					</li>
+				</ul>
+			</div>
+			<div class="swiper-scrollbar"></div>
+			<a href="#" class="btn_allmenu">
+				<i>
+					<span class="blind">전체메뉴</span>
+				</i>
+			</a>
+		</div>
+		<!-- lnb :: end -->
+
+		<!-- allmenu :: start -->
+		<div class="allmenu">
+			<div class="m01">
+				<div class="tit">
+					<span>교재소개</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">아이챌린지 소개</a>
+					</li>
+					<li>
+						<a href="#">프로그램 특징</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m02">
+				<div class="tit">
+					<span>교재쇼핑</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">월령프로그램</a>
+					</li>
+					<li>
+						<a href="#">단계프로그램</a>
+					</li>
+					<li>
+						<a href="#">ABC Bubbles</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m03">
+				<div class="tit">
+					<span>놀이교육</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">놀이극장</a>
+					</li>
+					<li>
+						<a href="#">호비송</a>
+					</li>
+					<li>
+						<a href="#">호비애니메이션</a>
+					</li>
+					<li>
+						<a href="#">i-소리책</a>
+					</li>
+					<li>
+						<a href="#">에듀박스(미정)</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m04">
+				<div class="tit">
+					<span>호비 멤버십</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">출석룰렛</a>
+					</li>
+					<li>
+						<a href="#">양육검사</a>
+					</li>
+					<li>
+						<a href="#">부모가이드</a>
+					</li>
+					<li>
+						<a href="#">도너츠몰</a>
+					</li>
+					<li>
+						<a href="#">프린트 학습지</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m05">
+				<div class="tit">
+					<span>커뮤니티</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">교재 사용 후기</a>
+					</li>
+					<li>
+						<a href="#">엄마아빠 토닥토닥</a>
+					</li>
+					<li>
+						<a href="#">육아무비클립</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m06">
+				<div class="tit">
+					<span>이벤트</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">진행중 이벤트</a>
+					</li>
+					<li>
+						<a href="#">종료된 이벤트</a>
+					</li>
+					<li>
+						<a href="#">당첨자 발표</a>
+					</li>
+					<li>
+						<a href="#">무료체험</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m07">
+				<div class="tit">
+					<span>마이페이지</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">회원정보</a>
+					</li>
+					<li>
+						<a href="#">주문내역</a>
+					</li>
+					<li>
+						<a href="#">배송조회</a>
+					</li>
+					<li>
+						<a href="#">배송지 정보</a>
+					</li>
+					<li>
+						<a href="#">당첨자 발표</a>
+					</li>
+					<li>
+						<a href="#">종료된 이벤트</a>
+					</li>
+					<li>
+						<a href="#">마일리지</a>
+					</li>
+					<li>
+						<a href="#">나의 커뮤니티 활동</a>
+					</li>
+					<li>
+						<a href="#">구독 고객 안내사항</a>
+					</li>
+					<li>
+						<a href="#">회원 탈퇴</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m08">
+				<div class="tit">
+					<span>고객센터</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">공지사항</a>
+					</li>
+					<li>
+						<a href="#">FAQ</a>
+					</li>
+					<li>
+						<a href="#">1:1 고객문의</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- allmenu :: end -->
+
+		<!-- container :: start -->
+		<div id="container">
+
+	<!-- content :: start -->
+	<div id="content" class="happykid">
+		<div class="cont_top">
+			<div>
+				<span>우리 아이의 발달 상태와 기질을 파악하면, 양육 방법이 보인다!</span>
+				<h3>양육검사</h3>
+			</div>
+		</div>
+		<div class="tab_type01">
+			<ul>
+				<li class="on"><a href="#">양육검사란?</a></li>
+				<li><a href="#">검사하기</a></li>
+			</ul>
+		</div>
+		<div class="cont cont01">
+			<h4>해피키드 양육검사란?</h4>
+			<div class="detail">
+				<p>해피키드 양육검사는 과학적인 검사와 개인 평가를 통해서 부모님과 개인에 맞는 맞춤형 양육컨설팅을 제공하는 체계적인 양육검사입니다.</p>
+				<p>아동학/유아교육학 전문가들과 SI(System Integration) 전문가들이 함께 모여 영·유아 양육에 특화된 정보처리 시스템과 데이터베이스를 구축하였으며, 지속적인 업데이트와 개인별 정보관리를 통하여 합리적인 양육방법과 일관성 있는 양육기준을 제시하고 있습니다.</p>
+				<p>해피키드 양육검사는 발달검사, 기질검사, 부모양육태도검사 이렇게 총 3가지로 구성되어 있습니다.각 검사는 주양육자(실제로 아이를 양육하는 사람, 주로 어머니를 의미함)가 실시하셔야 하며, 검사 후 각 검사 결과를 보실 수 있으며 각 검사별로 개인별 맟춤평가를 제공합니다.</p>
+			</div>
+		</div>
+		<div class="cont cont02">
+			<h4>양육검사 구성</h4>
+			<span class="noti">검사별 개월수는 만 나이기준입니다.</span>
+			<div class="detail">
+				<h5>발달검사</h5>
+				<a href="dcheck/pub_SampleResult.html" class="btn_sample">검사결과 샘플보기</a>
+				<p>영·유아의 전인적인 발달을 측정하기 위해 신체, 인지, 언어, 사회성, 생활습관의 영역에서 검사를 실시합니다. </p>
+				<p>검사결과는 실제 연령에 대비하여 각 영역별 발달 정도를 개월 수로 표시해 줍니다. </p>
+				<ul>
+					<li><a href="dcheck/pub_DetailInfo1.html"><span>영아기<em>(1~18개월)</em></span></a></li>
+					<li><a href="dcheck/pub_DetailInfo2.html"><span>걸음마기<em>(19~36개월)</em></span></a></li>
+					<li><a href="dcheck/pub_DetailInfo3.html"><span>유야기<em>(37~84개월)</em></span></a></li>
+				</ul>
+			</div>
+			<div class="detail d02">
+				<h5>기질검사</h5>
+				<a href="tcheck/pub_SampleResult.html" class="btn_sample">검사결과 샘플보기</a>
+				<p>기질은 영·유아의 행동양식 및 정서적 반응유형을 의미하며, 이후 아동과 성인의 성격을 형성하는 모태가 됩니다.</p>
+				<p>해피키드 기질검사는 활동성, 규칙성, 접근/회피성, 적응성, 반응강도, 정서성, 지구성, 주의산만성, 예민성 등의 영역에서 각 연령에 맞게 조합하여 측정합니다. </p>
+				<ul>
+					<li><a href="tcheck/pub_DetailInfo1.html"><span>영아기<em>(1~18개월)</em></span></a></li>
+					<li><a href="tcheck/pub_DetailInfo2.html"><span>걸음마기<em>(19~36개월)</em></span></a></li>
+					<li><a href="tcheck/pub_DetailInfo3.html"><span>유야기<em>(37~84개월)</em></span></a></li>
+				</ul>
+			</div>
+			<div class="detail d03">
+				<h5>부모양육태도검사</h5>
+				<a href="pcheck/pub_SampleResult.html" class="btn_sample">검사결과 샘플보기</a>
+				<p>자녀의 발달단계에 대비하여 자녀 요구에 대한 양육자의 민감도, 의사소통능력, 언어적 상호작용, 통제정도와 반응 등의 요소들을 자녀 연령에 적합하게 조합하여 측정합니다.</p>
+				<p>본 검사는 양육자의 양육스타일을 객관적으로 파악하여 적합한 양육가이드를 제공하기 위한 것입니다. </p>
+				<ul>
+					<li><a href="pcheck/pub_DetailInfo1.html"><span>1~6개월</span></a></li>
+					<li><a href="pcheck/pub_DetailInfo2.html"><span>7 ~ 24개월 </span></a></li>
+					<li><a href="pcheck/pub_DetailInfo3.html"><span>25 ~ 48개월 </span></a></li>
+					<li><a href="pcheck/pub_DetailInfo4.html"><span>49 ~ 84개월 </span></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- cont_doughnut :: start -->
+		<div class="cont_doughnut">
+			<div class="swiper-container swiper-container02">
+				<div class="swiper-wrapper">
+			
+					<!-- 도너츠몰 배너 :: start -->
+					<div class="swiper-slide">
+						<p class="tit">도너츠몰 <em>6월 인기 상품</em></p>
+						<p class="stit">아이챌린지 캐릭터 상품부터<br />다양한 육아 용품까지 구매할 수 있어요!</p>
+						<div class="cont_swipe">
+							<div class="cont">
+								<a href="#">
+									<span class="cont_img"><img src="http://m2.i-challenge.co.kr/Hobi/Membership/images/Parent/thum02.jpg" alt="thumsize186*200" /></span>
+									<span class="cont_txt">엔이 능률 올 데이</span>
+								</a>
+							</div>
+							<div class="cont">
+								<a href="#">
+									<span class="cont_img"><img src="http://m2.i-challenge.co.kr/Hobi/Membership/images/Parent/thum02.jpg" alt="thumsize186*200" /></span>
+									<span class="cont_txt">엔이 능률 올 데이<br />유브이 퍼펙트</span>
+								</a>
+							</div>
+							<div class="cont">
+								<a href="#">
+									<span class="cont_img"><img src="http://m2.i-challenge.co.kr/Hobi/Membership/images/Parent/thum02.jpg" alt="thumsize186*200" /></span>
+									<span class="cont_txt">엔이 능률 올 데이<br />유브이 퍼펙트</span>
+								</a>
+							</div>
+						</div>
+						<p class="noti">※ <em>도너츠몰</em>과 <em>프린트 학습지</em>는 PC 버전으로 제공됩니다.</p>
+					</div>
+					<!-- 도너츠몰 배너 :: end -->
+				
+					<!-- 프린트학습지 배너 :: start -->
+					<div class="swiper-slide">
+						<p class="tit">우리 아이를 위한 추천! <em>프린트학습지</em></p>
+						<p class="stit">다양한 영역의 학습지를 프린트하여<br />놀이하듯 즐겁게 학습습관 형성하세요! </p>
+						<div class="cont_swipe">
+							<div class="cont">
+								<a href="#">
+									<span class="cont_img"><img src="http://m2.i-challenge.co.kr/Hobi/Membership/images/Parent/thum02.jpg" alt="thumsize186*200" /></span>
+									<span class="cont_txt">선긋기</span>
+								</a>
+							</div>
+							<div class="cont">
+								<a href="#">
+									<span class="cont_img"><img src="http://m2.i-challenge.co.kr/Hobi/Membership/images/Parent/thum02.jpg" alt="thumsize186*200" /></span>
+									<span class="cont_txt">수세기</span>
+								</a>
+							</div>
+							<div class="cont">
+								<a href="#">
+									<span class="cont_img"><img src="http://m2.i-challenge.co.kr/Hobi/Membership/images/Parent/thum02.jpg" alt="thumsize186*200" /></span>
+									<span class="cont_txt">색칠놀이</span>
+								</a>
+							</div>
+						</div>
+						<p class="noti">※ <em>도너츠몰</em>과 <em>프린트 학습지</em>는 PC 버전으로 제공됩니다.</p>
+					</div>
+				</div>
+				<!-- 프린트학습지 배너 :: end -->
+			
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<!-- cont_doughnut :: end -->
+	</div>
+	<!-- content :: end -->
+
+		</div>
+		<!-- container :: end -->
+
+		<!-- footer :: start -->
+		<footer id="footer">
+			<ul class="foot_top">
+				<li>
+					<a href="javascript:goMenu('US0700');">이용약관</a>
+				</li>
+				<li class="sec">
+					<a href="javascript:goMenu('US0800');">개인정보처리방침</a>
+				</li>
+				<li>
+					<a href="javascript:goMenu('ET9900');">PC 버전</a>
+				</li>
+			</ul>
+			<div class="foot_btm">
+				<h2>
+					<img src="http://polly90.com/pub/Images/main/logo_foot.jpg" alt="NE 능률" />
+				</h2>
+				<address>
+					<em>서울시 마포구 월드컵북로 396 누리꿈스퀘어 비즈니스타워 10층</em>
+				</address>
+				<dl>
+					<dt>대표이사</dt>
+					<dd>주민홍　</dd>
+					<dt>사업자등록번호</dt>
+					<dd>105-81-65267</dd>
+					<dt>통신판매업신고번호제</dt>
+					<dd> 2004-02120호</dd>
+					<dt>개인정보 보호 책임자(CPO) :</dt>
+					<dd>한유형 (
+						<a href="mailto:necpo@neungyule.com;">necpo@neungyule.com</a>)</dd>
+				</dl>
+				<p>COPYRIGHT ⓒ NE NEUNGYULE INC. ALL RIGHTS RESERVED.</p>
+				<p>ⓒ Benesse Corporation.</p>
+			</div>
+		</footer>
+		<!-- footer :: end -->
+	</div>
+	<!-- wrap :: end -->
+</body>
+</html>

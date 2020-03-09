@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+/* 커뮤니티 > 토닥토닥 */
+.community .cont_benefit{width:100%;padding:15px 15px 0;margin:0 auto;font-family:"Noto Medium"}
+.community .cont_benefit p{display:block;min-width:200px;float:left;font-size:15px;color:#000;line-height:27px}
+.community .cont_benefit p em{color:#009e96}
+.community .cont_benefit .btn_write{display:block;float:right;width:18%;height:27px;line-height:29px;margin:0 0 5px;font-size:13px;color:#fff;background:#22b8bd;text-align:center;border-radius:5px}
+.community .cont_benefit .benefit{position:relative;clear:both;display:table;width:100%;height:60px;background:#f3f8f8;font-family:"Noto Light"}
+.community .cont_benefit .benefit:after{content:"";position:absolute;top:15px;left:22px;width:22px;height:32px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_parent.png) no-repeat 0 0;background-size:22px}
+.community .cont_benefit .benefit div{display:table-cell;vertical-align:middle}
+.community .cont_benefit .benefit p{float:none;width:100%;font-size:14px;line-height:1.3;padding:0 0 0 66px}
+.community .cont_srch{width:100%;height:40px;margin:20px auto 0;padding:0 15px}
+.community .cont_srch:after{clear:both;content:"";display:block;width:1px;height:1px}
+.community .cont_srch .selwrap{position:relative;width:27%;height:40px;float:left}
+.community .cont_srch .selwrap select{width:100%;height:38px;padding:0 0 0 9px;border:1px solid #e0e0e0;background:none;color:#222;font-size:14px;font-family:"Noto Demi";border-right:0;-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+.community .cont_srch .selwrap:after{content:"";position:absolute;top:16px;right:10px;display:block;width:10px;height:6px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_parent.png) no-repeat 0 -33px;background-size:22px}
+.community .cont_srch .srch{position:relative;width:73%;height:40px;float:left}
+.community .cont_srch .srch input{height:38px;line-height:38px}
+.community .cont_srch .srch .btn_srch{position:absolute;top:1px;right:1px;width:37px;height:37px}
+.community .cont_srch .srch .btn_srch:after{content:"";display:block;position:absolute;top:50%;left:50%;margin:-9px 0 0 -9px;width:19px;height:18px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_parent.png) no-repeat 0 -41px;background-size:22px}
+.community .cont_qust{width:100%;height:35px;margin:15px auto 0;padding:0 15px}
+.community .cont_qust .qust{float:left;clear:both;width:70%;height:33px;line-height:35px;border:1px solid #e0e0e0;background:#fafafa}
+.community .cont_qust .qust .txt01{width:57px;height:33px;line-height:35px;display:inline-block;position:relative;margin:0 0 0 8px;font-size:12px;color:#22b8bd;padding:0 0 0 15px;vertical-align:top}
+.community .cont_qust .qust .txt01:after{content:"";display:block;position:absolute;top:50%;left:0;width:11px;height:10px;margin-top:-7px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_parent.png) no-repeat 0 -61px;background-size:22px}
+.community .cont_qust .qust .txt02{display:inline-block;height:33px;line-height:35px;position:relative;width:65%;;padding:0 0 0 5px;overflow: hidden;text-overflow: ellipsis;-o-text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}
+.community .cont_qust .qust .txt02:before{content:"";display:block;width:1px;height:11px;background:#ccc;position:absolute;top:11px;left:1px}
+.community .cont_qust .selwrap02{position:relative;float:right;width:27%;background:#fafafa}
+.community .cont_qust .selwrap02 select{width:100%;height:33px;line-height:35px;padding:0 0 0 9px;background:#fff;color:#777;font-size:12px;font-family:"Noto Demi";border-right:0;-webkit-appearance: none;-moz-appearance: none;appearance: none;border:1px solid #e0e0e0}
+.community .cont_qust .selwrap02:after{content:"";position:absolute;top:14px;right:10px;display:block;width:10px;height:6px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_parent.png) no-repeat 0 -33px;background-size:22px}
+.community .cont_list{width:100%;margin:15px auto 0;padding:0 15px 25px}
+.community .cont_list li{padding:15px 0;border-top:1px solid #e0e0e0}
+.community .cont_list li:first-child{border-top:1px solid #666}
+.community .cont_list li .top{margin:0 0 13px}
+.community .cont_list li .name{font-size:14px;color:#222;font-family:"Noto Medium";}
+.community .cont_list li .likes{float:right}
+.community .cont_list li .likes a{font-size:13px;color:#22b8bd;font-family:"Noto Demi"}
+.community .cont_list li .btn_like{position:relative;padding:0 0 0 19px;margin:0 9px 0 0}
+.community .cont_list li .btn_like:after{position:absolute;top:50%;left:0;margin:-8px 0 0;content:"";display:block;width:15px;height:13px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_parent.png) no-repeat 0 -73px;background-size:22px}
+.community .cont_list li .btn_like.on:after{background-position:0 -87px}
+.community .cont_list li .btm_comment{position:relative;padding:0 0 0 19px;margin:0 9px 0 0}
+.community .cont_list li .btm_comment:after{position:absolute;top:50%;left:0;margin:-8px 0 0;content:"";display:block;width:13px;height:13px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_parent.png) no-repeat 0 -102px;background-size:22px}
+.community .cont_list li .btm{position:relative;padding:15px;width:100%;border:1px solid #22b8bd;border-radius:5px}
+.community .cont_list li .btm:after{content:"";position:absolute;top:-9px;left:15px;display:block;width:12px;height:10px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_parent.png) no-repeat 0 -146px;background-size:22px}
+.community .cont_list li .btm div{height:65px;line-height:1.7}
+.community .cont_list li .btm .tit{display:block;color:#222;font-size:14px;font-family: "Noto Medium";}
+.community .cont_list li .btm .cont{color:#666;font-size:12px;font-family: "Noto Demi";display: inline-block; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; /* 여러 줄 자르기 추가 스타일 */ white-space: normal; line-height: 1.4; height: 32px; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.community .cont_list li .btm .date{position:absolute;bottom:6px;right:6%;font-size:12px;color:#666;font-family: "Noto Medium";}
+.community .cont_list li .btm .btn_detail{position:absolute;top:4px;right:0;display:block;width:25px;height:30px}
+.community .cont_list li .btm .btn_detail:after{position:Absolute;top:50%;left:50%;content:"";margin:-4px 0 0 -7px;display:block;width:8px;height:13px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_parent.png) no-repeat 0 -117px;background-size:22px}
+
+/* 커뮤니티 > 토닥토닥 > 등록 */
+.community.parent.view .regArea {position:relative}
+.community.parent.view .regArea .byte {float:right;}
+.community.parent.view .regArea .txtwrap{height:95px;border:1px solid #e0e0e0;border-top:0}
+.community.parent.view .regArea textarea {width:100%; padding:10px 10px 40px; height:65px; border:0;color:#222;font-size:14px}
+.community.parent.view .regArea dl.attach {border:1px solid #ccc;  border-top:0;}
+.community.parent.view .regArea dl.attach dt {padding:15px 15px 10px 15px;}
+.community.parent.view .regArea dl.attach dt label {font-family:"Noto Medium"; color:#000;}
+.community.parent.view .regArea dl.attach dd:first-of-type {padding:0 15px 15px 15px;}
+.community.parent.view .regArea dl.attach input.text {padding:7px; border:1px solid #ccc;}
+.community.parent.view .regArea dl.attach .btnSubmit {width:100%; border:0; border-top:1px solid #ccc;}
+.community.parent.view .regArea .btn_submit {position:absolute;bottom:5px;left:2%;width:96%;height:27px;line-height:29px;border:1px solid #222;border-radius:3px;font-size:13px;color:#222}
+.community.parent.view .regArea dd.attachSt .btn {border-top:1px solid #ccc;}
+.community.parent.view .cont_btm{padding:0 15px}
+.community.parent.view .detail{position: relative;margin:0;padding:20px 0 10px 0;border-bottom: 1px solid #666;}
+.community.parent.view .detail .tit{color:#222;font-size:15px;font-family:"Noto Medium";}
+.community.parent.view .detail span{font-size:12px;color:#666}
+.community.parent.view .detailCont{padding:20px 0;border-bottom:1px solid #e0e0e0;color:#666;font-size:14px}
+.community.parent.view .btns{height:37px;padding:10px 0 0}
+.community.parent.view .btns button{float:left;width:20%;height:27px;line-height:29px;border-radius:3px;color:#fff;font-family:"Noto Demi";font-size:13px}
+.community.parent.view .btns button.btn_adjust{margin:0 7px 0 0;background:#fff;border:1px solid #22b8bd;color:#22b8bd}
+.community.parent.view .btns button.btn_delete{background:#fff;border:1px solid #22b8bd;color:#22b8bd}
+.community.parent.view .btns button.btn_list{background:#22b8bd;float:right}
+.community.parent.view .prevNext{border-bottom:1px solid #e0e0e0;font-size:14px;line-height:20px}
+.community.parent.view .prevNext dt{clear: both;float: left;padding: 10px 0 10px;font-family: "Noto Medium";color: #222;text-align: left;border-top: 1px solid #e0e0e0;font-size:14px}
+.community.parent.view .prevNext span{display:block}
+.community.parent.view .commentArea{padding:25px 0 0 }
+.community.parent.view .regArea h3{padding:10px 12px;font-size:14px;color:#fff;background:#22b8bd} 
+
+/* 커뮤니티 > 토닥토닥 > 댓글 */
+.community.parent.view .commentArea .btn.btnRecommand {margin-top:-26px;}
+.community.parent.view .commentArea dt span {color:#666;font-size:14px}
+.community.parent.view .commentArea ol.list li {padding:16px 0; }
+.community.parent.view .commentArea ol.list li .name {display:block;margin-bottom:3px; vertical-align:top;color:#222;font-size:14px}
+.community.parent.view .commentArea ol.list li dt {padding-bottom:10px; border-bottom:1px solid #ccc;}
+.community.parent.view .commentArea ol.list li dd {padding:12px 0;font-size:14px}
+.community.parent.view .commentArea ol.list li.reply01 {padding:0 0 16px}
+.community.parent.view .commentArea ol.list li.reply01 dt {padding:0 0 10px 15px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_comment.png) no-repeat 2px 3px;background-size:10px}
+.community.parent.view .commentArea ol.list li.reply01 dd {padding:12px 0 12px 15px;}
+.community.parent.view .commentArea ol.list li.reply01 .btns {padding:0 0 10px 15px;border-bottom:0}
+.community.parent.view .commentArea .btns{height:42px;border-bottom:1px solid #ccc;padding:0 0 15px}
+.community.parent.view .commentArea .btns button{float:left;width:20%;height:27px;margin:0 0 0 7px;line-height:29px;border:1px solid #222;border-radius:3px;color:#222;font-family:"Noto Demi";font-size:13px}
+.community.parent.view .commentArea .btns button:first-child{margin:0}
+.community.parent.view .commentArea .btns button.btn_comment{background:#222;color:#fff;border:0}
+
+/* 커뮤니티 > 토닥토닥 > 등록수정 form */
+.community input[type="text"], 
+.community input[type="password"], 
+.community input[type="datetime"], 
+.community input[type="datetime-local"], 
+.community input[type="date"], 
+.community input[type="month"], 
+.community input[type="time"], 
+.community input[type="week"], 
+.community input[type="number"], 
+.community input[type="email"], 
+.community input[type="url"], 
+.community input[type="search"], 
+.community input[type="tel"], 
+.community input[type="color"], 
+.community input[type="file"] {-webkit-appearance: none !important;-moz-appearance: none;appearance: none;border-radius: 0px;width:100%;height:33px;padding: 0 10px;border: 1px solid #e0e0e0;-webkit-border-radius: 0;-moz-border-radius: 0;-ms-border-radius: 0;-o-border-radius: 0;background-color: #fff;outline: 0;transition: background 0.2s linear 0s,box-shadow 0.2s linear 0s;}
+.community.form .cont01{padding:20px 15px}
+.community.form .cont01:after{display:none}
+.community.form .cont01 input[type="text"]{font-size:13px;line-height:1.5;color:#777}
+.community.form .noti{padding:0 0 9px;border-bottom:1px solid #555;font-size:12px;color:#888888;font-family: "Noto Demi";text-align:right}
+.community.form .noti em{color:#d71826;font-size:12px}
+.community.form h2{margin:20px 0 9px;font-family:"Noto Medium";font-size:16px;color:#222}
+.community.form h2 em{color:#d71826;font-size:15px;margin:0 4px 0 0}
+.community.form h2 span{font-size:13px;color:#222}
+.community.form .cont02{padding:0 15px}
+.community.form .cont02:after{display:none}
+.community.form .cont02 h2{margin:0 0 9px}
+.community.form .cont02 textarea{border: 1px solid #e0e0e0;font-size:13px;line-height:1.6;color:#777;background:#fff}
+.community.form .cont03{position:relative;height:auto;padding:0;margin:4px 15px 0;background:#fff}
+.community.form .cont03 input[type="file"]{border: 1px solid #e0e0e0;padding:4px}
+.community.form .cont04{position:relative;padding:0;margin:0 15px;background:#fff}
+.community.form .cont04 input[type="file"]{border: 1px solid #e0e0e0;padding:4px}
+.community.form .cont04:before{display:none}
+.community.form .cont_btm .btns{padding:20px 15px 0;height:80px}
+.community.form .cont_btm .btns button{float:left;width:49%;height:35px;line-height:37px;border-radius:3px;color:#fff;font-family:"Noto Demi";font-size:13px}
+.community.form .cont_btm .btns button.btn_submit{margin:0 2% 0 0;background:#22b8bd}
+.community.form .cont_btm .btns button.btn_cancle{background:#fff;border:1px solid #22b8bd;color:#22b8bd}
+.community.form .cont_btm .cont{padding:0 15px;}
+.community.form .cont_btm h2{margin:18px 0 9px}
+.community.form .cont_btm textarea{width:100%;border: 1px solid #e0e0e0;font-size:13px;line-height:1.6;color:#777;background:#fff}
+.community.form .cont_btm .cont .noti{padding:20px 0 9px}
+.community.form .cont_btm .cont .note{font-size:13px;color:#777;padding:8px 0 0 9px}
+
+/* 커뮤니티 > 육아영상 */
+.community.movie .cont_hashtag{width:100%;min-height:35px;margin:15px auto 0;padding:0 15px;}
+.community.movie .cont_hashtag .hashtag{display:table;width:100%;min-height:35px;border:1px solid #e0e0e0;background:#fafafa}
+.community.movie .cont_hashtag .txt01{display:table-cell;vertical-align: middle;width:16%;height:33px;line-height:35px;position:relative;text-indent:8px;font-size:13px;color:#22b8bd;font-family: "Noto Medium";}
+.community.movie .cont_hashtag .txt02{display:table-cell;vertical-align: middle;min-height:33px;line-height:20px;position:relative;width:84%;padding:2px 0 2px 5px;overflow: hidden;text-overflow: ellipsis;-o-text-overflow:ellipsis;word-break:keep-all;word-wrap:break-all}
+.community.movie .cont_hashtag .txt02:before{content:"";display:block;width:1px;height:11px;background:#ccc;position:absolute;top:50%;left:1px;margin-top:-5px}
+.community.movie .cont_hashtag .txt02 a{margin:0 3px;border-bottom:1px solid #222;font-family:"Noto Demi";font-size:13px;color:#222}
+.community.movie .cont_hashtag .txt02:after{clear:both;display:block}
+.community.movie .cont_sel{width:100%;height:35px;padding:0 15px;margin:20px 0 0}
+.community.movie .cont_sel .selwrap02{float:left;width:25.5%}
+.community.movie .cont_sel .selwrap02:first-child{width:28.5%;margin:0 1.5% 0 0}
+.community.movie .cont_sel.parent .selwrap02 select{width:100%}
+.community.movie .cont_sel .btns{float:right;width:43%}
+.community.movie .cont_sel.parent .btns{width:43%}
+.community.movie .cont_sel .btns a{float:left;width:48%;height:35px;line-height:37px;border-radius:3px;color:#fff;font-family:"Noto Demi";font-size:14px;background:#22b8bd;text-align:center}
+.community.movie .cont_sel .btns a:first-child{margin-right:4%}
+.community.movie .cont_movielist{width:100%;padding:0 15px;margin:10px 0 0}
+.community.movie .cont_movielist li{width:48%;float:left}
+.community.movie .cont_movielist li:nth-child(2n){float:right;margin-left:4%}
+.community.movie .cont_movielist li:nth-child(2n-1){clear:both}
+.community.movie .cont_movielist li .top{position:relative;width:100%}
+.community.movie .cont_movielist li .top .movie{display:block;width:100%;height:120px;overflow:hidden;background:#e4e4e4;border:1px solid #ccc}
+.community.movie .cont_movielist li .top .movie img{width:100%}
+.community.movie .cont_movielist li .top .age{position:absolute;top:0;left:0;width:49px;height:28px;line-height:30px;background:#39a6e5;text-align:center;font-size:11px;color:#fff;font-family: "Noto Demi";}
+.community.movie .cont_movielist li .btm{margin:0 0 20px}
+.community.movie .cont_movielist li .btm .txt01{width:100%;height:20px;margin:10px 0 0}
+.community.movie .cont_movielist li .btm .txt01 .tit{float:left;display:block;height:20px;width:87%;width :-webkit-calc(100% - 27px);width:-moz-calc(100% - 27px);width:calc(100% - 27px);overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;font-size:15px;font-family: "Noto Medium";color:#222}
+.community.movie .cont_movielist li .btm .txt01 .chk01{float:right;display:block;width:17px;height:17px;position:relative;top:-1px}
+.community.movie .cont_movielist li .btm .txt02{clear:both;margin:4px 0 0;height:16px;line-height:18px;font-size:13.5px;color:#222;font-family:"Noto Demi";}
+.community.movie .cont_movielist li .btm .txt02 .date{float:right}
+.community.movie .cont_movielist li .btm .txt03{clear:both;height:16px;line-height:18px;font-size:13.5px;color:#666;font-family:"Noto Demi";}
+.community.movie .cont_movielist li .btm .txt03 .recom{float:right}
+.community.movie.form .cont .selwrap02{width:100%}
+.community.movie.view .cont_pop{padding:25px 15px}
+.community.movie.view .cont_pop .movie{width:100%;height:163px;}
+.community.movie.view .cont_pop .txt .tit{padding:15px 0 0;font-size:16px;color:#222;font-family: "Noto Medium";}
+.community.movie.view .cont_pop .txt .info{border-bottom:1px solid #666;padding:10px 0 6px;font-size:13px;color:#666;font-family: "Noto Demi";}
+.community.movie.view .cont_pop .txt .info span:after{width:1px;height:10px;margin:0 6px 0 5px;background:#666;display: inline-block;content: '';position:relative;top:0px}
+.community.movie.view .cont_pop .txt .info span:nth-child(4):after{display:none}
+.community.movie.view .cont_pop .txt .info .btn_like{float:right;position:relative;top:-3px;display:block;width:57px;height:18px;font-family: "Noto Demi";border:1px solid #222;border-radius:3px;text-align:center;line-height:20px}
+.community.movie.view .cont_pop .txt .info .btn_like em{margin:0 0 0 2px;color:#22b8bd}
+.community.movie.view .cont_pop .txt .info .btn_like:before{display:inline-block;content:"";width:9px;height:9px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_pop.png) no-repeat 0 -10px;background-size:11px;position:relative;top:-0.5px;left:-3px;color:#222;}
+.community.movie.view .cont_pop .txt .info .btn_like.on:before{display:inline-block;content:"";width:9px;height:9px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_pop.png) no-repeat 0 0;background-size:11px;position:relative;top:-0.5px;left:-3px;color:#222;}
+.community.movie.view .cont_pop .hashtag{margin:10px 0 0}
+.community.movie.view .cont_pop .hashtag:before{display:inline-block;content:"";width:11px;height:11px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_pop.png) no-repeat 0 -21px;background-size:11px;}
+.community.movie.view .cont_pop .hashtag span{display:inline-block;margin:0 0 0 2px;font-size:13px;color:#666}
+.community.movie.view .btns{height:37px;padding:9px 0 0}
+.community.movie.view .btns button{float:left;display:block;width:20%;height:27px;line-height:29px;border-radius:3px;color:#fff;font-family:"Noto Demi";font-size:13px}
+.community.movie.view .btns button.btn_adjust{margin:0 7px 0 0;background:#fff;border:1px solid #22b8bd;color:#22b8bd}
+.community.movie.view .btns button.btn_delete{background:#fff;border:1px solid #22b8bd;color:#22b8bd}
+.community.movie.view .btns button.btn_close{background:#22b8bd;float:right}
+.community.movie.view .movie_list{margin:18px 0 0;padding:20px 0 0;border-top:1px solid #e0e0e0}
+.community.movie.view .movie_list li{float:left;width:48%;border:1px solid #e0e0e0}
+.community.movie.view .movie_list li:first-child{margin:0 4% 0 0}
+.community.movie.view .movie_list li span{display:block;width:100%;height:32px;line-height:34px;text-align:center;font-size:14px;color:#222;font-family: "Noto Medium";}
+.community.movie.view .movie_list li a{display:block;width:91%;min-height:77px;margin:0 auto 5px;background:#e4e4e4;border:1px solid #ccc}
+.community.movie.view .movie_list li a img{width:100%;height:100%}
+
+/* 커뮤니티 > 교재사용후기 */
+.community.review .cont_benefit p{font-size:16px}
+.community.review .cont_benefit p em{font-family:"Noto Demi"}
+.community.review .cont_benefit .btn_info{position:relative;display:block;float:right;width:20px;height:25px}
+.community.review .cont_benefit .btn_info:after{content:"";display:block;width:16px;height:16px;position:absolute;top:5px;left:2px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_review.png) no-repeat 0 0;background-size:50px}
+.community.review .cont_benefit .benefit{padding:5px 0 0;background:none}
+.community.review .cont_benefit .benefit:after{display:none}
+.community.review .cont_benefit .benefit div{position:relative;width:32%;float:left;margin:0 0 0 2%;padding:56px 0 10px}
+.community.review .cont_benefit .benefit p{min-width:0;padding:0;text-align:center;font-family:"Noto Demi";font-size:12px;color:#222}
+.community.review .cont_benefit .benefit p.tit{padding:0 0 5px;font-size:14px;font-family:"Noto Medium";}
+.community.review .cont_benefit .benefit .basic{margin:0;background:#eff2f5}
+.community.review .cont_benefit .benefit .basic:before{content:"";display:block;position:absolute;top:13px;left:50%;margin:0 0 0 -11px;width:22px;height:32px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_review.png) no-repeat 0 -20px;background-size:50px}
+.community.review .cont_benefit .benefit .premium{background:#edfcfc}
+.community.review .cont_benefit .benefit .premium:before{content:"";display:block;position:absolute;top:13px;left:50%;margin:0 0 0 -11px;width:22px;height:32px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_review.png) no-repeat 0 -56px;background-size:50px}
+.community.review .cont_benefit .benefit .best{background:#fcf7ed}
+.community.review .cont_benefit .benefit .best:before{content:"";display:block;position:absolute;top:15px;left:50%;margin:0 0 0 -15px;width:31px;height:26px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_review.png) no-repeat 0 -92px;background-size:50px}
+.community.review .tab_type01{margin:20px 0 0}
+.community.review .cont_sel{width:100%;height:35px;padding:0 15px;margin:20px 0 0}
+.community.review .cont_sel .selwrap02{float:left;width:26.5%}
+.community.review .cont_sel .selwrap02:first-child{width:26.5%;margin:0 1.5% 0 0}
+.community.review .cont_sel.parent .selwrap02 select{width:100%}
+.community.review .cont_sel .btns{float:right;width:43%}
+.community.review .cont_sel.parent .btns{width:43%}
+.community.review .cont_sel .btns a{float:right;width:48%;height:35px;line-height:37px;border-radius:3px;color:#fff;font-family:"Noto Demi";font-size:14px;background:#22b8bd;text-align:center}
+.community.review .cont_reviewlist{width:100%;padding:0 15px;margin:10px 0 0}
+.community.review .cont_reviewlist li{width:48%;float:left}
+.community.review .cont_reviewlist li:nth-child(2n){float:right;margin-left:4%}
+.community.review .cont_reviewlist li:nth-child(2n-1){clear:both}
+.community.review .cont_reviewlist li .top{position:relative;width:100%}
+.community.review .cont_reviewlist li .top .list{display:block;width:100%;overflow:hidden;background:#e4e4e4;border:1px solid #ccc}
+.community.review .cont_reviewlist li .top .list img{width:100%}
+.community.review .cont_reviewlist li .top .age{position:absolute;top:0;left:0;width:70px;height:28px;line-height:30px;background:#39a6e5;text-align:center;font-size:11px;color:#fff;font-family: "Noto Demi";}
+.community.review .cont_reviewlist li .btm{margin:0 0 20px}
+.community.review .cont_reviewlist li .btm .txt01{width:100%;height:20px;margin:10px 0 0}
+.community.review .cont_reviewlist li .btm .txt01 .tit{float:left;display:block;height:20px;width:100%;overflow: hidden;text-overflow: ellipsis;-o-text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;font-size:15px;font-family: "Noto Medium";color:#222}
+.community.review .cont_reviewlist li .btm .txt02{clear:both;margin:4px 0 0;height:16px;line-height:18px;font-size:13.5px;color:#222;font-family:"Noto Demi";}
+.community.review .cont_reviewlist li .btm .txt02 .date{float:right}
+.community.review .cont_reviewlist li .top .rating-xs{position:absolute;bottom:0;right:7px}
+.community.review .cont_basiclist{padding:0 15px;margin:10px 0 0}
+.community.review .cont_basiclist ul{width:100%;margin:0 0 15px;border-top:1px solid #666}
+.community.review .cont_basiclist ul li{padding:15px 0 25px;border-bottom:1px solid #e0e0e0}
+.community.review .cont_basiclist ul li .top{height:16px}
+.community.review .cont_basiclist ul li .top .age{float:left;display:block;min-width:33px;padding:0 4px;margin:0 10px 0 0;height:14px;line-height:16px;background:#39a6e5;border-radius:3px;text-align:center;font-size:11px;color:#fff;font-family: "Noto Light";}
+.community.review .cont_basiclist ul li .top .rating-container{float:left}
+.community.review .cont_basiclist ul li .date{float:right;margin:1px 0 0;font-size:14px}
+.community.review .cont_basiclist ul li .btm{clear:both;margin:5px 0 0}
+.community.review .cont_basiclist ul li .btm .txt01{margin:0 0 5px;font-size:16px;line-height:1.5;color:#222;font-family:"Noto Medium";}
+.community.review .cont_basiclist ul li .btm .txt01 .name{position:relative}
+.community.review .cont_basiclist ul li .btm .txt01 .name:after{position:relative;top:-2px;left:3px;width: 1px;height: 11px;margin: 0 6px 0 4px;background: #ccc;display: inline-block;vertical-align: -1px;content: '';}
+.community.review .cont_basiclist ul li .btm .txt02 .con{font-size:14px;font-family:"Noto Demi";display: inline-block; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; /* 여러 줄 자르기 추가 스타일 */ white-space: normal; line-height: 1.4; height: 38px;min-height:38px;text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.community.review .cont_basiclist ul li .btm .txt02.on .con{overflow: auto;height:auto;-webkit-line-clamp: inherit}
+.community.review .cont_basiclist ul li .btm .btn_more{position:relative;float:right;margin:3px 0 0;padding:0 10px 0 0;color:#444;font-size:14px;}
+.community.review .cont_basiclist ul li .btm .btn_more:after{content:"";display:block;position:absolute;top:4px;right:0;width:7px;height:4px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_review.png) no-repeat 0 -140px;background-size:50px}
+.community.review .cont_basiclist ul li .btm .txt02.on .btn_more:after{content:"";display:block;position:absolute;top:4px;right:0;width:7px;height:4px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_review.png) no-repeat -43px -140px;background-size:50px}
+.community.review li.nolist{float:none;width:100%;height:400px;display:table}
+.community.review li.nolist span{display:table-cell;vertical-align:middle;text-align:Center;font-size:15px;color:#222;font-family:"Noto Light"}
+.community.review.view .cont_btm{padding:0 15px 25px}
+.community.review.view .detail{position: relative;margin:0;padding:20px 0 10px 0;border-bottom: 1px solid #666;}
+.community.review.view .detail .tit{color:#222;font-size:15px;font-family:"Noto Medium";}
+.community.review.view .detail span{font-size:12px;color:#666}
+.community.review.view .detailCont{padding:20px 0;border-bottom:1px solid #e0e0e0;color:#666;font-size:14px}
+.community.review.view .btns{height:37px;padding:10px 0 0}
+.community.review.view .btns button{float:left;width:20%;height:27px;line-height:29px;border-radius:3px;color:#fff;font-family:"Noto Demi";font-size:13px}
+.community.review.view .btns button.btn_adjust{margin:0 7px 0 0;background:#fff;border:1px solid #22b8bd;color:#22b8bd}
+.community.review.view .btns button.btn_delete{background:#fff;border:1px solid #22b8bd;color:#22b8bd}
+.community.review.view .btns button.btn_list{background:#22b8bd;float:right}
+.community.review.view .prevNext{border-bottom:1px solid #e0e0e0;font-size:14px;line-height:20px}
+.community.review.view .prevNext dt{clear: both;float: left;padding: 10px 0 10px;font-family: "Noto Medium";color: #222;text-align: left;border-top: 1px solid #e0e0e0;font-size:14px}
+.community.review.view .prevNext span{display:block}
+.community.review.view .commentArea{padding:25px 0 0 }
+.community.review.view .regArea h3{padding:10px 12px;font-size:14px;color:#fff;background:#22b8bd}
+.community.review.form .cont01{padding:20px 15px 0}
+.community.review.form .cont04 .selwrap02{width:32%;float:left;margin:0 0 0 2%}
+.community.review.form .cont04 h2+.selwrap02{margin:0}
+.community.review.form .cont04:after{clear:both;content:"";display:block}
+.community.review.form .cont03{height:auto}
+.community.review.form button.btn_upload{float:right;margin:10px 0 0;background:#222;color:#fff;width:20%;height:27px;line-height:29px;border-radius:3px;font-family:"Noto Demi";font-size:13px}
+.community.review.form p.note{clear:both;padding:20px 15px 0 24px;font-size:14px}
+.community.review.form .cont05{padding:0 15px}
+.community.review.form .cont05 h2+div{background:#f4f4f4;padding:17px 0}
+.community.review.form .rating-container .rating-stars{left:50%;margin:0 0 0 -79px}
+.community.review.form .rating-container .star{margin:0 1px}
+.community.review.form .fa-star::before, .community.review.form .fa-star-o::before{width:28px;height:28px}
+.community.review.form .fa-star-o::before {background: url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_review.png) no-repeat 0 -147px;background-size: 50px;}
+.community.review.form .fa-star::before{background: url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_review.png) no-repeat 0 -177px;background-size: 50px;}
+.community.form .btn_del{position:absolute;top:0;right:0;display:block;width:30px;height:33px;}
+.community.form .btn_del:after{content:"";display:block;position:absolute;top:50%;left:50%;margin:-6px 0 0 -7px;width:14px;height:13px;background:url(http://m2.i-challenge.co.kr/Community/Images/Ico/ico_review.png) no-repeat 0 -217px;background-size: 50px;}
+.community.form .upload_file{position:relative;display:block;margin:0 0 10px}
+
+/* iphon se */
+@media only screen and (max-width: 320px) {
+   .community .cont_qust .qust .txt02{width:65%}
+   .community.parent.view .regArea textarea{font-size:12px}
+   .community.movie .cont_movielist li .top .movie{height:80px}
+   .community.movie .cont_hashtag .txt01{text-indent:2px}
+}
+
+/* iphon old */
+@media all and (min-width:321px) and (max-width: 350px){
+	.community.movie .cont_movielist li .top .movie{height:110px}
+	 .community.movie .cont_hashtag .txt01{text-indent:2px}
+}
+
+/* iphon new */
+@media all and (min-width:400px) and (max-width: 450px){
+	.community.movie .cont_movielist li .top .movie{height:135px}
+}
+
+/* pc */
+@media all and (min-width:640px){
+	.community.movie .cont_movielist li .top .movie{height:180px}
+	.community.movie.view .cont_pop .movie{width:100%;height:326px;}
+}

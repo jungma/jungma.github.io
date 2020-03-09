@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=high-dpi, minimal-ui" />
+<meta name="description" content="" />
+<meta name="google-site-verification" content="BFmEnM9KijGLhZEm4Q0cgECgwY2CBuoNGtFlMeklb70" />
+<meta property="og:title" content="" />
+<meta property="og:image" content="http://www.i-challenge.co.kr/images/common/kakao-meta-image.jpg" />
+<link rel="apple-touch-icon" href="http://m.i-challenge.co.kr/images/icon.png">
+<link rel="apple-touch-icon-precomposed" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="shortcut icon" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/style.css" />
+<link rel="stylesheet" type="text/css" href="../Css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Mypage/Css/Mypage2018.css" />
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/ui.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/kakao.link.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/swiper.min.js"></script>
+<script>
+	
+	var lnbDep1 = 3; //LNB depth 1
+	var allmenuDep1 = 4; //allmenu depth 1
+	var allmenuDep2 = 3; //allmenu depth 2
+
+	$(function () {
+		//lnb swipe 생성
+		var lnb = new Swiper('.lnb .swiper-container', {
+			scrollbar: '.swiper-scrollbar',
+			scrollbarHide: true,
+			slidesPerView: 'auto',
+			grabCursor: true
+		});
+
+		//lnb allmenu on/off 처리
+		$('.btn_allmenu').on('click', function () {
+			var _this = $(this);
+			if (_this.hasClass('on')) {
+				_this.removeClass('on');
+				$('.allmenu').slideUp();
+			} else {
+				_this.removeClass('on');
+				_this.addClass('on');
+				$('.allmenu').slideDown();
+			}
+
+		});
+	});
+		
+</script>
+<script>
+
+$(function(){
+	
+	//텝메뉴 숨김/보임
+	$('.tab_type04 ul li').each(function(index){
+		$(this).click(function(e){
+			$('.tab_type04 ul li').removeClass('on');
+			$(this).addClass('on');
+			$('.tab_cont>ul>li').hide();
+			$('.tab_cont>ul>li').eq(index).show();
+			e.preventDefault(); 
+		});
+	});
+	
+})
+</script>
+</head>
+
+<body>
+	<!-- wrap :: start -->
+	<div id="wrap">
+
+<div class="pop allm">
+	<div class="cont_pop">
+		<div class="pop_header">
+			<a href="javascript:void(0);" class="btn_back"><span class="blind">뒤로</span></a>
+			<span>전체 메뉴 보기</span>
+		</div>
+		<div class="pop_con">
+			<!-- allmenu :: start -->
+			<div class="allmenu">
+				<div class="m01">
+					<div class="tit">
+						<span>교재소개</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">아이챌린지 소개</a>
+						</li>
+						<li>
+							<a href="#">프로그램 특징</a>
+						</li>
+					</ul>
+				</div>
+				<div class="m02">
+					<div class="tit">
+						<span>교재쇼핑</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">월령프로그램</a>
+						</li>
+						<li>
+							<a href="#">단계프로그램</a>
+						</li>
+						<li>
+							<a href="#">ABC Bubbles</a>
+						</li>
+					</ul>
+				</div>
+				<div class="m03">
+					<div class="tit">
+						<span>놀이교육</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">놀이극장</a>
+						</li>
+						<li>
+							<a href="#">호비송</a>
+						</li>
+						<li>
+							<a href="#">호비애니메이션</a>
+						</li>
+						<li>
+							<a href="#">i-소리책</a>
+						</li>
+						<li>
+							<a href="#">에듀박스(미정)</a>
+						</li>
+					</ul>
+				</div>
+				<div class="m04">
+					<div class="tit">
+						<span>호비 멤버십</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">출석룰렛</a>
+						</li>
+						<li>
+							<a href="#">양육검사</a>
+						</li>
+						<li>
+							<a href="#">부모가이드</a>
+						</li>
+						<li>
+							<a href="#">도너츠몰</a>
+						</li>
+						<li>
+							<a href="#">프린트 학습지</a>
+						</li>
+					</ul>
+				</div>
+				<div class="m05">
+					<div class="tit">
+						<span>커뮤니티</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">교재 사용 후기</a>
+						</li>
+						<li>
+							<a href="#">엄마아빠 토닥토닥</a>
+						</li>
+						<li>
+							<a href="#">육아무비클립</a>
+						</li>
+					</ul>
+				</div>
+				<div class="m06">
+					<div class="tit">
+						<span>이벤트</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">진행중 이벤트</a>
+						</li>
+						<li>
+							<a href="#">종료된 이벤트</a>
+						</li>
+						<li>
+							<a href="#">당첨자 발표</a>
+						</li>
+						<li>
+							<a href="#">무료체험</a>
+						</li>
+					</ul>
+				</div>
+				<div class="m07">
+					<div class="tit">
+						<span>마이페이지</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">회원정보</a>
+						</li>
+						<li>
+							<a href="#">주문내역</a>
+						</li>
+						<li>
+							<a href="#">배송조회</a>
+						</li>
+						<li>
+							<a href="#">배송지 정보</a>
+						</li>
+						<li>
+							<a href="#">당첨자 발표</a>
+						</li>
+						<li>
+							<a href="#">종료된 이벤트</a>
+						</li>
+						<li>
+							<a href="#">마일리지</a>
+						</li>
+						<li>
+							<a href="#">나의 커뮤니티 활동</a>
+						</li>
+						<li>
+							<a href="#">구독 고객 안내사항</a>
+						</li>
+						<li>
+							<a href="#">회원 탈퇴</a>
+						</li>
+					</ul>
+				</div>
+				<div class="m08">
+					<div class="tit">
+						<span>고객센터</span>
+					</div>
+					<ul>
+						<li>
+							<a href="#">공지사항</a>
+						</li>
+						<li>
+							<a href="#">FAQ</a>
+						</li>
+						<li>
+							<a href="#">1:1 고객문의</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- allmenu :: end -->
+
+		</div>
+	</div>
+</div>
+
+	</div>
+	<!-- wrap :: end -->
+</body>
+</html>

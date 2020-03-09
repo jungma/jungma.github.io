@@ -1,0 +1,484 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=high-dpi, minimal-ui" />
+<meta name="description" content="" />
+<meta name="google-site-verification" content="BFmEnM9KijGLhZEm4Q0cgECgwY2CBuoNGtFlMeklb70" />
+<meta property="og:title" content="" />
+<meta property="og:image" content="http://www.i-challenge.co.kr/Images/common/kakao-meta-image.jpg" />
+<link rel="apple-touch-icon" href="http://m.i-challenge.co.kr/Images/icon.png">
+<link rel="apple-touch-icon-precomposed" href="http://m.i-challenge.co.kr/Images/icon128.png" />
+<link rel="shortcut icon" href="http://m.i-challenge.co.kr/Images/icon128.png" />
+<link rel="stylesheet" type="text/css" href="../Css/style.css" />
+<link rel="stylesheet" type="text/css" href="../Css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="https://m.i-challenge.co.kr:441/Css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="Css/book2018.css" />
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="https://m.i-challenge.co.kr:441/Js/ui.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/kakao.link.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="https://m.i-challenge.co.kr:441/Js/swiper.min.js"></script>
+<script>
+	
+	var lnbDep1 = 2; //LNB depth 1
+	var allmenuDep1 = 1; //allmenu depth 1
+	var allmenuDep2 = 2; //allmenu depth 2
+
+	$(function () {
+		//lnb swipe 생성
+		var lnb = new Swiper('.lnb .swiper-container', {
+			scrollbar: '.swiper-scrollbar',
+			scrollbarHide: true,
+			slidesPerView: 'auto',
+			grabCursor: true
+		});
+
+		//lnb allmenu on/off 처리
+		$('.btn_allmenu').on('click', function () {
+			var _this = $(this);
+			if (_this.hasClass('on')) {
+				_this.removeClass('on');
+				$('.allmenu').slideUp();
+			} else {
+				_this.removeClass('on');
+				_this.addClass('on');
+				$('.allmenu').slideDown();
+			}
+
+		});
+		
+		//텝메뉴 숨김/보임
+		$('.tab_type01 ul li').each(function(index){
+            $(this).click(function(e){
+                $('.tab_type01 ul li').removeClass('on');
+                $(this).addClass('on');
+                $('.tab_cont>ul>li').hide();
+                $('.tab_cont>ul>li').eq(index).show();
+				 e.preventDefault(); 
+            });
+        });
+	});
+			
+</script>
+</head>
+
+<body>
+	<!-- wrap :: start -->
+	<div id="wrap">
+
+		<!-- header :: start -->
+		<header id="header">
+			<div id="gnb">
+				<a href="#" class="btn_slide">
+					<span class="blind">슬라이드 메뉴</span>
+					<i></i>
+				</a>
+				<h1>
+					<a href="#">
+						<img src="http://polly90.com/pub/Images/main/logo.png" alt="아이챌린지" />
+					</a>
+				</h1>
+				<a href="#" class="btn_srch">
+					<span class="blind">교재찾기</span>
+					<i></i>
+				</a>
+				<a href="#" class="btn_login">
+					<span class="blind">로그인</span>
+					<i></i>
+				</a>
+			</div>
+		</header>
+		<!-- header :: end -->
+
+		<!-- lnb :: start -->
+		<!-- [D] 메뉴명 3개인 경우 wd03 클래스 추가 -->
+		<div class="lnb wd03">
+			<div class="swiper-container">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide">
+						<a href="#">아이챌린지란?</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#">궁금해요</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#">교재 구성</a>
+					</li>
+				</ul>
+			</div>
+			<div class="swiper-scrollbar"></div>
+			<a href="#" class="btn_allmenu">
+				<i>
+					<span class="blind">전체메뉴</span>
+				</i>
+			</a>
+		</div>
+		<!-- lnb :: end -->
+
+		<!-- allmenu :: start -->
+		<div class="allmenu">
+			<div class="m01">
+				<div class="tit">
+					<span>교재소개</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">아이챌린지 소개</a>
+					</li>
+					<li>
+						<a href="#">프로그램 특징</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m02">
+				<div class="tit">
+					<span>교재쇼핑</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">월령프로그램</a>
+					</li>
+					<li>
+						<a href="#">단계프로그램</a>
+					</li>
+					<li>
+						<a href="#">ABC Bubbles</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m03">
+				<div class="tit">
+					<span>놀이교육</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">놀이극장</a>
+					</li>
+					<li>
+						<a href="#">호비송</a>
+					</li>
+					<li>
+						<a href="#">호비애니메이션</a>
+					</li>
+					<li>
+						<a href="#">i-소리책</a>
+					</li>
+					<li>
+						<a href="#">에듀박스(미정)</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m04">
+				<div class="tit">
+					<span>호비 멤버십</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">출석룰렛</a>
+					</li>
+					<li>
+						<a href="#">양육검사</a>
+					</li>
+					<li>
+						<a href="#">부모가이드</a>
+					</li>
+					<li>
+						<a href="#">도너츠몰</a>
+					</li>
+					<li>
+						<a href="#">프린트 학습지</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m05">
+				<div class="tit">
+					<span>커뮤니티</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">교재 사용 후기</a>
+					</li>
+					<li>
+						<a href="#">엄마아빠 토닥토닥</a>
+					</li>
+					<li>
+						<a href="#">육아무비클립</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m06">
+				<div class="tit">
+					<span>이벤트</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">진행중 이벤트</a>
+					</li>
+					<li>
+						<a href="#">종료된 이벤트</a>
+					</li>
+					<li>
+						<a href="#">당첨자 발표</a>
+					</li>
+					<li>
+						<a href="#">무료체험</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m07">
+				<div class="tit">
+					<span>마이페이지</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">회원정보</a>
+					</li>
+					<li>
+						<a href="#">주문내역</a>
+					</li>
+					<li>
+						<a href="#">배송조회</a>
+					</li>
+					<li>
+						<a href="#">배송지 정보</a>
+					</li>
+					<li>
+						<a href="#">당첨자 발표</a>
+					</li>
+					<li>
+						<a href="#">종료된 이벤트</a>
+					</li>
+					<li>
+						<a href="#">마일리지</a>
+					</li>
+					<li>
+						<a href="#">나의 커뮤니티 활동</a>
+					</li>
+					<li>
+						<a href="#">구독 고객 안내사항</a>
+					</li>
+					<li>
+						<a href="#">회원 탈퇴</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m08">
+				<div class="tit">
+					<span>고객센터</span>
+				</div>
+				<ul>
+					<li>
+						<a href="#">공지사항</a>
+					</li>
+					<li>
+						<a href="#">FAQ</a>
+					</li>
+					<li>
+						<a href="#">1:1 고객문의</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- allmenu :: end -->
+
+		<!-- container :: start -->
+		<div id="container">
+
+			<!-- content :: start -->
+			<div id="content" class="book qna">
+				
+				<!-- cont_top :: start -->
+				<div class="cont_top">
+					<div>
+						<h3>엄마 아빠를 위해 자주 질문 받는 내용을<br />시원하게 대답해드려요.</h3>
+					</div>
+				</div>
+				<!-- cont_top :: end -->
+				
+				<!-- cont_btm :: start -->
+				<div class="cont_btm">
+				
+					<div class="cont_bx01">
+						<p class="tit">아이챌린지 <span>집 · 중 · 탐 · 구</span></p>
+					</div>
+
+					<div class="cont_bx03">
+						<!-- accodian :: start  -->
+						<ul class="accodian">
+							<li class="m01">
+								<div class="top">
+									<button>목록 펼치기 버튼</button>
+									<em class="ico">01</em>
+									<span><em>“방문 선생님 없이 홈스쿨링을?”</em><br />제가 잘 알려줄 수 있을까요?</span>
+								</div>
+								<div class="btm">
+									<span class="tx_01">초보 엄마들의 든든한 육아 지원군,<br /><em>부모가이드 제공</em></span>
+									<ul>
+										<li>
+											<span class="s_tit">주요<br />내용</span>
+											<span class="s_txt"><em>교재 활용</em><em>전문가 칼럼</em><em>월령별 특징</em><br />육아 &amp;교육 정보</span>
+										</li>
+									</ul>
+									<img src="Images/img_10.jpg" alt="" />
+									<span class="tx_02">아이챌린지 100% 활용할 수 있도록 <em>교재 활용 코너를<br />강화</em>하고, 이론에 치우친 정보보다는 각 발달에 맞는 <br /><em>육아 팁</em>을 따라 하기 쉽게 풀어냈습니다.</span>
+									<span class="tx_03">부모가이드 <em> ‘같이 크는 엄마’</em>가 매월 함께 하니까<br />직접 가르쳐야 하는 부담은 DOWN! <em>육아 자신감은 UP!</em><span>
+								</div>
+							</li>
+							<li class="m02">
+								<div class="top">
+									<button>목록 펼치기 버튼</button>
+									<em class="ico">02</em>
+									<span>아이챌린지는 <em>언제부터</em><br />시작하는 게 좋을까요?</span>
+								</div>
+								<div class="btm">
+									<span class="tx_01">시작 시기를 고민할 필요가 없는<br /><em>국내 최초 월령프로그램!</em></span>
+									<img src="Images/img_11.jpg" alt="BAYY, STEP1, STEP2, STEP3, STEP4" />
+									<span class="tx_03">그동안 교재와 장난감은 만 2세 이상, 2~3세용 등<br />사용하는 연령의 범위가 넓었습니다.</span>
+									<span class="tx_03">아이챌린지는 <em>한 달 한 달 발달 수준이 다른 영유아</em><br />시기를 고려하여 <em>아이의 월령과 발달 단계에 꼭 필요한</em><br />짚어주는 <em>월령프로그램을 국내 최초로 개발</em>했습니다.</span>
+									<span class="tx_03"><em>7개월부터 36개월 사이</em>의 아이라면 표준 발달에<br />근거하여 아이의 월령에 딱 맞게 선택하거나 아이에<br />따라 조금 빠르게, 또는 느리게도 시작할 수 있습니다.</span>
+								</div>
+							</li>
+							<li class="m03">
+								<div class="top">
+									<button>목록 펼치기 버튼</button>
+									<em class="ico">03</em>
+									<span>아직 <em>영상</em>은 아이에게 보여주기<br />꺼려지는데 <em>괜찮을까요?</em></span>
+								</div>
+								<div class="btm">
+									<span class="tx_01">일반 영상과 차별화된 놀이극장!<br /><em>부모의 걱정을 반영한 교육 콘텐츠</em></span>
+									<dl>
+										<dt>자극은 적게!</dt>
+										<dd>색깔, 형태, 소품의 수 그리고 등장인물을 최소화하여 아이에게<br />영상을 보여주는 것에 대한 부담감을 줄였어요.</dd>
+										<dd class="img"><img src="Images/img_15.jpg" alt="" /></dd>
+										<dt>놀이극장을 원하는 방식으로!</dt>
+										<dd>편의에 따라 원하는 매체를 선택해 놀이극장을 감상할 수 있어요.<br />호비 APP으로는 고객이라면 누구나 놀이극장 감상이 가능해요!</dd>
+										<dd class="img"><img src="Images/img_16.jpg" alt="" /></dd>
+										<dd class="noti">삼성, LG 스마트TV 이용 가능, TV 사양, 인터넷 속도 등 환경에 따라 차이가 있을 수 있습니다.</dd>
+										<dt>교재와의 연동 강화!</dt>
+										<dd class="lt_img01">다양한 교재 속 주제를 영상으로 구현해 <br />교재 내용의 이해를 높여요.</dd>
+										<dt>적정 분량!</dt>
+										<dd class="lt_img02">영유아의 눈과 귀에 주는 부담을 줄이기위해<br />20분 내외의 분량으로 구성했어요.</dd>
+										<dt>음악 퀄리티도 UP!</dt>
+										<dd class="lt_img03">전자음은 최대한 배제하고 클래식 악기를<br />활용한 음악을 선곡해 듣기에 편안해요.</dd>
+									</dl>
+									<span class="tx_03">스마트폰과 TV에서 눈을 못 떼는 아이가 될까 봐 걱정<br />되시죠? 자극적인 만화나 오락 영상과 달리<br /><em>교재와 연동되어 학습효과는 높여주고<br />즐거운 반복 학습</em>으로 발달에 도움을 줍니다.</span>
+									<span class="tx_03"><em>자극적인 요소는 최소화</em>하고 율동과 노래, 이야기로<br />생생하게 <em>학습 내용을 전달</em>하여 안심할 수 있습니다.</span>
+									<span class="tx_03">엄마, 아빠와 함께 시청하며 <em>상호작용하는<br />영상 시청 습관</em>도 함께하면 더욱 좋습니다!</span>
+								</div>
+							</li>
+							<li class="m04">
+								<div class="top">
+									<button>목록 펼치기 버튼</button>
+									<em class="ico">04</em>
+									<span>아이챌린지는 <em>습관 형성</em>에만<br />좋은 것 아닌가요?</span>
+								</div>
+								<div class="btm">
+									<span class="tx_01">세분화된 성장 영역별 능력을 키워 주는<br /><em>통합 발달 프로그램</em></span>
+									<img src="Images/img_12.jpg" alt="기본생활, 사회,정서, 언어, 인지, 신체, 예술경험" />
+									<span class="tx_03">아이챌린지는 기본생활뿐만 아니라 인성, 사회성을<br />중심으로 <em>사회·정서, 언어, 인지, 신체, 예술 경험의<br />6가지 교육 영역의 통합 발달</em>을 목표로 기획했습니다.</span>
+									<span class="tx_03"><em>난이도, 시기, 교육 체계, 분량 적정성과 뇌과학적<br />근거를 기반</em>으로 한 체계적인 놀이 교육으로<br />월령 대비 똑똑한 아이로 키울 수 있습니다.</span>
+								</div>
+							</li>
+							<li class="m05">
+								<div class="top">
+									<button>목록 펼치기 버튼</button>
+									<em class="ico">05</em>
+									<span><em>구성 대비 가격</em>이 적절한가요?</span>
+								</div>
+								<div class="btm">
+									<span class="tx_01"><em>월별 약 3만원대</em>의 합리적인 가격과<br />프로모션별 <em>특별한 할인 및 사은품 제공! </em></span>
+									<span class="tx_02">※ 월령프로그램 12개월 이상 구독 기준 가격입니다.</span>
+									<img src="Images/img_13.jpg" alt="기본생활, 사회,정서, 언어, 인지, 신체, 예술경험" />
+									<span class="tx_03">시중 교재는 단품 판매가 많아 할인율이 떨어지고<br />구성에 비해 가격이 비싼 편입니다.</span>
+									<span class="tx_03">아이챌린지는 월별 약 3만원대의 합리적인 가격으로<br />한 가지 주제에 대한 <em>교재+교구+영상+가이드</em>를<br />매달 다채롭게 받아볼 수 있습니다.</span>
+									<span class="tx_04">프로모션별로 특별한 할인 혜택과 다양한 사은품을<br />제공하므로 교재 쇼핑 페이지에서 꼭 확인해 주세요!</span>
+									<a href="https://m.i-challenge.co.kr:441/Shopping/Age/2018/1016/event.asp" class="btn_more">자세히 보기</a>
+								</div>
+							</li>
+							<li class="m06">
+								<div class="top">
+									<button>목록 펼치기 버튼</button>
+									<em class="ico">06</em>
+									<span>아이챌린지로 한글과<br /><em>수학 학습도 대비</em>할 수 있나요?</span>
+								</div>
+								<div class="btm">
+									<span class="tx_01">2017 영유아 브랜드 선호도조사<br /><em>한글교육 부분 1위, </em>아이챌린지</span>
+									<img src="Images/img_14.jpg" alt="" />
+									<span class="tx_02">※ 3단계 기준 제품 이미지입니다.</span>
+									<span class="tx_03"><em>단계프로그램 3단계</em>부터는 <em>진단 테스트</em>를 통해 아이<br />눈높이에 딱 맞는 <em>수준별 선택 학습</em>(Base, Standard,<br />Advance)으로 한글과 수학을 시작합니다.</span>
+									<span class="tx_03">한글과 수학 학습에 연동되는 <em>에듀토이를 통해</em><br />아이 스스로 즐겁게 학습 능력을 키울 수 있습니다.</span>
+								</div>
+							</li>
+						</ul>
+						<script>
+						$(function(){
+							acodian.click('.cont_bx03 .accodian > li > .top > button');
+						}) ;
+						</script>
+						<!-- accodian :: end  -->
+					</div>
+					<div class="cont_bx04">
+						<p class="tit"><em>아직 아이챌린지에 궁금한게 남았다면?</em><br />활짝 열려 있는 고객 센터에 문의하세요!</p>
+						<div class="img"><img src="Images/img_09.jpg" alt="" /></div>
+						<span class="tx_01"><em>홈페이지 · 전화 · 카카오톡</em>을 통해 아이챌린지<br />전문 상담원에게 자세한 답변을 받을 수 있습니다.</span>
+						<a href="#" class="btn_01">교재 구성 자세히 보기</a>
+					</div>
+				</div>
+				<!-- cont_btm :: end -->
+				
+				<!-- cont_fixed :: start -->
+				<div class="cont_fixed">
+					<a href="https://m.i-challenge.co.kr:441/Event/FreeTrial/">무료놀이체험북 신청</a>
+					<a href="https://m.i-challenge.co.kr:441/Shopping/Age/2018/1016/event.asp">구독하기</a>
+				</div>
+				<!-- cont_fixed :: end -->
+				
+			</div>
+			<!-- content :: end -->
+
+		</div>
+		<!-- container :: end -->
+
+		<!-- footer :: start -->
+		<footer id="footer">
+			<ul class="foot_top">
+				<li>
+					<a href="javascript:goMenu('US0700');">이용약관</a>
+				</li>
+				<li class="sec">
+					<a href="javascript:goMenu('US0800');">개인정보처리방침</a>
+				</li>
+				<li>
+					<a href="javascript:goMenu('ET9900');">PC 버전</a>
+				</li>
+			</ul>
+			<div class="foot_btm">
+				<h2>
+					<img src="http://polly90.com/pub/Images/main/logo_foot.jpg" alt="NE 능률" />
+				</h2>
+				<address>
+					<em>서울시 마포구 월드컵북로 396 누리꿈스퀘어 비즈니스타워 10층</em>
+				</address>
+				<dl>
+					<dt>대표이사</dt>
+					<dd>주민홍　</dd>
+					<dt>사업자등록번호</dt>
+					<dd>105-81-65267</dd>
+					<dt>통신판매업신고번호제</dt>
+					<dd> 2004-02120호</dd>
+					<dt>개인정보 보호 책임자(CPO) :</dt>
+					<dd>한유형 (
+						<a href="mailto:necpo@neungyule.com;">necpo@neungyule.com</a>)</dd>
+				</dl>
+				<p>COPYRIGHT ⓒ NE NEUNGYULE INC. ALL RIGHTS RESERVED.</p>
+				<p>ⓒ Benesse Corporation.</p>
+			</div>
+		</footer>
+		<!-- footer :: end -->
+	</div>
+	<!-- wrap :: end -->
+</body>
+</html>

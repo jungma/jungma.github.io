@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=high-dpi, minimal-ui" />
+<meta name="description" content="" />
+<meta name="google-site-verification" content="BFmEnM9KijGLhZEm4Q0cgECgwY2CBuoNGtFlMeklb70" />
+<meta property="og:title" content="" />
+<meta property="og:image" content="http://www.i-challenge.co.kr/images/common/kakao-meta-image.jpg" />
+<link rel="apple-touch-icon" href="http://m.i-challenge.co.kr/images/icon.png">
+<link rel="apple-touch-icon-precomposed" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="shortcut icon" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/style.css" />
+<link rel="stylesheet" type="text/css" href="../../Css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Mypage/Css/Mypage2018.css" />
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/ui.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/kakao.link.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/swiper.min.js"></script>
+<script>
+	
+	var lnbDep1 = 3; //LNB depth 1
+	var allmenuDep1 = 4; //allmenu depth 1
+	var allmenuDep2 = 3; //allmenu depth 2
+
+	$(function () {
+		//lnb swipe 생성
+		var lnb = new Swiper('.lnb .swiper-container', {
+			scrollbar: '.swiper-scrollbar',
+			scrollbarHide: true,
+			slidesPerView: 'auto',
+			grabCursor: true
+		});
+
+		//lnb allmenu on/off 처리
+		$('.btn_allmenu').on('click', function () {
+			var _this = $(this);
+			if (_this.hasClass('on')) {
+				_this.removeClass('on');
+				$('.allmenu').slideUp();
+			} else {
+				_this.removeClass('on');
+				_this.addClass('on');
+				$('.allmenu').slideDown();
+			}
+
+		});
+	});
+		
+</script>
+</head>
+
+<body>
+	<!-- wrap :: start -->
+	<div id="wrap">
+
+<div class="pop score">
+	<div class="cont_pop">
+		<div class="pop_header">
+			<a href="javascript:history.back();" class="btn_back"><img src="http://m2.i-challenge.co.kr/Hobi/Membership/images/Parent/btn_back.png" alt="뒤로" /></a>
+			<span>등급 점수 확인</span>
+		</div>
+		<div class="pop_con">
+		
+			<!-- cont_score :: start -->
+			<div class="cont_score">
+				
+				<!-- accodian :: start  -->
+				<ul class="accodian">
+					<li>
+						<div class="top">
+							<button>목록 펼치기 버튼</button>
+							<span class="txt01">8월 등급 점수</span>
+							<span class="txt02">32,800점</span>
+						</div>
+						<div class="btm">
+							<div class="tab_type05">
+								<ul>
+									<li><a href="#">구매</a></li>
+									<li><a href="#">호비APP</a></li>
+									<li><a href="#">친구 추천</a></li>
+									<li><a href="#">수신 동의</a></li>
+									<li class="on"><a href="#">참여 활동</a></li>
+								</ul>
+							</div>
+							<div class="tblwrap">
+								<table title="등급 점수 확인" summary="일자, 내역, 등급 점수">
+									<caption>등급 점수 확인 테이블</caption>
+									<colgroup>
+										<col width="20%" />
+										<col width="54%" />
+										<col width="26%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">일자</th>
+											<th scope="col">내역</th>
+											<th scope="col">등급 점수</th>
+										</tr>
+									</thead>
+									<tbody>
+
+										<tr>
+											<td>18.03.11</td>
+											<td>피추천인 피추천자 구독 신청</td>
+											<td>1,000점</td>
+										</tr>
+										<tr>
+											<td>18.03.11</td>
+											<td>피추천인 피추천자 구독 신청</td>
+											<td>1,000점</td>
+										</tr>
+										<tr>
+											<td>18.03.11</td>
+											<td>피추천인 피추천자 구독 신청</td>
+											<td>1,000점</td>
+										</tr>
+										<tr>
+											<td>18.03.11</td>
+											<td>피추천인 피추천자 구독 신청</td>
+											<td>1,000점</td>
+										</tr>
+										<tr>
+											<td>18.03.11</td>
+											<td>피추천인 피추천자 구독 신청</td>
+											<td>1,000점</td>
+										</tr>
+										<tr>
+											<td>18.03.11</td>
+											<td>피추천인 피추천자 구독 신청</td>
+											<td>1,000점</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2">친구 추천 등급 점수</td>
+											<td>10,000점</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="top">
+							<button>목록 펼치기 버튼</button>
+							<span class="txt01">8월 등급 점수</span>
+							<span class="txt02">32,800점</span>
+						</div>
+						<div class="btm">
+							<div class="tab_type05">
+								<ul>
+									<li><a href="#">구매</a></li>
+									<li><a href="#">호비APP</a></li>
+									<li class="on"><a href="#">친구 추천</a></li>
+									<li><a href="#">수신 동의</a></li>
+									<li><a href="#">참여 활동</a></li>
+								</ul>
+							</div>
+							<div class="tblwrap">
+								<table title="등급 점수 확인" summary="일자, 내역, 등급 점수">
+									<caption>등급 점수 확인 테이블</caption>
+									<colgroup>
+										<col width="20%" />
+										<col width="54%" />
+										<col width="26%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">일자</th>
+											<th scope="col">내역</th>
+											<th scope="col">등급 점수</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="nolist" colspan="3">점수 내역이 없습니다.</td>
+										</tr>
+									</tbody>
+
+								</table>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="top">
+							<button>목록 펼치기 버튼</button>
+							<span class="txt01">8월 등급 점수</span>
+							<span class="txt02">32,800점</span>
+						</div>
+						<div class="btm">
+							<div class="tab_type05">
+								<ul>
+									<li class="on"><a href="#">구매</a></li>
+									<li><a href="#">호비APP</a></li>
+									<li><a href="#">친구 추천</a></li>
+									<li><a href="#">수신 동의</a></li>
+									<li><a href="#">참여 활동</a></li>
+								</ul>
+							</div>
+							<div class="tblwrap">
+								<table title="등급 점수 확인" summary="일자, 내역, 등급 점수">
+									<caption>등급 점수 확인 테이블</caption>
+									<colgroup>
+										<col width="20%" />
+										<col width="54%" />
+										<col width="26%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">일자</th>
+											<th scope="col">내역</th>
+											<th scope="col">등급 점수</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="nolist" colspan="3">점수 내역이 없습니다.</td>
+										</tr>
+									</tbody>
+
+								</table>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="top">
+							<button>목록 펼치기 버튼</button>
+							<span class="txt01">8월 등급 점수</span>
+							<span class="txt02">32,800점</span>
+						</div>
+						<div class="btm">
+							<div class="tab_type05">
+								<ul>
+									<li><a href="#">구매</a></li>
+									<li><a href="#">호비APP</a></li>
+									<li><a href="#">친구 추천</a></li>
+									<li><a href="#">수신 동의</a></li>
+									<li class="on"><a href="#">참여 활동</a></li>
+								</ul>
+							</div>
+							<div class="tblwrap">
+								<table title="등급 점수 확인" summary="일자, 내역, 등급 점수">
+									<caption>등급 점수 확인 테이블</caption>
+									<colgroup>
+										<col width="20%" />
+										<col width="54%" />
+										<col width="26%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">일자</th>
+											<th scope="col">내역</th>
+											<th scope="col">등급 점수</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="nolist" colspan="3">점수 내역이 없습니다.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="top">
+							<button>목록 펼치기 버튼</button>
+							<span class="txt01">8월 등급 점수</span>
+							<span class="txt02">32,800점</span>
+						</div>
+						<div class="btm">
+							<div class="tab_type05">
+								<ul>
+									<li><a href="#">구매</a></li>
+									<li><a href="#">호비APP</a></li>
+									<li><a href="#">친구 추천</a></li>
+									<li class="on"><a href="#">수신 동의</a></li>
+									<li><a href="#">참여 활동</a></li>
+								</ul>
+							</div>
+							<div class="tblwrap">
+								<table title="등급 점수 확인" summary="일자, 내역, 등급 점수">
+									<caption>등급 점수 확인 테이블</caption>
+									<colgroup>
+										<col width="20%" />
+										<col width="54%" />
+										<col width="26%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">일자</th>
+											<th scope="col">내역</th>
+											<th scope="col">등급 점수</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="nolist" colspan="3">점수 내역이 없습니다.</td>
+										</tr>
+									</tbody>
+
+								</table>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<script>
+				$(function(){
+					acodian.click('.cont_score .accodian > li > .top > button');
+				}) ;
+				</script>
+				<!-- accodian :: end  -->
+
+			</div>
+			<!-- cont_score :: end -->
+		</div>
+	</div>
+</div>
+
+	</div>
+	<!-- wrap :: end -->
+</body>
+</html>

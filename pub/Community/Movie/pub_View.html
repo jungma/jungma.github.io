@@ -1,0 +1,142 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=high-dpi, minimal-ui"
+		/>
+		<meta name="description" content="" />
+		<meta name="google-site-verification" content="BFmEnM9KijGLhZEm4Q0cgECgwY2CBuoNGtFlMeklb70" />
+		<meta property="og:title" content="" />
+		<meta property="og:image" content="http://www.i-challenge.co.kr/images/common/kakao-meta-image.jpg" />
+		<link rel="apple-touch-icon" href="http://m.i-challenge.co.kr/images/icon.png">
+		<link rel="apple-touch-icon-precomposed" href="http://m.i-challenge.co.kr/images/icon128.png" />
+		<link rel="shortcut icon" href="http://m.i-challenge.co.kr/images/icon128.png" />
+		<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/style.css" />
+    <link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href=".http://m2.i-challenge.co.kr/Css/swiper.css" />
+	<link rel="stylesheet" type="text/css" href="../Css/community2018.css" />
+    <script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="http://m.i-challenge.co.kr/Js/kakao.link.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/ui.js"></script>
+    <script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/swiper.min.js"></script>
+		<script>
+			var lnbDep1 = 2; //LNB depth 1
+			var allmenuDep1 = 5; //allmenu depth 1
+			var allmenuDep2 = 2; //allmenu depth 2
+
+			$(function () {
+				//lnb swipe 생성
+				var lnb = new Swiper('.lnb .swiper-container', {
+					scrollbar: '.swiper-scrollbar',
+					scrollbarHide: true,
+					slidesPerView: 'auto',
+					grabCursor: true
+				});
+
+				//lnb allmenu on/off 처리
+				$('.btn_allmenu').on('click', function () {
+					var _this = $(this);
+					if (_this.hasClass('on')) {
+						_this.removeClass('on');
+						$('.allmenu').slideUp();
+					} else {
+						_this.removeClass('on');
+						_this.addClass('on');
+						$('.allmenu').slideDown();
+					}
+
+				});
+
+				//토닥토닥 게시글 리스트 글자수 45개 이상일 글자수 숨기고 ... 텍스트 가져오기
+				$('.cont_list .btm .cont').each(function () {
+					var numChar = $(this).text().length;
+					var maxNum = 50;
+					var jbExcerpt = $(this).text().substring(0, maxNum);
+					if (numChar > 50) {
+						$(this).html(jbExcerpt);
+					}
+				});
+
+			});
+
+
+		</script>
+	</head>
+
+<body>
+    <!-- wrap :: start -->
+    <div id="wrap">
+
+			
+        <!-- container :: start -->
+        <div id="container">
+
+	<!-- content :: start -->
+	<div id="content" class="community movie view">
+		
+		<!-- cont_pop :: start -->
+		<div class="cont_pop">
+			<div class="movie">
+				<iframe class="playArea" id="playerLayer" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/q7AdgoqY5Ks?autoplay=1&amp;controls=1&amp;autohide=0&amp;rel=0&amp;wmode=transparent&amp;enablejsapi=1&amp;origin=http%3A%2F%2Fm2.i-challenge.co.kr&amp;widgetid=1"></iframe>
+			</div>
+			<div class="txt">
+				<div class="tit">콩순이 동물병원 송 [콩순이의 율동교실 4기]</div>
+				<div class="info">
+					<span>호비맘</span>
+					<span>만 1~2세</span>
+					<span>18.03.29</span>
+					<span>조회 35</span>
+					
+					<!-- [D] 선택 시 하트 아이콘 채색 class="on" 추가 -->
+					<a href="#" class="btn_like">추천<em>1</em></a>
+				</div>
+				<div class="hashtag">
+					<span>호비</span>
+				</div>
+			</div>
+			
+			<!-- btn :: start -->
+			<div class="btns">
+				<button type="button" class="btn_adjust">수정</button>
+				<button type="button" class="btn_delete">삭제</button>
+				<button type="button" class="btn_close">닫기</button>
+			</div>
+			<!-- btn :: end -->
+			
+			<!-- movie_list :: start -->
+			<div class="movie_list">
+				<ul>
+					<li>
+						<span class="tit">이전 영상</span>
+						<a href="#">
+							<img src="https://img.youtube.com/vi/q7AdgoqY5Ks/hqdefault.jpg" alt="" />
+						</a>
+					</li>
+					<li>
+						<span class="tit">다음 영상</span>
+						<a href="#">
+							<img src="https://img.youtube.com/vi/q7AdgoqY5Ks/hqdefault.jpg" alt="" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- movie_list :: end -->
+		</div>		
+		<!-- cont_pop :: end -->
+		
+	</div>
+	<!-- content :: end -->
+
+        </div>
+        <!-- container :: end -->
+
+
+    </div>
+    <!-- wrap :: end -->
+</body>
+
+</html>

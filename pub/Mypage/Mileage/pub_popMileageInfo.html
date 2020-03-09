@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=high-dpi, minimal-ui" />
+<meta name="description" content="" />
+<meta name="google-site-verification" content="BFmEnM9KijGLhZEm4Q0cgECgwY2CBuoNGtFlMeklb70" />
+<meta property="og:title" content="" />
+<meta property="og:image" content="http://www.i-challenge.co.kr/images/common/kakao-meta-image.jpg" />
+<link rel="apple-touch-icon" href="http://m.i-challenge.co.kr/images/icon.png">
+<link rel="apple-touch-icon-precomposed" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="shortcut icon" href="http://m.i-challenge.co.kr/images/icon128.png" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/style.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Css/swiper.css" />
+<link rel="stylesheet" type="text/css" href="http://m2.i-challenge.co.kr/Mypage/Css/Mypage2018.css" />
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/ui.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://m.i-challenge.co.kr/Js/kakao.link.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="http://m2.i-challenge.co.kr/Js/swiper.min.js"></script>
+<script>
+	
+	var lnbDep1 = 3; //LNB depth 1
+	var allmenuDep1 = 4; //allmenu depth 1
+	var allmenuDep2 = 3; //allmenu depth 2
+
+	$(function () {
+		//lnb swipe 생성
+		var lnb = new Swiper('.lnb .swiper-container', {
+			scrollbar: '.swiper-scrollbar',
+			scrollbarHide: true,
+			slidesPerView: 'auto',
+			grabCursor: true
+		});
+
+		//lnb allmenu on/off 처리
+		$('.btn_allmenu').on('click', function () {
+			var _this = $(this);
+			if (_this.hasClass('on')) {
+				_this.removeClass('on');
+				$('.allmenu').slideUp();
+			} else {
+				_this.removeClass('on');
+				_this.addClass('on');
+				$('.allmenu').slideDown();
+			}
+
+		});
+	});
+		
+</script>
+<script>
+
+$(function(){
+	//도너츠전환 안내 슬라이드 on/off 처리
+	$('.btn_open').on('click', function(e){
+		e.preventDefault();
+		tabOnOff($(this), '#beltBn');
+	});
+	
+	//도너츠전환 안내 슬라이드 on/off 처리s
+	$('.tab_type02 li').on('click', function(e){
+		e.preventDefault();
+		$('.tab_type02 li').removeClass("on");
+		$(this).addClass("on");
+		
+		if($('.tab_type02 li.period').hasClass("on")){
+			$(".cont_period").show();
+		}else{
+			$(".cont_period").hide();
+		}
+	});
+})
+</script>
+</head>
+
+<body>
+	<!-- wrap :: start -->
+	<div id="wrap">
+
+<div class="mypage mileage pop">
+	<div class="cont_pop">
+		<div class="pop_header">
+			<a href="javascript:history.back();" class="btn_back"><img src="http://m2.i-challenge.co.kr/Hobi/Membership/images/Parent/btn_back.png" alt="뒤로" /></a>
+			<span>마일리지 제도 안내</span>
+		</div>
+		<div class="pop_con">
+		
+		<!-- cont_mileageinfo :: start -->
+		<div class="cont_mileageinfo">
+
+			
+			<div class="tblwrap">
+				<table title="도너츠" summary="전환 도너츠, 적립 도너츠, 사용 도너츠">
+					<caption>도너츠 테이블</caption>
+					<colgroup>
+						<col width="10%" />
+						<col width="18%" />
+						<col width="51%" />
+						<col width="19%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" colspan="2">구분</th>
+							<th scope="col">적립 방법</th>
+							<th scope="col">마일리지</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="2">회원 가입(기본)</td>
+							<td class="txtlt">홈페이지 신규 회원 가입 (최초 1회 메일 인증 시 적립)</td>
+							<td>1,000M</td>
+						</tr>
+						<tr>
+							<td colspan="2" rowspan="2">회원 가입(추가)</td>
+							<td class="txtlt">신규 가입 시 아이정보 입력</td>
+							<td>500M</td>
+						</tr>
+						<tr>
+							<td class="txtlt">고객 서비스 수신 항목(이메일, SMS, 전화, DM) 전체 수신 동의<br />- 개별 수신 동의 시 각 100M</td>
+							<td>500M</td>
+						</tr>
+						<tr>
+							<td colspan="2">로그인</td>
+							<td class="txtlt">1일 1회(PC/모바일웹)</td>
+							<td>20M</td>
+						</tr>
+						<tr>
+							<td rowspan="6">커뮤<br />니티</td>
+							<td rowspan="3">교재사용<br />후기</td>
+							<td class="txtlt">1일 1회, 일반 후기 등록</td>
+							<td>100M</td>
+						</tr>
+						<tr>
+							<td class="txtlt">1일 1회, 프리미엄 후기 등록</td>
+							<td>500M</td>
+						</tr>
+						<tr>
+							<td class="txtlt">분기별 1회, 우수 후기 선정</td>
+							<td>2,000M</td>
+						</tr>
+						<tr>
+							<td>엄마아빠<br />토닥토닥</td>
+							<td class="txtlt">1일 1회, 게시글 등록</td>
+							<td>50M</td>
+						</tr>
+						<tr>
+							<td>육아 영상</td>
+							<td class="txtlt">1일 1회, 게시글 등록</td>
+							<td>50M</td>
+						</tr>
+						<tr>
+							<td>포토갤러리</td>
+							<td class="txtlt">1일 1회, 게시글 등록(PC)</td>
+							<td>50M</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="bdnone">기타</td>
+							<td class="txtlt bdnone">이벤트/프로모션/설문참여 시</td>
+							<td class="bdnone">별도</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<h4>※ 유의사항</h4>
+			<ul class="txt">
+				<li>마일리지 유효기간은 24개월이며, 유효기간이 만료되면<br />익월 1일에 일괄 소멸됩니다.</li>
+				<li>반복 및 유해 게시 내용 등록의 경우, 해당 게시물 삭제와<br />함께 마일리지가 환수됩니다. 또한 이용 정지등의 불이익을 받을 수 있습니다.</li>
+				<li>마일리지/도너츠는 비현금성 포인트로 현금으로 환불되지<br />않습니다.</li>
+				<li>회원 탈퇴 시 모든 마일리지는 삭제되며, 재가입해도<br />복구되지 않습니다.</li>
+			</ul>
+		</div>
+		<!-- cont_mileageinfo :: end -->
+		
+
+		</div>
+	</div>
+</div>
+
+	</div>
+	<!-- wrap :: end -->
+</body>
+</html>
