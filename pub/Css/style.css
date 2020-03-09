@@ -1,8 +1,8 @@
 @charset "euc-kr";
 
-@import url("http://m.i-challenge.co.kr/Css/base.css?v=2");
-@import url("http://m.i-challenge.co.kr/Css/layout.css");
-@import url("http://m.i-challenge.co.kr/Css/star-rating.css");
+@import url("../Css/base.css");
+@import url("../Css/layout.css");
+@import url("../Css/star-rating.css");
 
 @font-face {font-family:"Noto Light"; src:url('../Font/NotoSansCJKkr-Light.eot'); src:url('../Font/NotoSansCJKkr-Light.eot?#iefix') format('embedded-opentype'), url('../Font/NotoSansCJKkr-Light.woff') format('woff'), url('../Font/NotoSansCJKkr-Light.ttf') format('truetype'), url('../Font/NotoSansCJKkr-Light.svg#NotoSansCJKkr-Light') format('svg'); font-weight:normal; font-style:normal;}
 @font-face {font-family:"Noto Demi"; src:url('../Font/NotoSansCJKkr-DemiLight.eot'); src:url('../Font/NotoSansCJKkr-DemiLight.eot?#iefix') format('embedded-opentype'), url('../Font/NotoSansCJKkr-DemiLight.woff') format('woff'), url('../Font/NotoSansCJKkr-DemiLight.ttf') format('truetype'), url('../Font/NotoSansCJKkr-DemiLight.svg#NotoSansCJKkr-DemiLight') format('svg'); font-weight:normal; font-style:normal;}
