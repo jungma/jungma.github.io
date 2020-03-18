@@ -984,3 +984,5 @@ pre {
   cursor: url(../img/cursor.png), url(../img/cursor.cur), auto;
   cursor: -webkit-image-set(url(../img/cursor.png) 1x, url(../img/cursor@2x.png) 2x), auto;
 }
+
+code{font-family:'BMJUA', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
