@@ -1074,7 +1074,8 @@ pre {
   display: inline-block;
   width: 31%;
   margin: 20px 0.5%;
-  text-align: left
+  text-align: left;
+  vertical-align:top;
 }
 
 .row .card .card-img-top {
