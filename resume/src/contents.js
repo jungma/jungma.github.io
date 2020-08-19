@@ -23,7 +23,7 @@ module.exports = {
       },
       {
         'date': 'Framework',
-        'title': 'Vue.js / Nuxt.js / React / Jquery ',
+        'title': 'Vue.js / Jquery ',
         'contents': ['']
       },
       {
@@ -66,7 +66,7 @@ module.exports = {
   summary: {
     '경력 요약': [
       {
-        'date': ['2018.08', '현재'],
+        'date': ['2018.08', '2020.06'],
         'title': '하나투어',
         'contents': [
           '주 - 하나투어 사이트 운영',
@@ -89,18 +89,11 @@ module.exports = {
           '서브 - 해법스터디 웹 운영 및 리뉴얼 참여 ',
         ]
       },
-      {
-        'date': ['2014.02', '2014.06'],
-        'title': '미소사',
-        'contents': [
-          '주 - 미소사 웹 에이전시 사내 프로젝트수행',
-        ]
-      }
     ]
   },
   detailContents: {
     '하나투어': {
-      'date': '2018.08.01 - 현재',
+      'date': '2018.08.01 - 2020.06.19',
       'info': '전세계 패키지여행, 항공권, 호텔, 자유여행 등 실시간 예약 서비스 제공',
       'service': [
         `Web<br /> 
@@ -110,7 +103,7 @@ module.exports = {
       'project': {
         'project': [
           {
-            'date': '2020.01 - 현재 ',
+            'date': '2020.01 - 2020.06.19 ',
             'title': '하나투어 차세대 웹사이트 Vue.js (SPA)로 개발된 사이트',
             'contents': [
               'VUE.JS 기반 웹 컴포넌트 수정 진행',
@@ -128,7 +121,7 @@ module.exports = {
             ]
           },
           {
-            'date': '2018.08 - 현재',
+            'date': '2018.08 - 2020.06.19',
             'title': '하나투어 웹사이트 운영',
             'contents': [
               '하나투어 메인 웹사이트 운영',
@@ -208,29 +201,6 @@ module.exports = {
               '- 작업 리스트 : 웹, 모바일 전체',
               '- 기여도 : 100%',
               'stack: HTML5, CSS3, JavaScript'
-            ]
-          },
-        ]
-      }
-    },
-    '미소사': {
-      'date': '2014.02 - 2014.07',
-      'info': '소상공인을 위한 소규모 웹사이트 구축 웹에이전시',
-      'service': [
-        `Web<br /> 
-        - 회사 홈페이지: <a href="#none">비운영</a>
-        `
-      ],
-      'project': {
-        'project': [
-          {
-            'date': '2014.07 - 2017.05',
-            'title': '사내 웹페이지 개편',
-            'contents': [
-              '사내 웹사이트 개편작업',
-              '- 작업 리스트 : 미소사 포탈, 가맹점 전용사이트, 고객만족센터 사이트 ',
-              '- 기여도 : 100%',
-              'stack: HTML, CSS, JavaScript'
             ]
           },
         ]
