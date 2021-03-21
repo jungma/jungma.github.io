@@ -10,8 +10,9 @@
 <link rel="stylesheet" href="css/aos.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="shortcut icon" href="https://www.plankorea.or.kr/favicon.ico">
+ <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+ <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
 
 </head>
 
@@ -50,10 +51,14 @@
       <!-- mobile 배경이미지 -->
       <img src="images/bg-sec2-mo.png" alt="" class="section-default-img mobile" />
 	  <div class="video_wrap">
-		<div class="video_dimmer"></div>
-		<video id="video01" class="video_player video_player01 show" preload="auto" muted loop="" autoplay data-setup="" playsinline poster="images/poster.jpg"  width="100%" height="auto">
+		<!--<video id="video01" class="video_player video_player01 show" preload="auto" muted loop="" autoplay data-setup="" playsinline poster="images/poster.jpg"  width="100%" height="auto">
 			<source src="images/video.mp4" type="video/mp4">
-		</video>
+		</video>-->
+		
+
+<video id="video01" class="video-js" controls="false" preload="auto" poster="images/poster.jpg" data-setup="{}" muted loop="" autoplay width="100%" height="auto">
+    <source src="images/video.mp4" type="video/mp4" />
+  </video>
 		</div>
     </div>
 
