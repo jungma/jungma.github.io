@@ -10,10 +10,17 @@
 <link rel="stylesheet" href="css/aos.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="shortcut icon" href="https://www.plankorea.or.kr/favicon.ico">
- <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
- <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/aos.js"></script>
+<script>
+$(function(){
+	AOS.init({
+	easing: 'ease-in-out',
+	duration: 1100
+	});
+});
+</script>
 </head>
 
 
@@ -144,13 +151,7 @@
 	
   </div>
   
-<script src="js/aos.js"></script>
-		<script>
-			AOS.init({
-				easing: 'ease-out-back',
-				duration: 1000
-			});
-		</script>
+
 </body>
 
 </html>
