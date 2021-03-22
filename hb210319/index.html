@@ -8,19 +8,10 @@
 <link rel="stylesheet" href="css/form.css">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/aos.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v3">
 <link rel="shortcut icon" href="https://www.plankorea.or.kr/favicon.ico">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/aos.js"></script>
-<script>
-$(function(){
-	AOS.init({
-	easing: 'ease-in-out',
-	duration: 1100
-	});
-});
-</script>
 </head>
 
 
@@ -36,7 +27,7 @@ $(function(){
 		<img src="images/img1.png" class="tx tx3" data-aos-delay="400" data-aos="fade-up" alt="" />
 		
       <!-- mobile 배경이미지 -->
-      <img src="images/bg-sec1-mo.png" alt="" class="section-default-img mobile" />
+      <img src="images/bg-sec1-mo.jpg" alt="" class="section-default-img mobile" />
 	  <img src="images/sec1-tx1-m.png" class="tx tx1 m" data-aos-delay="0" data-aos="fade-up" alt="" />
 	  <img src="images/sec1-tx2-m.png" class="tx tx2 m" data-aos-delay="200" data-aos="fade-up" alt="" />
 		<img src="images/sec1-tx3-m.png" class="tx tx3 m" data-aos-delay="800" data-aos="fade-up" alt="" />
@@ -54,7 +45,7 @@ $(function(){
       <img src="images/bg-sec2.png" alt="영상" class="section-default-img" />
 	  
 	  <img src="images/bg-sec1-2.png" class="bg1" alt="">
-
+	  <img src="images/bg-sec1-2-m.png" class="bg1 m" alt="">
       <!-- mobile 배경이미지 -->
       <img src="images/bg-sec2-mo.png" alt="" class="section-default-img mobile" />
       <!-- youtube -->
@@ -146,7 +137,15 @@ $(function(){
 	
   </div>
   
-
+<script src="js/aos.js"></script>
+<script>
+$(function(){
+	AOS.init({
+	easing: 'ease-in-out',
+	duration: 1100
+	});
+});
+</script>
 </body>
 
 </html>
