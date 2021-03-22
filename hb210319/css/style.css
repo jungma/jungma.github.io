@@ -15,7 +15,7 @@
 .sec1 .tx3{position:absolute;bottom:-2.09%;left:0;z-index:3}
 .sec1, .sec2{background:#eaf3f3}
 .sec2 .bg1{position:absolute;top:0;left:0;width:100%;z-index:2}
-.sec2 .youtube{position: absolute;top:11.8%;left: 17.6%;width: 64.8%;height: 64%;}
+.sec2 .youtube{position: absolute;top:11.8%;left: 19.7%;width: 60.6%;height: 64%;}
 .sec2 .video_wrap{position:absolute;top:0;left:0;width:100%;height:100%}
 .video-js .vjs-control-bar, .vjs-big-play-button{display:none !important}
 .video01-dimensions{width:100%;height:100%}
@@ -47,7 +47,7 @@
 .sec7 .section-link--promise {width:25.52%;top:76.51%;left:37.24%}
 
 @media screen and (max-width:1400px) {
-	.sec2 .youtube{position: absolute;top:10%;}
+.sec2 .youtube{position: absolute;top:3%;left:10.05%;width: 79.9%;height: 76.42%;}
 .tx{display:none}
 .tx.m{display:block}
 .section-default-img {display: none;}
@@ -57,7 +57,7 @@
 .sec1 .section-link--promise {width:29.42%;top:33.78%;left:35.29%}
 .sec1 .tx1{top:3.66%}
 .sec1 .tx2{top:24.37%}
-.sec1 .tx3{top:48.01%}
+.sec1 .tx3{top:48.2%%}
 .sec2 .bg1{display:none}
 .sec2 .video_wrap{top:-8%}
 .sec3 {margin-top:-9%}
