@@ -15,7 +15,7 @@
 .sec1 .tx3{position:absolute;bottom:-2.09%;left:0;z-index:3}
 .sec1, .sec2{background:#eaf3f3}
 .sec2 .bg1{position:absolute;top:0;left:0;width:100%;z-index:2}
-.sec2 .youtube{position: absolute;top:11%;left: 17.6%;width: 64.8%;height: 64%;}
+.sec2 .youtube{position: absolute;top:11.8%;left: 17.6%;width: 64.8%;height: 64%;}
 .sec2 .video_wrap{position:absolute;top:0;left:0;width:100%;height:100%}
 .video-js .vjs-control-bar, .vjs-big-play-button{display:none !important}
 .video01-dimensions{width:100%;height:100%}
